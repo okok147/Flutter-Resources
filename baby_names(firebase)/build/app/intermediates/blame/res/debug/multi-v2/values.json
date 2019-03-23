@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
                     "source": "/Users/ok/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/b9d358f922506f34761caec15790d255/res/values/values.xml",
@@ -40,6 +40,23 @@
                     }
                 },
                 {
+                    "source": "/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/generated/res/google-services/debug/values/values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,199,316,398,502,605,725,831",
+                        "endColumns": "143,116,81,103,102,119,105,82",
+                        "endOffsets": "194,311,393,497,600,720,826,909"
+                    },
+                    "to": {
+                        "startLines": "110,111,112,113,114,115,116,117",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "7011,7155,7272,7354,7458,7561,7681,7787",
+                        "endColumns": "143,116,81,103,102,119,105,82",
+                        "endOffsets": "7150,7267,7349,7453,7556,7676,7782,7865"
+                    }
+                },
+                {
                     "source": "/Users/ok/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/ebec6f9ac3e9f6741a7cf9fdc30489ed/res/values/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,33,46,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30",
@@ -56,25 +73,6 @@
                         "endLines": "2,3,4,5,6,7,8,9,42,61,92,93,94,95,96,97,98,99,101,102,103,104,105,106,107,108,109",
                         "endColumns": "89,79,89,89,79,80,79,79,20,20,104,180,124,106,179,122,115,102,187,104,180,124,174,147,62,61,78",
                         "endOffsets": "190,270,360,450,530,611,691,771,2417,2834,4778,4959,5084,5191,5371,5494,5610,5713,6068,6173,6354,6479,6654,6802,6865,6927,7006"
-                    }
-                },
-                {
-                    "source": "/Users/ok/Documents/GitHub/flutter-development/baby_names/android/app/src/main/res/values/styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "347"
-                    },
-                    "to": {
-                        "startLines": "119",
-                        "startColumns": "4",
-                        "startOffsets": "7941",
-                        "endLines": "123",
-                        "endColumns": "12",
-                        "endOffsets": "8233"
                     }
                 },
                 {
@@ -95,20 +93,22 @@
                     }
                 },
                 {
-                    "source": "/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/generated/res/google-services/debug/values/values.xml",
+                    "source": "/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/android/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,199,316,398,502,605,725,831",
-                        "endColumns": "143,116,81,103,102,119,105,82",
-                        "endOffsets": "194,311,393,497,600,720,826,909"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "347"
                     },
                     "to": {
-                        "startLines": "110,111,112,113,114,115,116,117",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "7011,7155,7272,7354,7458,7561,7681,7787",
-                        "endColumns": "143,116,81,103,102,119,105,82",
-                        "endOffsets": "7150,7267,7349,7453,7556,7676,7782,7865"
+                        "startLines": "119",
+                        "startColumns": "4",
+                        "startOffsets": "7941",
+                        "endLines": "123",
+                        "endColumns": "12",
+                        "endOffsets": "8233"
                     }
                 }
             ]

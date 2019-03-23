@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
+            "outputFile": "/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-ja/values-ja.xml",
             "map": [
                 {
                     "source": "/Users/ok/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/2b5d7a1e869308479e877adfec167376/res/values-ja/values.xml",

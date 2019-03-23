@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml",
+            "outputFile": "/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-zu/values-zu.xml",
             "map": [
                 {
                     "source": "/Users/ok/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/443e34865294070c25c9abe1bd90ad24/res/values-zu/values-zu.xml",

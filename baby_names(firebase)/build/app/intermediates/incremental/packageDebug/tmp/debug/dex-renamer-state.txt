@@ -1,4 +1,4 @@
-#Sat Mar 23 13:00:36 HKT 2019
+#Sat Mar 23 13:03:23 HKT 2019
 path.1=classes.dex
 path.0=classes.dex
 renamed.7=classes8.dex
@@ -9,14 +9,14 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.7=/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/transforms/dexMerger/debug/2
-base.6=/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/transforms/dexMerger/debug/4
-base.5=/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/transforms/dexMerger/debug/1
-base.4=/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/transforms/dexMerger/debug/0
-base.3=/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/transforms/dexMerger/debug/7
-base.2=/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/transforms/dexMerger/debug/6
-base.1=/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/transforms/dexMerger/debug/3
-base.0=/Users/ok/Documents/GitHub/flutter-development/baby_names/build/app/intermediates/transforms/dexMerger/debug/5
+base.7=/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/transforms/dexMerger/debug/7
+base.6=/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/transforms/dexMerger/debug/5
+base.5=/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/transforms/dexMerger/debug/6
+base.4=/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/transforms/dexMerger/debug/3
+base.3=/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/transforms/dexMerger/debug/4
+base.2=/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/transforms/dexMerger/debug/1
+base.1=/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/transforms/dexMerger/debug/2
+base.0=/Users/ok/Documents/GitHub/flutter-development/baby_names(firebase)/build/app/intermediates/transforms/dexMerger/debug/0
 path.7=classes.dex
 path.6=classes.dex
 path.5=classes.dex
