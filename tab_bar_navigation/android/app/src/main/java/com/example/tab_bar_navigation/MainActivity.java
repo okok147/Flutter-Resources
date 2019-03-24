@@ -1,4 +1,4 @@
-package com.example.flutter_app;
+package com.example.tab_bar_navigation;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;
