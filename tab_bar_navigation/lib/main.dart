@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import './FirstPage.dart' as first;
-import './SecondPage.dart' as second;
-import './ThirdPage.dart' as third;
+
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -9,27 +8,22 @@ void main() {
   ));
 }
 
+
 class MyTabs extends StatefulWidget {
   @override
   MyTabsState createState() => new MyTabsState();
 }
 
-class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
 
 
-  TabController controller;
+class MyTabsState extends State<MyTabs>  {
 
-  @override
-  void initState() {
-    super.initState();
-    controller = new TabController(vsync: this, length: 3);
-  }
 
-  @override
-  void dispose() {
-    controller.dispose();
-    super.dispose();
-  }
+
+
+
+
+
 
   @override
     Widget build(BuildContext context) {
@@ -40,37 +34,29 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
 
         ),
 
-      bottomNavigationBar: new Material(
-        color: Colors.black54,
-        child: new TabBar(
+      bottomNavigationBar: CurvedNavigationBar(
+        backgroundColor: Colors.blueAccent,
+      items: <Widget>[
+        Icon(Icons.add, size: 30),
+        Icon(Icons.list, size: 30),
+        Icon(Icons.compare_arrows, size: 30),
 
-            controller: controller,
-            tabs: <Tab>[
-        new Tab(icon: new Icon(Icons.closed_caption)),
-        new Tab(icon: new Icon(Icons.favorite)),
-        new Tab(icon: new Icon(Icons.shopping_cart)),
+    ],
+      onTap: (index){
 
-      ]
-
-        ),
+      },
       ),
-      body: new TabBarView(
-        controller: controller,
-        children: <Widget>[
-
-          new first.First(),
-          new second.Second(),
-          new third.Third(),
-          new Tab(icon: new Icon(Icons.closed_caption)),
-          new Tab(icon: new Icon(Icons.favorite)),
-          new Tab(icon: new Icon(Icons.shopping_cart)),
+      body: new Container(color: Colors.blueAccent),
 
 
 
 
-        ],
-      )
-    );
+
+
+
+
+      );
+
   }
 }
 
