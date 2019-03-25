@@ -1,4 +1,4 @@
-package com.example.navigation_bar;
+package com.example.nav_bar_practice;
 
 import android.os.Bundle;
 import io.flutter.app.FlutterActivity;

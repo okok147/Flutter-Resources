@@ -1,4 +1,4 @@
-# navigation_bar
+# nav_bar_practice
 
 A new Flutter application.
 
