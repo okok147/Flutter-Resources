@@ -36,6 +36,8 @@ class MyAppState extends State<MyApp> {
         body: _pageOption[_selectPage],
         bottomNavigationBar: BottomNavigationBar(
           currentIndex: _selectPage,
+
+          //each index represent a number,when tap,var a number then switch to that page.
           onTap: (int index) {
             setState(() {
               _selectPage = index;
