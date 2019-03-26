@@ -45,6 +45,7 @@ class MyAppState extends State<MyApp> {
 
     //This is the whole app
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
 
       theme: ThemeData(
