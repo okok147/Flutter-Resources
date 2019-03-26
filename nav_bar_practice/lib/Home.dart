@@ -38,7 +38,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 
 
       body: Center(
-        child: Text('Welcome'),
+        child: Text('Welcome.'),
       ),
 
 
