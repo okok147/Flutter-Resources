@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nav_bar_practice/Home.dart';
 import 'package:nav_bar_practice/Work.dart';
 import 'package:nav_bar_practice/Landscape.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,8 +35,8 @@ class MyAppState extends State<MyApp> {
       home: Scaffold(
         appBar: AppBar(title: Text('Bottom Nav Bar Video'),),
         body: _pageOption[_selectPage],
-        bottomNavigationBar: BottomNavigationBar(
-          currentIndex: _selectPage,
+        bottomNavigationBar: CurvedNavigationBar(
+
 
           //each index represent a number,when tap,var a number then switch to that page.
           onTap: (int index) {
@@ -43,24 +44,13 @@ class MyAppState extends State<MyApp> {
               _selectPage = index;
             });
           },
-          items : [
-            BottomNavigationBarItem(
-                icon: Icon(Icons.home),
-                title: Text('Home')
-            ),
-
-            BottomNavigationBarItem(
-                icon: Icon(Icons.work),
-                title: Text('Home')
-            ),
-
-            BottomNavigationBarItem(
-                icon: Icon(Icons.landscape),
-                title: Text('Home')
-            ),
 
 
 
+          items: <Widget>[
+            Icon(Icons.add, size: 30),
+            Icon(Icons.list, size: 30),
+            Icon(Icons.compare_arrows, size: 30),
           ],
         ),
       ),
