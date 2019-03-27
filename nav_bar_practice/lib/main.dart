@@ -61,7 +61,7 @@ class MyAppState extends State<MyApp> {
 
         PreferredSize(
         preferredSize: Size.fromHeight(0.0),
-          child: AppBar(title: Text('Curved Nav Bar'))
+          child: AppBar(title: Text(''))
 
 
 
@@ -77,19 +77,21 @@ class MyAppState extends State<MyApp> {
 
 
         //Part 2
-        //***This is the code makes array works as page changing method,it sets page as t
+        //***This is the code makes array works as page changing method,it sets body as _pageOption[**line 32]
         body: _pageOption[_selectPage],
 
         //Part 3
         bottomNavigationBar:
 
         PreferredSize(
-        preferredSize: Size.fromHeight(40.0),
+        //preferredSize: Size.fromWidth(0.0),
           child:
 
 
 
         CurvedNavigationBar(
+
+
 
 
 
@@ -120,6 +122,7 @@ class MyAppState extends State<MyApp> {
           //animation
           animationDuration: Duration(milliseconds: 600),
           animationCurve: Curves.easeInOut,
+
         ),)
 
 
