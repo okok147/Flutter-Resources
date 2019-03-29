@@ -72,7 +72,7 @@ class _MyHomePageState extends State<MyHomePage> {
     );
     slides.add(
       new Slide(
-        title: "Cyun",
+        title: "HAHA",
         description:
         "Start Now",
         pathImage: "images/photo_ruler.png",
