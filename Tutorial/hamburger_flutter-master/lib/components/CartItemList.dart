@@ -16,7 +16,7 @@ class CartItemList extends StatelessWidget {
           new Padding(padding: EdgeInsets.only(left: 10, right: 10), child:
             new Column(crossAxisAlignment: CrossAxisAlignment.start, children: <Widget>[
               new Padding(padding: EdgeInsets.only(bottom: 5), child: new Text("${order.item.title}".toUpperCase(), style: TextStyle(fontSize: 20, color: Colors.black))),
-              new Text("Quantity: ${order.quantity}".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black), textAlign: TextAlign.left),
+              new Text("CartItem.dart: ${order.quantity}".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black), textAlign: TextAlign.left),
               new Text("Cost: ${order.price.toStringAsFixed(2)}".toUpperCase(), style: TextStyle(fontSize: 10, color: Colors.black), textAlign: TextAlign.left),
             ])
           )

@@ -17,6 +17,7 @@ abstract class Item {
   String get urlImage => _urlToImage;
 
   double get price => _price;
+  //double is number
 
   double calculatePrice();
 

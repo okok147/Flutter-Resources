@@ -38,6 +38,7 @@ class _IngredientWidget extends State<CategoryIngredientWidget> {
             width: MediaQuery.of(context).size.height*0.1,
             height: MediaQuery.of(context).size.height*0.1,
             decoration: new BoxDecoration(
+              //background color of ingredients picture while loading
               color: const Color(0xff7c94b6),
               image: new DecorationImage(
                 image: new NetworkImage(widget.categoryIngredient.urlToImage),

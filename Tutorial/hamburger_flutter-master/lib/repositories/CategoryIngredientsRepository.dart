@@ -9,7 +9,7 @@ class CategoryIngredientsRepository {
 
   void _fillList(){
     _list.add(new CategoryIngredient("Cheese", "https://sc02.alicdn.com/kf/UTB8Ps9bXnzIXKJkSafVq6yWgXXae/Mozzarella-Cheese-Frozen-Polish-Food-Block-2.jpg_350x350.jpg", [
-      new Ingredient(1.5, "Cheddar"),
+      new Ingredient(3.0, "repo>CateIn"),
       new Ingredient(2, "Feta"),
       new Ingredient(1.05, "Gouda"),
       new Ingredient(1.45, "Oka"),

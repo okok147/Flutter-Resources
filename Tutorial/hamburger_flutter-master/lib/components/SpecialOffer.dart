@@ -21,7 +21,7 @@ class _SpecialOffer extends State<SpecialOffer> {
   Widget build(BuildContext context) {
     return new Container(padding: EdgeInsets.symmetric(horizontal: 10), child:
       new Column(children: <Widget>[
-        new Align(alignment: Alignment.centerLeft, child: new Text("Special Offers".toUpperCase(), style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.grey))),
+        new Align(alignment: Alignment.centerLeft, child: new Text("Special Offers.dart".toUpperCase(), style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold, color: Colors.grey))),
         new Container(height: 240, child:
           new StreamBuilder(
               stream: _offerBloc.allOffers,

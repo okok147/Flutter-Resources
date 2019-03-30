@@ -5,14 +5,19 @@ import 'package:hamburger_flutter/views/ItemDetails.dart';
 
 class ItemWidget extends StatelessWidget {
 
+
+  //size of Special offer picture
   final Item item;
   final double heightContainer = 220;
   final double widthContainer = 170;
+  //Shadow behind Double X Bacon
   final BoxDecoration _shadowDecoration = new BoxDecoration(boxShadow: [BoxShadow(color: Colors.black, blurRadius: 50, spreadRadius: 1.0, offset: Offset(10.0, 10.0,),)]);
 
   ItemWidget({Key key, this.item}) : super(key: key);
 
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context)
+  //Special offer picture content
+  {
    return new GestureDetector(onTap: (){Navigator.push(context, MaterialPageRoute(builder: (context) => new ItemDetails(item: item)));}, child:
        new SizedBox(width: widthContainer, height: heightContainer, child:
         new Stack(children: <Widget>[
@@ -24,6 +29,9 @@ class ItemWidget extends StatelessWidget {
           ),
           new Align(alignment: Alignment.bottomLeft, child:
             new Container(decoration: _shadowDecoration, margin: EdgeInsets.all(20), child:
+                //title of Double X Bacon
+
+            //import item.title of item.dart
               new Text(item.title, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Theme.of(context).indicatorColor))
             ),
           )

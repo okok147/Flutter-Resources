@@ -25,7 +25,7 @@ class _AddIngredients extends State<AddIngredients> {
             new Padding(padding: EdgeInsets.only(top: 20), child:
               new Stack(children: <Widget>[
                 new Center(child: Icon(Icons.keyboard_arrow_down, color: Colors.grey, size: 30)),
-                new Padding(padding: EdgeInsets.only(top: 10), child: new Text("Ingredients", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20))),
+                new Padding(padding: EdgeInsets.only(top: 10), child: new Text("comp>AddIngr", style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20))),
               ])
             ),
             new Container(height: MediaQuery.of(context).size.height*0.18, child:
