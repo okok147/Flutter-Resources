@@ -3,10 +3,10 @@
 
 # Disable Debug Banner in flutter
 
-  // in return new MaterialApp(
+    // in return new MaterialApp(
   
-  debugShowCheckedModeBanner: false,
-  //)
+    debugShowCheckedModeBanner: false,
+    //)
   
   
 # install cocoapods in flutter
@@ -15,14 +15,13 @@
   
 # Pop to another page
 
-  // TODO: Show the next page (101) 
+    // TODO: Show the next page (101) 
                 RaisedButton(
                   child: Text('NEXT'),
                   onPressed: () {
                     Navigator.pop(context);
                   },
                 ),
-                
- //https://codelabs.developers.google.com/codelabs/mdc-101-flutter/index.html?index=..%2F..index
+               //https://codelabs.developers.google.com/codelabs/mdc-101-flutter/index.html?index=..%2F..index
                 
              
