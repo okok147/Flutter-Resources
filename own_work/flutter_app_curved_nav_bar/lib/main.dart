@@ -5,8 +5,44 @@ import 'package:flutter_app_curved_nav_bar/Homepage.dart';
 import 'package:flutter_app_curved_nav_bar/Emotion.dart';
 import 'package:flutter_app_curved_nav_bar/Profile.dart';
 
+void main() {
+  runApp(new MaterialApp(
+    home:new HomePage(),
 
-void main() => runApp(MaterialApp(home: BottomNavBar()));
+    routes: <String,WidgetBuilder> {
+      "/BottomNavBar" :(BuildContext context) => new BottomNavBar(),
+
+
+    },
+  ));
+}
+
+class HomePage extends StatelessWidget{
+  @override
+  Widget build(BuildContext context) {
+    return new Scaffold(
+
+      
+      body: new Container(
+        child: new Center(
+          child: new Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              new IconButton(icon: new Icon(MdiIcons.fromString('login')),
+              iconSize: 100.0,
+              onPressed: () {Navigator.of(context).pushNamed("/BottomNavBar");}
+              ),
+              new Text("Login")
+              
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+
 
 class BottomNavBar extends StatefulWidget {
   @override
@@ -35,32 +71,32 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
 
 
-        bottomNavigationBar: CurvedNavigationBar(
+      bottomNavigationBar: CurvedNavigationBar(
 
 
 
-          onTap: (index) {
-            setState(() {
-              _selectPage = index;
-            });
-          },
-          initialIndex: 0,
+        onTap: (index) {
+          setState(() {
+            _selectPage = index;
+          });
+        },
+        initialIndex: 0,
 
 
-          items: <Widget>[
-            Icon(Icons.home, size: 30),
-            Icon(MdiIcons.fromString('emoticon'), size: 30),
-            Icon(MdiIcons.fromString('face'), size: 30),
-          ],
-          color: Colors.black12,
-          buttonBackgroundColor: Colors.white,
-          backgroundColor: Colors.lightBlueAccent,
-          animationCurve: Curves.easeInOut,
-          animationDuration: Duration(milliseconds: 600),
+        items: <Widget>[
+          Icon(Icons.home, size: 30),
+          Icon(MdiIcons.fromString('emoticon'), size: 30),
+          Icon(MdiIcons.fromString('face'), size: 30),
+        ],
+        color: Colors.black12,
+        buttonBackgroundColor: Colors.white,
+        backgroundColor: Colors.lightBlueAccent,
+        animationCurve: Curves.easeInOut,
+        animationDuration: Duration(milliseconds: 600),
 
 
 
-        ),
+      ),
 
 
 

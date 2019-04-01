@@ -628,8 +628,10 @@ class _LoginPageState extends State<LoginPage>
                             fontFamily: "WorkSansBold"),
                       ),
                     ),
-                    onPressed: () =>
-                        showInSnackBar("SignUp button pressed")),
+                    onPressed: () {
+                      Navigator.pop(context);
+                    }
+                ),
               ),
             ],
           ),
