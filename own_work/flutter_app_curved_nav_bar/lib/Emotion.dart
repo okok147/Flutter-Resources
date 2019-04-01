@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_sound/flutter_sound.dart';
+import 'package:flare_flutter/flare_actor.dart';
 
 void main() => runApp(Emotion());
 
@@ -36,7 +37,10 @@ class _MyStatefulWidgetState extends State <MyStatefulWidget> {
   Widget build (BuildContext context) {
     return Scaffold (
       body: Center(
-        child: Text('Share your feeling'),
+        child: FlareActor("assets/see.flr",
+        animation: "full_loop",
+        fit:BoxFit.contain,
+        alignment: Alignment.center,)
 
 
       ),

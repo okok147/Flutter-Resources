@@ -5,6 +5,7 @@ import 'package:flutter_app_curved_nav_bar/Homepage.dart';
 import 'package:flutter_app_curved_nav_bar/Emotion.dart';
 import 'package:flutter_app_curved_nav_bar/Profile.dart';
 
+
 void main() {
   runApp(new MaterialApp(
     home:new HomePage(),
@@ -22,19 +23,19 @@ class HomePage extends StatelessWidget{
   Widget build(BuildContext context) {
     return new Scaffold(
 
-      
+
       body: new Container(
         child: new Center(
           child: new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               new IconButton(icon: new Icon(MdiIcons.fromString('fingerprint'),color: Colors.lightBlue,),
-              iconSize: 100.0,
-                             //set the routes you want to go here
-              onPressed: () {Navigator.of(context).pushNamed("/BottomNavBar");}
+                  iconSize: 100.0,
+                  //set the routes you want to go here
+                  onPressed: () {Navigator.of(context).pushNamed("/BottomNavBar");}
               ),
               new Text("Login",style: TextStyle(fontStyle: FontStyle.italic),)
-              
+
             ],
           ),
         ),
