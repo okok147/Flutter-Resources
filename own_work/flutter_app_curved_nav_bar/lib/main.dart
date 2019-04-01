@@ -8,7 +8,7 @@ import 'package:flutter_app_curved_nav_bar/Profile.dart';
 void main() {
   runApp(new MaterialApp(
     home:new HomePage(),
-
+    //it can direct you to another routes
     routes: <String,WidgetBuilder> {
       "/BottomNavBar" :(BuildContext context) => new BottomNavBar(),
 
@@ -30,6 +30,7 @@ class HomePage extends StatelessWidget{
             children: <Widget>[
               new IconButton(icon: new Icon(MdiIcons.fromString('fingerprint'),color: Colors.lightBlue,),
               iconSize: 100.0,
+                             //set the routes you want to go here
               onPressed: () {Navigator.of(context).pushNamed("/BottomNavBar");}
               ),
               new Text("Login",style: TextStyle(fontStyle: FontStyle.italic),)
