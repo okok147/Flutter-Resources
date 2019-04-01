@@ -35,12 +35,15 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State <MyStatefulWidget> {
 
   Widget build (BuildContext context) {
+
     return Scaffold (
       body: Center(
+
         child: FlareActor("assets/see.flr",
         animation: "full_loop",
         fit:BoxFit.contain,
-        alignment: Alignment.center,)
+        alignment: Alignment.center,
+        )
 
 
       ),

@@ -4,7 +4,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:flutter_app_curved_nav_bar/Homepage.dart';
 import 'package:flutter_app_curved_nav_bar/Emotion.dart';
 import 'package:flutter_app_curved_nav_bar/Profile.dart';
-
+import 'package:smart_flare/smart_flare.dart';
 
 void main() {
   runApp(new MaterialApp(
