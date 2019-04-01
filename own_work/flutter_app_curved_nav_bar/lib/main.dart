@@ -28,11 +28,11 @@ class HomePage extends StatelessWidget{
           child: new Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              new IconButton(icon: new Icon(MdiIcons.fromString('login')),
+              new IconButton(icon: new Icon(MdiIcons.fromString('fingerprint'),color: Colors.lightBlue,),
               iconSize: 100.0,
               onPressed: () {Navigator.of(context).pushNamed("/BottomNavBar");}
               ),
-              new Text("Login")
+              new Text("Login",style: TextStyle(fontStyle: FontStyle.italic),)
               
             ],
           ),
