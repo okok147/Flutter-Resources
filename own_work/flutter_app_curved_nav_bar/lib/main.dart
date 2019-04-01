@@ -53,6 +53,7 @@ class BottomNavBar extends StatefulWidget {
 class _BottomNavBarState extends State<BottomNavBar> {
   int _selectPage = 0;
 
+
   final _pageOption = [
 
     Homepage(),
@@ -64,7 +65,12 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
+
+
+
 
 
 
@@ -72,7 +78,13 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
 
 
+
+
       bottomNavigationBar: CurvedNavigationBar(
+
+
+
+
 
 
 
@@ -84,7 +96,11 @@ class _BottomNavBarState extends State<BottomNavBar> {
         initialIndex: 0,
 
 
-        items: <Widget>[
+        items: <Widget >[
+
+
+
+
           Icon(Icons.home, size: 30),
           Icon(MdiIcons.fromString('emoticon'), size: 30),
           Icon(MdiIcons.fromString('face'), size: 30),
