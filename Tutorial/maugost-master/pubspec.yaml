@@ -1,0 +1,95 @@
+name: maugost
+description: A new Flutter application.
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^0.1.2
+  outline_material_icons: ^0.1.0
+  smart_text_view: ^0.1.0
+  smooth_star_rating: ^1.0.1
+  ravepay:
+       git:
+         url: git://github.com/mtellect/ravepay_dart
+  flutter_platform_widgets: ^0.9.5
+  flutter_masked_text: 0.7.0
+  #flutter_paystack: ^1.0.0
+  pin_code_view: 0.1.1
+  rflutter_alert: ^1.0.2
+  photo:
+       git:
+         url: git://github.com/mtellect/flutter_photo
+
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+
+# The following section is specific to Flutter.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/images1.png
+    - assets/images/images2.jpeg
+    - assets/images/images3.jpg
+    - assets/images/images4.jpg
+    - assets/images/flutter_icon.png
+    - assets/images/mypics.jpg
+
+    - assets/rave/visa.png
+    - assets/rave/jcb.png
+    - assets/rave/verve.png
+    - assets/rave/discover.png
+    - assets/rave/american_express.png
+    - assets/rave/dinners_club.png
+    - assets/rave/mastercard.png
+    - assets/rave/successful.png
+    - assets/rave/otp.png
+    - assets/rave/dob.png
+
+  fonts:
+      - family: GOTHIC
+        fonts:
+          - asset: assets/fonts/GOTHIC.TTF
+            style: normal
+          - asset: assets/fonts/GOTHICB.TTF
+            weight: 700
+
+
+      - family: OpenSans
+        fonts:
+          - asset: assets/fonts/OpenSans-Regular.ttf
+            style: normal
+          - asset: assets/fonts/OpenSans-Light.ttf
+          - asset: assets/fonts/OpenSans-Bold.ttf
+
+      - family: OpenSans
+        fonts:
+          - asset: assets/fonts/TrajanPro-Bold.otf
