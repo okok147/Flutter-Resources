@@ -8,6 +8,7 @@ import 'package:flutter_app_curved_nav_bar/Profile.dart';
 
 void main() {
   runApp(new MaterialApp(
+    debugShowCheckedModeBanner: false,
     home: new FlareDemo(),
 
     //direct to another routes
