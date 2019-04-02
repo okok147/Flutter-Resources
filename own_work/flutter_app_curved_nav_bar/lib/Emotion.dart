@@ -36,18 +36,9 @@ class _MyStatefulWidgetState extends State <MyStatefulWidget> {
 
   Widget build (BuildContext context) {
 
-    return Scaffold (
-      body: Center(
+    return new FlareActor("assets/see.flr",
+      alignment:Alignment.center, fit:BoxFit.contain, animation:"full_loop",);
 
-        child: FlareActor("assets/see.flr",
-        animation: "full_loop",
-        fit:BoxFit.contain,
-        alignment: Alignment.center,
-        )
-
-
-      ),
-    );
   }
 }
 
