@@ -28,8 +28,8 @@ class FlareDemo extends StatefulWidget {
 class _FlareDemoState extends State<FlareDemo> {
   @override
   Widget build(BuildContext context) {
-    var animationWidth = 195.0;
-    var animationHeight = 151.0;
+    var animationWidth = 185.0;
+    var animationHeight = 141.0;
     var thirdOfWidth = animationWidth / 3;
     var activeAreas = [
       // Insert top-left
