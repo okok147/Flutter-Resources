@@ -28,6 +28,9 @@
 
 
 
+#  Just some tips,you don't have to follow them 😆
+
+
 # Disable Debug Banner in flutter
 
     // in return new MaterialApp(
