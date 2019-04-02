@@ -51,7 +51,7 @@ class _MovieGalleryState extends State<MovieGallery> {
       clipBehavior: Clip.antiAliasWithSaveLayer,
       elevation: 10.0,
       margin: EdgeInsets.only(left: isFirst ? 0 : 10, right: 10, bottom: 20),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10.0))),
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(20.0))),
       child: Image.network('https://image.tmdb.org/t/p/w500$imagePath',
         fit: BoxFit.cover,
         width: itemHeight * 4 / 3,
