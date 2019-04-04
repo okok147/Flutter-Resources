@@ -49,6 +49,9 @@ flutter:
   assets:
     - assets/see.flr
     - assets/Fingerprint.flr
+    - assets/emotion.flr
+    - assets/home.flr
+    - assets/human_revolution.flr
   #  - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
