@@ -2,7 +2,6 @@
 
 
 
-![Screenshot 2019-04-02 at 5 41 19 PM](https://user-images.githubusercontent.com/38970774/55392813-9967f000-556e-11e9-9c70-14c5d62db482.png)
 
 
 
