@@ -62,8 +62,7 @@ class _FlareDemoState extends State<Homepage> {
 
               filename: 'assets/home.flr',
               startingAnimation: 'Sun Rotate' ,
-              height: 100.0,
-              width: 100.0,
+
 
 
 
