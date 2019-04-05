@@ -1,16 +1,26 @@
+<<<<<<< HEAD:own_work/flutter_app_auth/README.md
 # flutter_app_auth
+=======
+# Spent a day trying to solve the problem,finally I overcame it!！！:
+>>>>>>> 146dd66925ee8a20e7831021f8e7f8cff498957c:own_work/flutter_app_firebase_auth/README.md
 
-A new Flutter application.
+    
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+# How I solved the problem:
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
+# First,follow 1-2 tutorials:
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+    https://www.youtube.com/playlist?list=PLgGjX33Qsw-Ha_8ks9im86sLIihimuYrr
+    
+# Second,Fix the first bug:
+    https://www.youtube.com/watch?v=Kj_pS8v8CCU
+    
+# Third, follow
+
+    https://stackoverflow.com/questions/47079113/android-studio-3-0-execution-failed-for-task-unable-to-merge-dex/48531191#48531191
+    
+    
+    
+    
