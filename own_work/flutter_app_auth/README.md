@@ -1,8 +1,8 @@
-<<<<<<< HEAD:own_work/flutter_app_auth/README.md
+
 # flutter_app_auth
-=======
+
 # Spent a day trying to solve the problem,finally I overcame it!！！:
->>>>>>> 146dd66925ee8a20e7831021f8e7f8cff498957c:own_work/flutter_app_firebase_auth/README.md
+
 
  
 
