@@ -62,3 +62,7 @@
 #  Basic Navigation and Routes!
 
         https://www.youtube.com/watch?v=RLyw-_MLLTo&t=321s
+        
+# SHA1 Fingerprint get
+
+        https://www.youtube.com/watch?v=a6Xm_gVlEaE
