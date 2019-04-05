@@ -1,4 +1,4 @@
-# Spent a day try to solve the problem,finally I overcome it!:
+# Spent a day trying to solve the problem,finally I overcame it!:
 
     
 
