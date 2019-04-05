@@ -1,6 +1,6 @@
-# Spent a day try to solve the problem:
+# Spent a day try to solve the problem,finally I did that!:
 
-    finally!
+    
 
 
 # How I solved the problem:
