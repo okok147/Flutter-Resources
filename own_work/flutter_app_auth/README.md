@@ -4,7 +4,7 @@
 # Spent a day trying to solve the problem,finally I overcame it!！！:
 >>>>>>> 146dd66925ee8a20e7831021f8e7f8cff498957c:own_work/flutter_app_firebase_auth/README.md
 
-    ![Screenshot_1554475584](https://user-images.githubusercontent.com/38970774/55636472-874bb300-57f5-11e9-9639-85749d09725d.png)
+  ![Screenshot_1554475584](https://user-images.githubusercontent.com/38970774/55636472-874bb300-57f5-11e9-9639-85749d09725d.png)
 
 
 # How I solved the problem:
