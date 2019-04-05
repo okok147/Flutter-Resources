@@ -1,10 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_flare/smart_flare.dart';
-import 'package:flutter_app_curved_nav_bar/Homepage.dart';
-import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter_app_curved_nav_bar/Emotion.dart';
-import 'package:flutter_app_curved_nav_bar/Profile.dart';
+
 
 void main() {
   runApp(new MaterialApp(
