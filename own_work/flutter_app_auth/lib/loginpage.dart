@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:smart_flare/smart_flare.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -17,13 +18,22 @@ class _LoginPageState extends State <LoginPage> {
     return new Scaffold(
 
       body: Center(
+
+
+
+
+
         child: Container(
-          padding: EdgeInsets.all(25.0),
+          //distance between two sides
+
+          padding: EdgeInsets.all(55.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               TextField (
-                decoration: InputDecoration(hintText: 'Email'),
+
+                decoration: InputDecoration(hintText: 'Email',border: new OutlineInputBorder(
+                    borderRadius: const BorderRadius.all(const Radius.circular(30.0)))),
                 onChanged: (value) {
                   setState(() {
                     _email = value;
@@ -32,7 +42,12 @@ class _LoginPageState extends State <LoginPage> {
               ),
               SizedBox(height: 15.0),
               TextField (
-                decoration: InputDecoration(hintText: 'Password'),
+                
+                
+                decoration: InputDecoration(hintText: 'Password',border: new OutlineInputBorder(
+                  borderRadius: const BorderRadius.all(const Radius.circular(30.0))
+                )),
+                
                 onChanged: (value) {
                   setState(() {
                     _password = value;
@@ -42,10 +57,17 @@ class _LoginPageState extends State <LoginPage> {
               ),
               SizedBox (height: 20.0),
               RaisedButton (
+                shape: new RoundedRectangleBorder(
+                  borderRadius: new BorderRadius.circular(30.0),
+                ),
                 child: Text('Login'),
-                color: Colors.blue,
+                color: Colors.lightBlueAccent,
+                  textColor: Colors.white,
+                  splashColor: Colors.white,
+                  //the distance between widget and background
                   elevation: 7.0,
                 onPressed: () {
+
 
                   FirebaseAuth.instance.signInWithEmailAndPassword(
                       email: _email,
@@ -58,11 +80,18 @@ class _LoginPageState extends State <LoginPage> {
                 },
               ),
               SizedBox (height: 15.0),
+
               Text ('Don\' t have an account?'),
               SizedBox (height: 10.0),
+
+
+
               RaisedButton (
+                shape: new RoundedRectangleBorder(
+                  borderRadius: new BorderRadius.circular(30.0)
+                ),
                 child: Text('Sign Up'),
-                color: Colors.blue,
+                color: Colors.blueGrey,
                 textColor: Colors.white,
                 elevation: 7.0,
                 onPressed: (){

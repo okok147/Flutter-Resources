@@ -21,6 +21,8 @@ dependencies:
   cloud_firestore:
   flutter:
     sdk: flutter
+  smart_flare:
+  flare_flutter:
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
