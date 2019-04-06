@@ -23,14 +23,18 @@ class _LoginPageState extends State <LoginPage> {
 
 
 
+
         child: Container(
+
           //distance between two sides
 
           padding: EdgeInsets.all(55.0),
           child: Column(
+
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               TextField (
+
 
                 decoration: InputDecoration(hintText: 'Email',border: new OutlineInputBorder(
                     borderRadius: const BorderRadius.all(const Radius.circular(30.0)))),

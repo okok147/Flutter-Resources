@@ -66,6 +66,7 @@ class _FlareDemoState extends State<Homepage> {
 
 
 
+
               activeAreas: activeAreas,
 
 

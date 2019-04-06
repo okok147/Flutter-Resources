@@ -5,6 +5,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter_app_curved_nav_bar/Emotion.dart';
 import 'package:flutter_app_curved_nav_bar/Profile.dart';
+import 'package:flare_splash_screen/flare_splash_screen.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -60,6 +61,7 @@ class _FlareDemoState extends State<FlareDemo> {
         body: Align(
             alignment: Alignment.center,
             child: SmartFlareActor(
+
               width: animationWidth,
               height: animationHeight,
               filename: 'assets/Fingerprint.flr',
@@ -67,7 +69,9 @@ class _FlareDemoState extends State<FlareDemo> {
               activeAreas: activeAreas,
 
 
-            )));
+
+
+            ),),);
   }
 }
 

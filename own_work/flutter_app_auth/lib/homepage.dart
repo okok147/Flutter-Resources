@@ -24,11 +24,25 @@ class _HomePageState extends State<HomePage> {
               new Text('You are now logged in'),
               SizedBox (
                 height: 15.0,
+
               ),
               new OutlineButton(
+
+               shape: new RoundedRectangleBorder(
+
+                 borderRadius: new BorderRadius.circular(30.0),
+
+               ),
+
                   borderSide: BorderSide(
-                    color: Colors.red,style:  BorderStyle.solid, width: 3.0),
+
+
+                    color: Colors.green,style:  BorderStyle.solid, width: 3.0),
+
                   child: Text('Logout'),
+
+
+
                   onPressed:() {
                     FirebaseAuth.instance.signOut().then((value){
                       Navigator
