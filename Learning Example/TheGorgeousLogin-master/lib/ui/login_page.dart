@@ -3,6 +3,8 @@ import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:the_gorgeous_login/style/theme.dart' as Theme;
 import 'package:the_gorgeous_login/utils/bubble_indication_painter.dart';
+import 'package:smart_flare/smart_flare.dart';
+
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key}) : super(key: key);
@@ -71,11 +73,13 @@ class _LoginPageState extends State<LoginPage>
                   children: <Widget>[
                     Padding(
                       padding: EdgeInsets.only(top: 75.0),
-                      child: new Image(
-                          width: 250.0,
-                          height: 191.0,
-                          fit: BoxFit.fill,
-                          image: new AssetImage('assets/img/login_logo.png')),
+
+                      child: new SmartFlareActor(width: 200, height: 200,
+                          filename: 'assets/Fingerprint.flr',
+                      startingAnimation: 'process',)
+                      ,
+                      
+                      
                     ),
                     Padding(
                       padding: EdgeInsets.only(top: 20.0),
