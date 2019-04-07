@@ -7,3 +7,11 @@
 Uplabs design        |  Flutter rendering
 :-------------------------:|:-------------------------:
 ![original-design](./github/template.jpg)  |   ![](./github/login.gif)
+
+
+
+
+
+
+<h1 align="center">Decoded Version:</h1>
+
