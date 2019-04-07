@@ -1,6 +1,6 @@
 # how can I find these project? 🤔
 
-    own_work 
+    Own_work / Decoded Project
 https://github.com/kelvin147789/flutter-development/tree/master/own_work
    
 
@@ -22,7 +22,7 @@ https://github.com/kelvin147789/flutter-development/tree/master/own_work
 
 ------------------------------
 
-# decoded project 🛠️
+# Decoded Project 🛠️
 
 Login        |  Register
 :-------------------------:|:-------------------------:
