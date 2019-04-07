@@ -98,7 +98,9 @@ class _LoginPageState extends State<LoginPage>
                       child:
 
 
-                      /* new Image(
+                      /* 
+                      
+                         new Image(
                           width: 250.0,
                           height: 191.0,
                           fit: BoxFit.fill,
