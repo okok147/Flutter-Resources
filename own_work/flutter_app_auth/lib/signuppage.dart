@@ -51,7 +51,9 @@ class _SignupPageState extends State <SignupPage> {
 
 
                 TextField (
-                  decoration: InputDecoration(hintText: 'Email'),
+                  decoration: InputDecoration(hintText: 'Email',border: new OutlineInputBorder(
+                      borderRadius: const BorderRadius.all(const Radius.circular(30.0))
+                  )),
                   onChanged: (value) {
                     setState(() {
                       _email = value;
@@ -62,7 +64,9 @@ class _SignupPageState extends State <SignupPage> {
 
                 SizedBox(height: 15.0),
                 TextField (
-                  decoration: InputDecoration(hintText: 'Password'),
+                  decoration: InputDecoration(hintText: 'Password',border: new OutlineInputBorder(
+                      borderRadius: const BorderRadius.all(const Radius.circular(30.0))
+                  )),
                   onChanged: (value) {
                     setState(() {
                       _password = value;

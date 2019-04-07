@@ -18,6 +18,8 @@ class _LoginPageState extends State <LoginPage> {
     return new Scaffold(
 
       body: Center(
+        
+        
 
 
 
@@ -36,8 +38,12 @@ class _LoginPageState extends State <LoginPage> {
               TextField (
 
 
-                decoration: InputDecoration(hintText: 'Email',border: new OutlineInputBorder(
-                    borderRadius: const BorderRadius.all(const Radius.circular(30.0)))),
+                decoration: InputDecoration(hintText: 'Email',
+
+                    border: new OutlineInputBorder(
+                    borderRadius: const BorderRadius.all(const Radius.circular(30.0)))
+
+                ),
                 onChanged: (value) {
                   setState(() {
                     _email = value;
@@ -48,9 +54,13 @@ class _LoginPageState extends State <LoginPage> {
               TextField (
                 
                 
-                decoration: InputDecoration(hintText: 'Password',border: new OutlineInputBorder(
+                decoration: InputDecoration(hintText: 'Password',
+
+                    border: new OutlineInputBorder(
                   borderRadius: const BorderRadius.all(const Radius.circular(30.0))
-                )),
+                )
+
+                ),
                 
                 onChanged: (value) {
                   setState(() {
