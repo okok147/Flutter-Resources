@@ -13,8 +13,11 @@ Uplabs design        |  Flutter rendering
 
 
 
-<h1 align="center">Decoded Version:</h1>
+<h1 align="center">Decoded Version</h1>
+
+:-------------------------:|:-------------------------:
 
 
-![Screenshot_1554617272](https://user-images.githubusercontent.com/38970774/55679460-9b4efc00-593e-11e9-8833-2eeb5509f6d4.png)
+![Screenshot_1554617272](https://user-images.githubusercontent.com/38970774/55679460-9b4efc00-593e-11e9-8833-2eeb5509f6d4.png) |
+
 ![Screenshot_1554617283](https://user-images.githubusercontent.com/38970774/55679461-9be79280-593e-11e9-86d9-43f3c6c49f22.png)
