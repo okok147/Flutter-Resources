@@ -56,7 +56,7 @@ Login        |  Register
 
 # Disable Debug Banner in flutter
 
-    // in main.dart > return new MaterialApp(
+    // in main.dart (mostly) > return new MaterialApp(
   
     debugShowCheckedModeBanner: false,
     //)
