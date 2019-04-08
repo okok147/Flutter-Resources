@@ -14,12 +14,6 @@ https://github.com/kelvin147789/flutter-development/tree/master/own_work
 
 ------------------------------
 
-# flutter_app_auth 🧾
-Before Login      |  Login 
-:-------------------------:|:-------------------------:
-![Screenshot_1554618181](https://user-images.githubusercontent.com/38970774/55679585-c0446e80-5940-11e9-85b0-e4f4334ff410.png) |![Screenshot_1554618207](https://user-images.githubusercontent.com/38970774/55679587-c2a6c880-5940-11e9-9991-858d1b4ec467.png)
-
-------------------------------
 
 # Decoded Project 🛠️
 
