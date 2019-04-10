@@ -163,6 +163,9 @@ class _LoginPageState extends State<LoginPage>
     );
   }
 
+
+
+
   @override
   void dispose() {
 
@@ -210,8 +213,12 @@ class _LoginPageState extends State<LoginPage>
   }
 
 
+
+
   //Existing,new button
   Widget _buildMenuBar(BuildContext context) {
+
+
 
 
     return Container(
@@ -279,6 +286,11 @@ class _LoginPageState extends State<LoginPage>
       ),
     );
   }
+
+
+
+
+
 
 
 
@@ -589,6 +601,9 @@ class _LoginPageState extends State<LoginPage>
 
 
 
+
+
+
   Widget _buildSignUp(BuildContext context) {
     return Container(
       //distance between upper elements,which are select button
@@ -857,6 +872,10 @@ class _LoginPageState extends State<LoginPage>
       ),
     );
   }
+
+
+
+
 
   void _onSignInButtonPress() {
     _pageController.animateToPage(0,
