@@ -1,9 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
-import 'package:flutter_app_curved_nav_bar/Homepage.dart';
-import 'package:flutter_app_curved_nav_bar/Emotion.dart';
-import 'package:flutter_app_curved_nav_bar/Profile.dart';
+
 
 void main() => runApp(MaterialApp(home:BottomNavBar()));
 
@@ -16,11 +14,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
 
   int _page = 0;
 
-  final _pageOption = [
-    Homepage(),
-    Emotion(),
-    Profile(),
-  ];
+
 
 
   @override
