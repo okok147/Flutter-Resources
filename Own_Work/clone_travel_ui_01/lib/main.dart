@@ -43,6 +43,7 @@ class _SignInSignUpPageState extends State <SignInSignUpPage> {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: <Widget>[
+
                   Text (
                     "Travel the world!",
                     style: TextStyle(
@@ -52,6 +53,7 @@ class _SignInSignUpPageState extends State <SignInSignUpPage> {
                     ),
                     textAlign: TextAlign.center,
                   ),
+
                   Padding (
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
@@ -60,10 +62,15 @@ class _SignInSignUpPageState extends State <SignInSignUpPage> {
                       textAlign: TextAlign.center,
                     ),
                   ),
+
                 ],
               ),
             ),
           ),
+
+
+
+
           Flexible (
             flex: 3,
             child: Container(
