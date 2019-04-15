@@ -69,6 +69,8 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
                       textAlign: TextAlign.center,
                     ),
                   ),
+
+
                 ],
 
 
@@ -83,8 +85,12 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
               color: Colors.white,
               child: Column(
                 children: <Widget>[
+
+
+
                   InkWell (
                     onTap: () {
+                      print("Navigate to SignUpPage");
                       Navigator.push(context,
                       MaterialPageRoute(builder: (context) =>
                       SignUpPage()));
@@ -108,8 +114,12 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
                       ),
                     ),
                   ),
+
+
+
                   InkWell (
                     onTap: (){
+                      print("Navigate to SignIbPage");
                       Navigator.push(context, MaterialPageRoute(builder: (context) =>
                       SignInPage()));
                     },
@@ -129,6 +139,9 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
                       ),
                     ),
                   )
+
+
+
                 ],
               )),
 
