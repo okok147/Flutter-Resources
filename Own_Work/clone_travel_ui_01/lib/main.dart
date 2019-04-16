@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:clone_travel_ui/ui/dashboard.dart';
-import 'package:clone_travel_ui/ui/signup_page.dart';
 import 'package:clone_travel_ui/ui/signin_page.dart';
+import 'package:clone_travel_ui/ui/signup_page.dart';
 
-void main() {
+void main () {
   runApp(MyApp());
 }
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return MaterialApp (
-      title: 'Fluttter',
+      title: 'Third Time ',
       theme: ThemeData(fontFamily: 'Lato'),
       home: SignInSignUpPage(),
     );
@@ -22,30 +22,30 @@ class MyApp extends StatelessWidget {
 
 class SignInSignUpPage extends StatefulWidget {
   @override
-  _SignInSignUpPageState createState() => new _SignInSignUpPageState();
+  _SignInSignUpPageState createState () => new _SignInSignUpPageState();
 }
 
 
-class _SignInSignUpPageState extends State <SignInSignUpPage> {
+class _SignInSignUpPageState extends State<SignInSignUpPage> {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold (
       body: Column(
         children: <Widget>[
-          Flexible(
+          Flexible (
             flex: 4,
             child: Container(
               color: Colors.white,
               padding: EdgeInsets.only(bottom: 48.0),
               alignment: Alignment.center,
-              child: Column (
+              child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.end,
-                children: <Widget>[
 
+                children: <Widget>[
                   Text (
-                    "Travel the world!",
+                    'Travel the world!!',
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.w200,
@@ -53,13 +53,10 @@ class _SignInSignUpPageState extends State <SignInSignUpPage> {
                     ),
                     textAlign: TextAlign.center,
                   ),
-
                   Padding (
                     padding: const EdgeInsets.all(16.0),
-                    child: Text(
-                      "Best coder in the world.",
-                      style: TextStyle(color: Colors.grey,fontSize: 12.0),
-                      textAlign: TextAlign.center,
+                    child: Text('Coder in the world.',
+                    style: TextStyle(color: Colors.grey,fontSize: 12.0),
                     ),
                   ),
 
@@ -68,23 +65,16 @@ class _SignInSignUpPageState extends State <SignInSignUpPage> {
             ),
           ),
 
-
-
-
           Flexible (
             flex: 3,
             child: Container(
               color: Colors.white,
               child: Column(
                 children: <Widget>[
-
-
-                  InkWell (
-                    onTap: () {
-                      print('Navigate to SignUpPage');
-                      Navigator.push(context,
-                      MaterialPageRoute(builder: (context) =>
-                      SignUpPage()));
+                  InkWell(
+                    onTap: (){
+                      print('Navigate to SignUpPage ~');
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
                     },
 
                     child: Container(
@@ -93,26 +83,26 @@ class _SignInSignUpPageState extends State <SignInSignUpPage> {
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(30.0)),
                         gradient: LinearGradient(colors: [
-                          Color.fromRGBO(50, 145, 249, 1.0),
-                          Color.fromRGBO(72, 197, 247, 1.0)
+                          Color.fromRGBO(50, 145, 248, 1.0),
+                          Color.fromRGBO(71, 196, 246, 0.9)
                         ])),
 
                       alignment: Alignment.center,
-                      child: Text("Sign Up",
-                      style: TextStyle(color: Colors.white,fontSize: 22.0)
+                      child: Text('Sign Up',
+                      style: TextStyle(
+                        color: Colors.white,fontSize: 22.0)
                       ),
-
                     ),
                   ),
 
-
-
                   InkWell (
-                    onTap: () {
-                      print('Navigate to SigninPage');
+                    onTap: (){
+                      print('Navigate to SigninPage now!');
                       Navigator.push(context, MaterialPageRoute(builder: (context) => SignInPage()));
+
                     },
-                    child: Container(
+
+                    child:  Container(
                       height: 60.0,
                       alignment: Alignment.center,
                       margin: EdgeInsets.only(left: 24.0,right: 24.0,top: 6.0,bottom: 12.0),
@@ -121,21 +111,16 @@ class _SignInSignUpPageState extends State <SignInSignUpPage> {
                         color: Colors.transparent,
                         border: Border.all(
                           color: Colors.blueAccent,
-                          width: 1.0,
+                          width: 1.0
                         )),
-                      child: Text('Sign In',
-                      style: TextStyle(color: Colors.blueAccent,fontSize: 22.0)
-                      ),
+                      child: Text('Sign In Yo',style: TextStyle(color: Colors.blueAccent,fontSize: 22.0)),
 
                     ),
                   )
                 ],
               ),
             ),
-          ),
-
-
-
+          )
         ],
       ),
     );
