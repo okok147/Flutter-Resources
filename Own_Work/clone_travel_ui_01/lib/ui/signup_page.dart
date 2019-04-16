@@ -31,7 +31,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Container(
-                        height: 250.0,
+                        height: 134.0,
                       ),
                       Container(
                         height: 60.0,
@@ -57,7 +57,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         ),
                       ),
                       Padding(
-                        padding: const EdgeInsets.only(top: 18.0),
+                        padding: const EdgeInsets.only(top: 0.0),
                         child: RichText(
                           text: TextSpan(children: <TextSpan>[
                             TextSpan(
@@ -80,7 +80,7 @@ class _SignUpPageState extends State<SignUpPage> {
             ],
           ),
           Positioned(
-            top: MediaQuery.of(context).size.height / 2 - 80.0,
+            top: MediaQuery.of(context).size.height / 2 - 200.0,
             left: 12.0,
             right: 12.0,
             child: Container(
@@ -140,24 +140,38 @@ class _SignUpPageState extends State<SignUpPage> {
                 )),
           ),
           Positioned(
+
             right: 24.0,
             left: 24.0,
-            top: MediaQuery.of(context).size.height / 2 - 80.0 + 300.0 - 30.0,
-            child: Container(
-              height: 60.0,
-              width: MediaQuery.of(context).size.width - 48.0,
-              margin: EdgeInsets.only(left: 24.0, right: 24.0),
-              decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                  gradient: LinearGradient(colors: [
-                    Color.fromRGBO(50, 145, 249, 1.0),
-                    Color.fromRGBO(72, 197, 247, 1.0)
-                  ])),
-              alignment: Alignment.center,
-              child: Text(
-                "Sign Up",
-                style: TextStyle(color: Colors.white, fontSize: 22.0),
-              ),
+            top: MediaQuery.of(context).size.height / 2 - 215.0 + 300.0 - 30.0,
+            child: Column(
+              children: <Widget>[
+                InkWell(
+                  onTap: (){
+                    print('Navigate to SignUpPage ~');
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
+                  },
+
+                  child: Container(
+                    height: 60.0,
+                    margin: EdgeInsets.only(left: 24.0,right: 24.0,top: 12.0,bottom: 6.0),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                        gradient: LinearGradient(colors: [
+                          Color.fromRGBO(50, 145, 248, 1.0),
+                          Color.fromRGBO(71, 196, 246, 0.9)
+                        ])),
+
+                    alignment: Alignment.center,
+                    child: Text('Sign Up',
+                        style: TextStyle(
+                            color: Colors.white,fontSize: 22.0)
+                    ),
+                  ),
+                ),
+
+
+              ],
             ),
           ),
         ],

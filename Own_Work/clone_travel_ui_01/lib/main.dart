@@ -104,6 +104,8 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
 
                     child:  Container(
                       height: 60.0,
+
+
                       alignment: Alignment.center,
                       margin: EdgeInsets.only(left: 24.0,right: 24.0,top: 6.0,bottom: 12.0),
                       decoration: BoxDecoration(
