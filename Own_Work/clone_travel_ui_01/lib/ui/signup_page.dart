@@ -13,16 +13,7 @@ class _SignUpPageState extends State<SignUpPage> {
         children: <Widget>[
           Column(
             children: <Widget>[
-              Flexible(
-                flex: 1,
-                child: Container(
-                  decoration: BoxDecoration(
-                      gradient: LinearGradient(colors: [
-                        Color.fromRGBO(50, 145, 249, 1.0),
-                        Color.fromRGBO(72, 197, 247, 1.0)
-                      ])),
-                ),
-              ),
+
               Flexible(
                 flex: 1,
                 child: Container(
@@ -36,7 +27,7 @@ class _SignUpPageState extends State<SignUpPage> {
                       ),
                       Container(
                         height: 60.0,
-                        width: MediaQuery.of(context).size.width - 96.0,
+                        width: MediaQuery.of(context).size.width - 1.0,
                         margin: EdgeInsets.only(
                             left: 24.0, right: 24.0, top: 12.0, bottom: 6.0),
                         decoration: BoxDecoration(
@@ -175,6 +166,52 @@ class _SignUpPageState extends State<SignUpPage> {
                         style: TextStyle(
                             color: Colors.white,fontSize: 22.0)
                     ),
+                  ),
+                ),
+
+
+              ],
+            ),
+          ),
+
+          Positioned(
+
+            right: 24.0,
+            left: 24.0,
+            top: MediaQuery.of(context).size.height / 2 - 215.0 + 384.0 - 30.0,
+            child: Column(
+              children: <Widget>[
+                InkWell(
+                  onTap: (){
+                    print('Navigate to SignUpPage ~');
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
+                  },
+
+                  child: Container(
+                    height: 60.0,
+                    margin: EdgeInsets.only(left: 24.0,right: 24.0,top: 12.0,bottom: 6.0),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                        gradient: LinearGradient(colors: [
+                          Color.fromRGBO(50, 145, 248, 0.8),
+                          Color.fromRGBO(30, 61, 168, 1.0)
+                        ])),
+
+                    alignment: Alignment.center,
+                    child: RichText(
+                      text: TextSpan(children: <TextSpan>[
+                        TextSpan(
+                            text: "Sign Up With ",
+                            style: TextStyle(
+                                color: Colors.white, fontSize: 14.0)),
+                        TextSpan(
+                            text: "Facebook",
+                            style: TextStyle(
+                                color: Colors.white, fontSize: 18.0))
+                      ]),
+                    ),
+
+
                   ),
                 ),
 
