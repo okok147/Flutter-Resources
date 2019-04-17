@@ -31,6 +31,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
                       Container(
+                        //space between flexible of blue background
                         height: 134.0,
                       ),
                       Container(
@@ -93,26 +94,30 @@ class _SignUpPageState extends State<SignUpPage> {
                 child: Card(
                   child: Column(
                     children: <Widget>[
+
                       Padding(
                         padding: const EdgeInsets.only(
                             left: 28.0, right: 28.0, top: 14.0, bottom: 7.0),
+                        //Full Name Textfield
                         child: TextFormField(
                           decoration: const InputDecoration(
                               labelStyle: TextStyle(color: Colors.grey),
                               filled: false,
                               hintText: 'Full name',
                               labelText: 'Full Name',
-                              suffixIcon: Icon(Icons.person)),
+                              suffixIcon: Icon(Icons.person_outline)),
                           keyboardType: TextInputType.text,
                         ),
                       ),
+
                       Padding(
                         padding: const EdgeInsets.only(
                             left: 28.0, right: 28.0, bottom: 7.0),
+                        //Email Textfield
                         child: TextFormField(
                           decoration: const InputDecoration(
                             filled: false,
-                            suffixIcon: Icon(Icons.email),
+                            suffixIcon: Icon(Icons.alternate_email),
                             labelStyle: TextStyle(color: Colors.grey),
                             hintText: 'Email',
                             labelText: 'Email',
@@ -120,21 +125,24 @@ class _SignUpPageState extends State<SignUpPage> {
                           keyboardType: TextInputType.emailAddress,
                         ),
                       ),
+
                       Padding(
                         padding: const EdgeInsets.only(
                             left: 28.0, right: 28.0, bottom: 7.0),
+                        //Password Textfield
                         child: TextFormField(
                           obscureText: true,
                           decoration: const InputDecoration(
                             filled: false,
                             labelStyle: TextStyle(color: Colors.grey),
-                            suffixIcon: Icon(Icons.lock),
+                            suffixIcon: Icon(Icons.lock_open),
                             hintText: 'Password',
                             labelText: 'Password',
                           ),
                           keyboardType: TextInputType.emailAddress,
                         ),
                       ),
+
                     ],
                   ),
                 )),
