@@ -122,6 +122,7 @@ class _SignUpPageState extends State<SignUpPage> {
                             left: 28.0, right: 28.0, bottom: 7.0),
                         //Password Textfield
                         child: TextFormField(
+                          //to hide the text when typing
                           obscureText: true,
                           decoration: const InputDecoration(
                             filled: false,
@@ -193,7 +194,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(30.0)),
                         gradient: LinearGradient(colors: [
-                          Color.fromRGBO(50, 145, 248, 0.8),
+                          Color.fromRGBO(50, 145, 248, 0.9),
                           Color.fromRGBO(30, 61, 168, 1.0)
                         ])),
 
