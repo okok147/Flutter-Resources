@@ -108,7 +108,7 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
 
 
                       alignment: Alignment.center,
-                      margin: EdgeInsets.only(left: 24.0,right: 24.0,top: 6.0,bottom: 12.0),
+                      margin: EdgeInsets.only(left: 24.0,right: 24.0,top: 12.0,bottom: 12.0),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(30.0)),
                         color: Colors.transparent,
