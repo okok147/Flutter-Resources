@@ -209,7 +209,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         TextSpan(
                             text: "Sign In",
                             style: TextStyle(
-                                color: Colors.blueGrey, fontSize: 18.0))
+                                color: Colors.blueGrey, fontSize: 14.0))
                       ]),
                     ),
 

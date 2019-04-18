@@ -49,7 +49,7 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
 
                 children: <Widget>[
                   Text (
-                    'Travel the world!!',
+                    'Travel the world',
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.w200,
