@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:clone_travel_ui/ui/dashboard.dart';
+import 'package:clone_travel_ui/ui/signup_page.dart';
 
 class SignInPage extends StatefulWidget {
   @override
@@ -15,20 +16,11 @@ class _SignInPageState extends State<SignInPage> {
         children: <Widget>[
           Column(
             children: <Widget>[
-              Flexible(
-                flex: 1,
-                child: Container(
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(colors: [
-                      Color.fromRGBO(50, 147, 247, 1.0),
-                      Color.fromRGBO(72, 197, 247, 1.0)
-                    ])),
-                ),
-              ),
+
 
 
               Flexible (
-                flex: 1,
+                flex: 5,
                 child: Container(
                   color: Colors.white10,
                   child: Column(
@@ -38,25 +30,7 @@ class _SignInPageState extends State<SignInPage> {
                         height: 150.0,
                       ),
 
-                      Padding (
-                        padding: const EdgeInsets.only(top: 18.0),
-                        child: RichText(
 
-                            text: TextSpan(children: <TextSpan> [
-                              TextSpan (
-                                text: "Have an account?",
-                                style: TextStyle(
-                                  color: Colors.grey,fontSize: 14.0)),
-                              TextSpan (
-                                text: "Create Now",
-                                style: TextStyle(
-                                  color: Colors.black45,
-                                  fontSize: 14.0,
-                                  letterSpacing: 0.4))
-
-                            ]),
-                        ),
-                      )
                     ],
                   ),
                 ),
@@ -142,6 +116,44 @@ class _SignInPageState extends State<SignInPage> {
                   style: TextStyle(color: Colors.white,fontSize: 22.0),
                 ),
               ),
+            ),
+          ),
+
+          Positioned (
+
+            right: 24.0,
+            left: 24.0,
+            top: MediaQuery.of(context).size.height / 2 - 215.0 + 384.0 + 50.0,
+            child: Column(
+              children: <Widget>[
+
+                InkWell(
+                  onTap: (){
+                    print('Navigate to SignUpPage ~');
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
+                  },
+
+                  child: RichText(
+                    text: TextSpan(children: <TextSpan>[
+                      TextSpan(
+                          text: "Don't have an account? ",
+                          style: TextStyle(
+                              color: Colors.grey, fontSize: 14.0)),
+
+
+                      TextSpan(
+                          text: "Create Now",
+                          style: TextStyle(
+                              color: Colors.blueGrey, fontSize: 14.0))
+                    ]),
+                  ),
+
+
+
+                ),
+
+
+              ],
             ),
           )
         ],

@@ -5,14 +5,17 @@ import 'package:clone_travel_ui/ui/signin_page.dart';
 import 'package:clone_travel_ui/ui/signup_page.dart';
 
 void main () {
+
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
     // TODO: implement build
     return MaterialApp (
+      debugShowCheckedModeBanner: false,
       title: 'Third Time ',
       theme: ThemeData(fontFamily: 'Lato'),
       home: SignInSignUpPage(),
@@ -21,6 +24,7 @@ class MyApp extends StatelessWidget {
 }
 
 class SignInSignUpPage extends StatefulWidget {
+
   @override
   _SignInSignUpPageState createState () => new _SignInSignUpPageState();
 }
