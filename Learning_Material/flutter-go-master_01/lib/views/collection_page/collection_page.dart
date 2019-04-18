@@ -131,13 +131,17 @@ class _CollectionPageState extends State<CollectionPage> {
       return ListView(
         children: <Widget>[
           Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.end,
             children: <Widget>[
               Image.asset(
                 'assets/images/nothing.png',
                 fit: BoxFit.contain,
                 width: MediaQuery.of(context).size.width / 2,
+
               ),
-              Text('暂无收藏，赶紧去收藏一个吧!'),
+              Text('暂无收藏，views > collection_page > cl143!'),
+
             ],
           ),
         ],

@@ -19,6 +19,8 @@ final pages = [
       'FLutterGo的背景',
       '🐢 官网文档示例较不够健全，不够直观\n🐞 运行widget demo要到处翻阅资料\n🐌 英文文档翻译生涩难懂，学习资料太少\n🚀 需要的效果不知道用哪个widget\n',
       'assets/images/calendar.png'),
+
+
   PageViewModel(
     const Color(0xFFFF682D),
     //'assets/home.png',
@@ -27,6 +29,8 @@ final pages = [
     '🐡 详解常用widget多达 140+ 个\n🦋 持续迭代追新官方版本\n🐙 配套Demo详解widget用法\n🚀 一站式搞定所有常用widget,开箱即查\n',
     'assets/images/house.png',
   ),
+
+
 ];
 SpUtil sp;
 

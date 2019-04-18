@@ -182,7 +182,8 @@ class DisclaimerMsgState extends State<DisclaimerMsg> {
                 color: Colors.black45,
               ),
               child: Text(
-                '🔔 免责声明',
+                //免责声明
+                '🔔comp > disclam cl186',
                 style: TextStyle(
                   fontSize: 14.0,
                   //fontWeight: FontWeight.bold,

@@ -96,6 +96,7 @@ class FirstPageState extends State<FirstPage> with AutomaticKeepAliveClientMixin
         //alignment: const FractionalOffset(0.9, 0.1),//方法一
         children: <Widget>[
             Pagination(),
+
             Positioned(//方法二
             top: 10.0,
             left: 0.0,

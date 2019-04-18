@@ -42,8 +42,8 @@ class _MyHomePageState extends State<AppPage>
   String data2ThirdPage = '这是传给ThirdPage的值';
   String appBarTitle = tabData[0]['text'];
   static List tabData = [
-    {'text': 'first_page', 'icon': new Icon(Icons.home)},
-    {'text': 'home.dart', 'icon': new Icon(Icons.extension)},
+    {'text': 'first_page>', 'icon': new Icon(Icons.home)},
+    {'text': 'home.dart>', 'icon': new Icon(Icons.extension)},
     {'text': 'cl45', 'icon': new Icon(Icons.favorite)},
     {'text': '关于手册', 'icon': new Icon(Icons.import_contacts)}
   ];
