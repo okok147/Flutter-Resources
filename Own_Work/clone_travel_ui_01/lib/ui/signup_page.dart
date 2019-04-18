@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:clone_travel_ui/ui/signin_page.dart';
 
 class SignUpPage extends StatefulWidget {
   @override
@@ -25,46 +26,8 @@ class _SignUpPageState extends State<SignUpPage> {
                         //space between flexible of blue background
                         height: 134.0,
                       ),
-                      Container(
-                        height: 60.0,
-                        width: MediaQuery.of(context).size.width - 1.0,
-                        margin: EdgeInsets.only(
-                            left: 24.0, right: 24.0, top: 12.0, bottom: 6.0),
-                        decoration: BoxDecoration(
-                            borderRadius:
-                            BorderRadius.all(Radius.circular(30.0)),
-                            color: Color.fromRGBO(30, 61, 168, 1.0)),
-                        alignment: Alignment.center,
-                        child: RichText(
-                          text: TextSpan(children: <TextSpan>[
-                            TextSpan(
-                                text: "Sign Up With ",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 14.0)),
-                            TextSpan(
-                                text: "Facebook",
-                                style: TextStyle(
-                                    color: Colors.white, fontSize: 18.0))
-                          ]),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 0.0),
-                        child: RichText(
-                          text: TextSpan(children: <TextSpan>[
-                            TextSpan(
-                                text: "Aleady have an account ? ",
-                                style: TextStyle(
-                                    color: Colors.grey, fontSize: 14.0)),
-                            TextSpan(
-                                text: "Sign In",
-                                style: TextStyle(
-                                    color: Colors.black54,
-                                    fontSize: 14.0,
-                                    letterSpacing: 0.5))
-                          ]),
-                        ),
-                      )
+
+
                     ],
                   ),
                 ),
@@ -82,7 +45,7 @@ class _SignUpPageState extends State<SignUpPage> {
                   borderRadius: BorderRadius.all(Radius.circular(8.0)),
                   color: Colors.white,
                 ),
-                child: Card(
+
                   child: Column(
                     children: <Widget>[
 
@@ -137,13 +100,13 @@ class _SignUpPageState extends State<SignUpPage> {
 
                     ],
                   ),
-                )),
+                ),
           ),
           Positioned(
 
             right: 24.0,
             left: 24.0,
-            top: MediaQuery.of(context).size.height / 2 - 215.0 + 300.0 - 30.0,
+            top: MediaQuery.of(context).size.height / 2 - 215.0 + 300.0 - 40.0,
             child: Column(
               children: <Widget>[
                 InkWell(
@@ -179,7 +142,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
             right: 24.0,
             left: 24.0,
-            top: MediaQuery.of(context).size.height / 2 - 215.0 + 384.0 - 30.0,
+            top: MediaQuery.of(context).size.height / 2 - 215.0 + 384.0 - 40.0,
             child: Column(
               children: <Widget>[
                 InkWell(
@@ -220,6 +183,44 @@ class _SignUpPageState extends State<SignUpPage> {
               ],
             ),
           ),
+
+          Positioned (
+
+            right: 24.0,
+            left: 24.0,
+            top: MediaQuery.of(context).size.height / 2 - 215.0 + 384.0 + 50.0,
+            child: Column(
+              children: <Widget>[
+
+                InkWell(
+                  onTap: (){
+                    print('Navigate to SignUpPage ~');
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => SignInPage()));
+                  },
+
+                    child: RichText(
+                      text: TextSpan(children: <TextSpan>[
+                        TextSpan(
+                            text: "Already have an account? ",
+                            style: TextStyle(
+                                color: Colors.grey, fontSize: 14.0)),
+
+
+                        TextSpan(
+                            text: "Sign In",
+                            style: TextStyle(
+                                color: Colors.blueGrey, fontSize: 18.0))
+                      ]),
+                    ),
+
+
+
+                ),
+
+
+              ],
+            ),
+          )
         ],
       ),
     );
