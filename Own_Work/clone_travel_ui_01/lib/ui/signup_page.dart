@@ -106,7 +106,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
             right: 24.0,
             left: 24.0,
-            top: MediaQuery.of(context).size.height / 2 - 215.0 + 300.0 - 40.0,
+            top: MediaQuery.of(context).size.height / 2 - 215.0 + 300.0 - 50.0,
             child: Column(
               children: <Widget>[
                 InkWell(
@@ -142,7 +142,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
             right: 24.0,
             left: 24.0,
-            top: MediaQuery.of(context).size.height / 2 - 215.0 + 384.0 - 40.0,
+            top: MediaQuery.of(context).size.height / 2 - 215.0 + 384.0 - 50.0,
             child: Column(
               children: <Widget>[
                 InkWell(
@@ -194,7 +194,7 @@ class _SignUpPageState extends State<SignUpPage> {
 
                 InkWell(
                   onTap: (){
-                    print('Navigate to SignUpPage ~');
+                    print('Navigate to SigninPage now!');
                     Navigator.push(context, MaterialPageRoute(builder: (context) => SignInPage()));
                   },
 
