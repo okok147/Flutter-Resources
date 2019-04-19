@@ -6,6 +6,8 @@ import 'package:clone_travel_ui/ui/dashboard/profile_page.dart';
 import 'package:clone_travel_ui/ui/dashboard/tours_page.dart';
 import 'package:clone_travel_ui/ui/tabnavigations/homenav.dart';
 
+//main > signin_page + signin_page > dashboard(unfinished)
+
 
 class DashboardPage extends StatefulWidget {
   @override
