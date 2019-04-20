@@ -1,0 +1,4 @@
+#Sun Apr 14 10:17:34 HKT 2019
+base.0=/Users/ok/Documents/GitHub/flutter-development/Learning_Material/flutter-travel-ui-master_02/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

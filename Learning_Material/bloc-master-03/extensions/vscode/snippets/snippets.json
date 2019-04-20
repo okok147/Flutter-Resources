@@ -1,0 +1,116 @@
+{
+  "bloc": {
+    "scope": "dart",
+    "prefix": "bloc",
+    "body": [
+      "import 'package:bloc/bloc.dart';",
+      "",
+      "class ${1:MyBloc} extends Bloc<${2:MyEvent}, ${3:MyState}> {",
+      "\t@override",
+      "\t${3:MyState} get initialState => ${4:// TODO: implement initialState};",
+      "",
+      "\t@override",
+      "\tStream<${3:MyState}> mapEventToState(",
+      "\t\t${2:MyEvent} event,",
+      "\t) async* {",
+      "\t\t${5:// TODO: implement mapEventToState}",
+      "\t}",
+      "}"
+    ]
+  },
+  "blocbuilder": {
+    "scope": "dart",
+    "prefix": "blocbuilder",
+    "body": [
+      "BlocBuilder(",
+      "\tbloc: ${1:MyBloc},",
+      "\tbuilder: (BuildContext context, ${2:MyState} state) {",
+      "\t\treturn ${3:Container();}",
+      "\t},",
+      ")"
+    ]
+  },
+  "bloclistener": {
+    "scope": "dart",
+    "prefix": "bloclistener",
+    "body": [
+      "BlocListener(",
+      "\tbloc: ${1:MyBloc},",
+      "\tlistener: (BuildContext context, ${2:MyState} state) {",
+      "\t\t${3:// TODO: implement listener}",
+      "\t},",
+      "\tchild: ${4:Container()}",
+      ")"
+    ]
+  },
+  "blocprovider": {
+    "scope": "dart",
+    "prefix": "blocprovider",
+    "body": [
+      "BlocProvider(",
+      "\tbloc: ${1:MyBloc},",
+      "\tchild: ${2:Container()},",
+      ")"
+    ]
+  },
+  "blocprovidertree": {
+    "scope": "dart",
+    "prefix": "blocprovidertree",
+    "body": [
+      "BlocProviderTree(",
+      "\tblocProviders: [",
+      "\t\tBlocProvider<${1:MyBloc}>(bloc: ${3:_myBloc}),",
+      "\t\tBlocProvider<${4:MyOtherBloc}>(bloc: ${5:_myOtherBloc}),",
+      "\t],",
+      "\tchild: ${6:Container()},",
+      ")"
+    ]
+  },
+  "blocdelegate": {
+    "scope": "dart",
+    "prefix": "blocdelegate",
+    "body": [
+      "import 'package:bloc/bloc.dart';",
+      "",
+      "class ${1:MyBlocDelegate} extends BlocDelegate {",
+      "\t@override",
+      "\tvoid onError(Object error, StackTrace stacktrace) {",
+      "\t\tsuper.onError(error, stacktrace);",
+      "\t\t${2:// TODO: implement onError}",
+      "\t}",
+      "",
+      "\t@override",
+      "\tvoid onTransition(Transition transition) {",
+      "\t\tsuper.onTransition(transition);",
+      "\t\t${3:// TODO: implement onTransition}",
+      "\t}",
+      "}"
+    ]
+  },
+  "blocstate": {
+    "scope": "dart",
+    "prefix": "blocstate",
+    "body": [
+      "import 'package:equatable/equatable.dart';",
+      "import 'package:meta/meta.dart';",
+      "",
+      "@immutable",
+      "abstract class $1State extends Equatable {",
+      "\t$1State([List props = const []]) : super(props);",
+      "}"
+    ]
+  },
+  "blocevent": {
+    "scope": "dart",
+    "prefix": "blocevent",
+    "body": [
+      "import 'package:equatable/equatable.dart';",
+      "import 'package:meta/meta.dart';",
+      "",
+      "@immutable",
+      "abstract class $1Event extends Equatable {",
+      "\t$1Event([List props = const []]) : super(props);",
+      "}"
+    ]
+  }
+}
