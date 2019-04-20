@@ -2,6 +2,12 @@
 
 A new Flutter application.
 
+A easy way to use intro slider,add command below in pubspec.yaml > dependencies:
+
+    intro_slider:
+
+    Docs:https://pub.dartlang.org/packages/intro_slider
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
