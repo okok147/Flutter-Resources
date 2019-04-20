@@ -2,6 +2,8 @@
 
 A new Flutter application.
 
+A UI example 
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
