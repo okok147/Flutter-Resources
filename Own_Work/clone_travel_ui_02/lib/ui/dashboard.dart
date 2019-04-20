@@ -1,67 +1,78 @@
 import 'package:flutter/material.dart';
-import 'package:clone_travel_ui/ui/components/bottomnavbar.dart';
-import 'package:clone_travel_ui/ui/dashboard/explore_page.dart';
+import 'package:curved_navigation_bar/curved_navigation_bar.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:clone_travel_ui/ui/dashboard/home_page.dart';
-import 'package:clone_travel_ui/ui/dashboard/profile_page.dart';
-import 'package:clone_travel_ui/ui/dashboard/tours_page.dart';
-import 'package:clone_travel_ui/ui/tabnavigations/homenav.dart';
 
-//main > signin_page + signin_page > dashboard(now)
-
+void main() => runApp(MaterialApp(home: DashboardPage()));
 
 class DashboardPage extends StatefulWidget {
   @override
-  _DashboardPageState createState() => new _DashboardPageState();
+  _BottomNavBarState createState() => _BottomNavBarState();
 }
 
-class _DashboardPageState extends State<DashboardPage> {
-  static final Map<int, GlobalKey<NavigatorState>> navigatorKeys = {
-    0: GlobalKey<NavigatorState>(),
-    1: GlobalKey<NavigatorState>(),
-    2: GlobalKey<NavigatorState>(),
-    3: GlobalKey<NavigatorState>(),
-  };
+class _BottomNavBarState extends State<DashboardPage> {
+  int _selectpage = 0;
 
-  int _selected = 0;
+  final _pageOption = [
 
-  List<Widget> _children = [
-    HomeTabNavigator(navigatorKey : navigatorKeys[0],),
-    //ToursPage(),
-    //ExplorePage(),
-    //ProfilePage(),
-
+    HomePage(),
 
   ];
 
-  void _selectedTab(int index) {
-    setState(() {
-      _selected = index;
-    });
-  }
-
-
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return WillPopScope (
-      onWillPop:  () async =>
-      !await navigatorKeys[_selected].currentState.maybePop(),
+    return Scaffold(
 
-      child: Scaffold(
-        body: _children[_selected],
-        bottomNavigationBar: FABBottomAppBar(
-          color: Colors.grey,
-          selectedColor: Colors.blueAccent,
-          onTabSelected: _selectedTab,
-          items: [
-            BottomAppBarItem(iconData: Icons.add_to_home_screen,text: "Home"),
-            BottomAppBarItem(iconData: Icons.beach_access,text: 'Tours'),
-            BottomAppBarItem(iconData: Icons.location_searching,text: 'Explore'),
-            BottomAppBarItem(iconData: Icons.person_outline,text: 'Profile'),
 
-          ],
-        ),
+
+
+
+
+      body: _pageOption[_selectpage],
+
+
+
+
+
+      bottomNavigationBar: CurvedNavigationBar(
+
+
+
+
+
+
+
+        onTap: (index) {
+
+          setState(() {
+            _selectpage = index;
+          });
+
+        },
+
+
+
+        items: <Widget >[
+
+
+
+
+          Icon(Icons.home, size: 30),
+          Icon(MdiIcons.fromString('emoticon'), size: 30),
+          Icon(MdiIcons.fromString('face'), size: 30),
+        ],
+        color: Colors.black12,
+        buttonBackgroundColor: Colors.white,
+        backgroundColor: Colors.lightBlueAccent,
+        animationCurve: Curves.easeInOut,
+        animationDuration: Duration(milliseconds: 600),
+
+
+
       ),
+
+
+
 
     );
   }

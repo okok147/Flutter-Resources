@@ -35,16 +35,17 @@ class _SignUpPageState extends State<SignUpPage> {
             ],
           ),
           Positioned(
-            top: MediaQuery.of(context).size.height / 2 - 200.0,
+            top: MediaQuery.of(context).size.height / 2 - 220.0,
             left: 12.0,
             right: 12.0,
             child: Container(
                 height: 300.0,
                 width: double.infinity,
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(8.0)),
-                  color: Colors.white,
+                  borderRadius: BorderRadius.all(Radius.circular(9.0)),
+                  color: Colors.white10,
                 ),
+                  child: Card(
 
                   child: Column(
                     children: <Widget>[
@@ -98,7 +99,10 @@ class _SignUpPageState extends State<SignUpPage> {
                         ),
                       ),
 
+
+
                     ],
+                  ),
                   ),
                 ),
           ),

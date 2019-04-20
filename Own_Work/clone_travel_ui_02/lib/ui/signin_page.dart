@@ -22,7 +22,7 @@ class _SignInPageState extends State<SignInPage> {
               Flexible (
                 flex: 5,
                 child: Container(
-                  color: Colors.white10,
+                  color: Colors.white,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: <Widget>[
@@ -47,7 +47,7 @@ class _SignInPageState extends State<SignInPage> {
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(9.0)),
-                color: Colors.white10
+                color: Colors.white
               ),
 
               child: Card(
@@ -57,7 +57,7 @@ class _SignInPageState extends State<SignInPage> {
                       padding: const EdgeInsets.only(left: 28.0,right: 28.0,top: 14.0,bottom: 7.0),
                       child: TextFormField(
                         decoration: const InputDecoration(
-                          labelStyle:  TextStyle(color: Colors.grey),
+                          labelStyle:  TextStyle(color: Colors.blueGrey),
                           filled: false,
                           hintText:  'Email',
                           labelText: 'Email',

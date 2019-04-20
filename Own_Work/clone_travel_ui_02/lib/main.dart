@@ -49,7 +49,7 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
 
                 children: <Widget>[
                   Text (
-                    'Travel the world',
+                    'What do you',
                     style: TextStyle(
                       color: Colors.black87,
                       fontWeight: FontWeight.w200,
@@ -59,7 +59,7 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
                   ),
                   Padding (
                     padding: const EdgeInsets.all(16.0),
-                    child: Text('Coder in the world.',
+                    child: Text('want to say?',
                     style: TextStyle(color: Colors.grey,fontSize: 12.0),
                     ),
                   ),
@@ -76,29 +76,7 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
               color: Colors.white,
               child: Column(
                 children: <Widget>[
-                  InkWell(
-                    onTap: (){
-                      print('Navigate to SignUpPage ~');
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
-                    },
 
-                    child: Container(
-                      height: 60.0,
-                      margin: EdgeInsets.only(left: 24.0,right: 24.0,top: 12.0,bottom: 6.0),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.all(Radius.circular(30.0)),
-                        gradient: LinearGradient(colors: [
-                          Color.fromRGBO(50, 145, 248, 1.0),
-                          Color.fromRGBO(71, 196, 246, 0.9)
-                        ])),
-
-                      alignment: Alignment.center,
-                      child: Text('Sign Up',
-                      style: TextStyle(
-                        color: Colors.white,fontSize: 22.0)
-                      ),
-                    ),
-                  ),
 
                   InkWell (
                     onTap: (){
@@ -120,10 +98,34 @@ class _SignInSignUpPageState extends State<SignInSignUpPage> {
                           color: Colors.blueAccent,
                           width: 1.0
                         )),
-                      child: Text('Sign In Yo',style: TextStyle(color: Colors.blueAccent,fontSize: 22.0)),
+                      child: Text('Sign In ',style: TextStyle(color: Colors.blueAccent,fontSize: 22.0)),
 
                     ),
-                  )
+                  ),
+
+                  InkWell(
+                    onTap: (){
+                      print('Navigate to SignUpPage ~');
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => SignUpPage()));
+                    },
+
+                    child: Container(
+                      height: 60.0,
+                      margin: EdgeInsets.only(left: 24.0,right: 24.0,top: 12.0,bottom: 6.0),
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(30.0)),
+                          gradient: LinearGradient(colors: [
+                            Color.fromRGBO(50, 145, 248, 1.0),
+                            Color.fromRGBO(71, 196, 246, 0.9)
+                          ])),
+
+                      alignment: Alignment.center,
+                      child: Text('Sign Up',
+                          style: TextStyle(
+                              color: Colors.white,fontSize: 22.0)
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
