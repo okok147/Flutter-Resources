@@ -31,7 +31,7 @@ class _FlareDemoState extends State<FlareDemo> {
     var activeAreas = [
       // Insert top-left
       RelativeActiveArea(
-          debugArea: true,
+          debugArea: false,
           area: Rect.fromLTRB(0, 0, 0.35, 0.5),
           guardComingFrom: ['deactivate'],
           animationName: 'camera_tapped',
