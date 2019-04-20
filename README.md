@@ -1,6 +1,6 @@
 # Examples:
 
-    own_work
+    own_work,learning_material
 
 
 
