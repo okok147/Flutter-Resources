@@ -2,6 +2,8 @@
 
 A new Flutter application.
 
+With animation and cuved navigation bar
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
