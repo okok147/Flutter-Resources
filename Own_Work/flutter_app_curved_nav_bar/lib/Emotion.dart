@@ -5,6 +5,7 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter_app_curved_nav_bar/Emotion.dart';
 import 'package:flutter_app_curved_nav_bar/Profile.dart';
+import 'package:flutter_app_curved_nav_bar/main.dart';
 
 void main() {
   runApp(new MaterialApp(
@@ -44,6 +45,10 @@ class _FlareDemoState extends State<Emotion> {
 
           animationsToCycle: ['Off','On'],
           onAreaTapped: () {
+
+            Navigator.push(context, new MaterialPageRoute(builder: (context)
+            => new BottomNavBar()));
+            Homepage();
 
             //New method for direct to another page
 
