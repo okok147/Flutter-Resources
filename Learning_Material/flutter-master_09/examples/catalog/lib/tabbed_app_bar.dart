@@ -11,8 +11,11 @@ class TabbedAppBarSample extends StatelessWidget {
       home: DefaultTabController(
         length: choices.length,
         child: Scaffold(
+
           appBar: AppBar(
             title: const Text('Tabbed AppBar'),
+
+
             bottom: TabBar(
               isScrollable: true,
               tabs: choices.map<Widget>((Choice choice) {
