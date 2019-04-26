@@ -219,7 +219,9 @@ class _MyAppState extends State<MyApp> {
                         style: TextStyle(fontFamily: "Poppins-Medium"),
                       ),
                       InkWell(
-                        onTap: () {},
+                        onTap: () {
+                          Navigator.push(context, new MaterialPageRoute(builder: (context) => new MyApp()));
+                        },
                         child: Text("SignUp",
                             style: TextStyle(
                                 color: Color(0xFF5d74e3),

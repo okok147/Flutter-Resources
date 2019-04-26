@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:flutter_login_page_ui/main.dart';
 
 class FormCard extends StatelessWidget {
   @override
@@ -61,6 +62,20 @@ class FormCard extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: <Widget>[
+
+
+
+                InkWell(
+                        onTap: () {
+                          Navigator.push(context, new MaterialPageRoute(builder:(context) => new MyApp()));
+                        },
+                        child: Text("Forget Password?",
+                            style: TextStyle(
+                                color: Colors.blueAccent,
+                                fontFamily: "Poppins-Medium")),
+                      )
+
+                /*
                 Text(
                   "Forgot Password?",
                   style: TextStyle(
@@ -68,6 +83,8 @@ class FormCard extends StatelessWidget {
                       fontFamily: "Poppins-Medium",
                       fontSize: ScreenUtil.getInstance().setSp(28)),
                 )
+
+            */
               ],
             )
           ],
