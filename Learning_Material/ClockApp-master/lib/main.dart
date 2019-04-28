@@ -99,7 +99,7 @@ class BottomBar extends StatelessWidget {
         children: <Widget>[
           FlatButton(
             child: Text(
-              "EDIT ALARMS",
+              "SHARE",
               style: TextStyle(letterSpacing: 1.5),
             ),
             color: Color(0xffff5e92),
