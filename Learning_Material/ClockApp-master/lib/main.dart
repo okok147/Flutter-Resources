@@ -23,7 +23,7 @@ class AppClock extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: 600,
+        height: 500,
         width: double.infinity,
         child: DefaultTabController(
             length: 3,
@@ -42,7 +42,7 @@ class AppClock extends StatelessWidget {
                             TabBar(
                                 indicator: UnderlineTabIndicator(
                                     borderSide: BorderSide(
-                                        color: Color(0xffff0863), width: 4.0),
+                                        color: Colors.greenAccent, width: 4.0),
                                     insets: EdgeInsets.fromLTRB(
                                         40.0, 20.0, 40.0, 0)),
                                 indicatorWeight: 15,
@@ -61,7 +61,7 @@ class AppClock extends StatelessWidget {
                                   ),
                                   Tab(
                                     text: "RECORDS",
-                                    icon: Icon(Icons.menu, size: 40),
+                                    icon: Icon(Icons.bookmark_border, size: 40),
                                   ),
                                   Tab(
                                     text: "PROFILE",
@@ -93,7 +93,7 @@ class BottomBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: EdgeInsets.fromLTRB(50, 0, 50, 50),
+      padding: EdgeInsets.fromLTRB(50, 0, 50, 20),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -114,7 +114,7 @@ class BottomBar extends StatelessWidget {
             child: Text(
               "+",
               style: TextStyle(
-                  color: Color(0xff253165),
+                  color: Colors.blueAccent,
                   fontWeight: FontWeight.w700,
                   fontSize: 25),
             ),

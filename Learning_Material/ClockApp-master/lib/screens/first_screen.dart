@@ -7,7 +7,7 @@ class FirstTab extends StatelessWidget {
     return ListView(
       children: <Widget>[
         SizedBox(
-          height: 85,
+          height: 65,
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 40),
