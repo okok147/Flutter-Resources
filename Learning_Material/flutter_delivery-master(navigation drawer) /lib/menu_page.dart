@@ -1,7 +1,15 @@
 import 'package:delivery/circular_image.dart';
 import 'package:flutter/material.dart';
+import 'package:delivery/main.dart';
+
+
+
 
 class MenuScreen extends StatelessWidget{
+
+  int _selectPage = 0;
+
+
 
   final String imageUrl = "https://celebritypets.net/wp-content/uploads/2016/12/Adriana-Lima.jpg";
 
@@ -11,6 +19,8 @@ class MenuScreen extends StatelessWidget{
     MenuItem(Icons.favorite, 'Discounts'),
     MenuItem(Icons.code, 'Prom-codes'),
     MenuItem(Icons.format_list_bulleted, 'Orders'),
+
+
   ];
 
   @override
@@ -18,7 +28,7 @@ class MenuScreen extends StatelessWidget{
     return Container(
       padding: EdgeInsets.only(top: 62, left: 32,bottom: 8,
           right: MediaQuery.of(context).size.width/2.9),
-      color: Color(0xff454dff),
+      color: Colors.black54,
       child: Column(
         children: <Widget>[
           Row(
@@ -40,8 +50,12 @@ class MenuScreen extends StatelessWidget{
           Spacer(),
           Column(
             children: options.map((item) {
-              return ListTile(
-                onTap: (){},
+               return ListTile(
+                onTap: (){
+
+
+
+                },
                 leading: Icon(item.icon, color: Colors.white, size: 20,),
                 title: Text(item.title,
                   style: TextStyle(
@@ -51,6 +65,8 @@ class MenuScreen extends StatelessWidget{
                   ),
                 ),
               );
+
+
             }).toList(),
           ),
 
@@ -65,6 +81,15 @@ class MenuScreen extends StatelessWidget{
                     color: Colors.white
                 )),),
           ListTile(
+
+            onTap: (){
+
+
+
+
+
+
+            },
             leading: Icon(Icons.headset_mic, color: Colors.white, size: 20,),
             title: Text('Support',
                 style: TextStyle(
