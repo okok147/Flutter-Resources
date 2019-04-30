@@ -98,6 +98,7 @@ class BottomBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           FlatButton(
+            splashColor: Colors.white,
             child: Text(
               "SHARE",
               style: TextStyle(letterSpacing: 1.5),
@@ -111,9 +112,11 @@ class BottomBar extends StatelessWidget {
             onPressed: () {},
           ),
           FloatingActionButton(
+
             child: Text(
               "+",
               style: TextStyle(
+
                   color: Colors.blueAccent,
                   fontWeight: FontWeight.w700,
                   fontSize: 25),
@@ -121,6 +124,7 @@ class BottomBar extends StatelessWidget {
             onPressed: () {},
             backgroundColor: Colors.white,
             foregroundColor: Colors.black,
+
             elevation: 5,
             highlightElevation: 3,
           )
