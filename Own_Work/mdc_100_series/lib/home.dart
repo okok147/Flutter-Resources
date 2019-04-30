@@ -22,7 +22,7 @@ import 'package:intl/intl.dart';
 
 class HomePage extends StatelessWidget {
   // TODO: Make a collection of cards (102)
-//MDC 102 
+//MDC 102
 
   List<Card> _buildGridCards(BuildContext context) {
     List<Product> products = ProductsRepository.loadProducts(Category.all);
@@ -98,6 +98,11 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.white12,
       appBar: AppBar(
+        elevation: 10.0,
+        brightness: Brightness.light,
+
+
+
 
 
         leading: IconButton(icon: Icon(Icons.menu,semanticLabel: 'menu',
@@ -109,6 +114,7 @@ class HomePage extends StatelessWidget {
 
         ),
         title: Text('SHRRINNEEE'),
+
 
         actions: <Widget>[
           IconButton(
