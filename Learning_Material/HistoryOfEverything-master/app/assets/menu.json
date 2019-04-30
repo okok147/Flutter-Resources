@@ -1,0 +1,114 @@
+[
+    {
+        "label": "Birth of the Universe",
+        "background": "#083158",
+        "color": "#ffffff",
+        "asset":"milky",
+        "items":
+        [
+            {
+                "start": -15000000000,
+                "end": -10000000000,
+                "label": "Big Bang"
+            },
+            {
+                "start": -4625000000,
+                "end": -4560000000,
+                "label": "Birth of the Sun"
+            },
+            {
+                "start": -4520000000,
+                "end": -4490000000,
+                "label": "Earth is Born"
+            },
+            {
+                "start": -4250000000,
+                "end": -3890000000,
+                "label": "Heavy Bombardment"
+            }
+        ]
+    },
+    {
+        "label": "Life on Earth",
+        "background": "#fdfdfd",
+        "color": "#000000",
+        "asset":"fish",
+        "items":
+        [
+            {
+                "start": -4300000000,
+                "end": -3560000000,
+                "label": "Single Celled Organisms"
+            },
+            {
+                "start": -638000000,
+                "end": -350000000,
+                "label": "Animals"
+            },
+            {
+                "start": -320000000,
+                "end": -25000000,
+                "label": "Dinosaur Age"
+            },
+            {
+                "start": -215550384.05521244,
+                "end": -167149739.29848185,
+                "label": "Mammals"
+            },
+            {
+                "start": -6800000,
+                "end": -3000000,
+                "label": "Humans"
+            }
+        ]
+    },
+    {
+        "label": "Common Era",
+        "background": "#001d22",
+        "color": "#ffffff",
+        "asset":"mlk",
+        "items":
+        [
+            {
+                "start": 900,
+                "end": 1587,
+                "label": "Crusades"
+            },
+            {
+                "start": 1620,
+                "end": 1824,
+                "label": "Newton's Theory of Gravity"
+            },
+            {
+                "start": 1852,
+                "end": 1876,
+                "label": "Marie Curie"
+            },
+            {
+                "start": 1914,
+                "end": 1952,
+                "label": "Amelia Earhart"
+            },
+            {
+                "start": 1910,
+                "end": 1917,
+                "label": "World War I"
+            },
+            {
+                "start": 1930,
+                "end": 1955,
+                "label": "World War II"
+            },
+            {
+                "start": 1956,
+                "end": 1972,
+                "label": "Martin Luther King, Jr."
+            },
+            {
+                "start": 1955,
+                "end": 2000,
+                "label": "Moon Landing"
+            }
+        ]
+    }
+]

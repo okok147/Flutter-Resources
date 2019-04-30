@@ -1,0 +1,634 @@
+[
+	{
+		"date": -13800000000,
+		"label": "Big Bang",
+		"article":"big_bang.txt",
+		"background": [0, 38, 75],
+		"accent": [246, 76, 130, 255],
+		"ticks": 
+		{
+			"background": [20, 57, 92, 240],
+			"long": [255, 255, 255, 75],
+			"short": [255, 255, 255, 51],
+			"text": [255, 255, 255, 157]
+		},
+		"header": 
+		{
+			"background": [11, 47, 81, 94],
+			"text": [255, 255, 255, 157]
+		},
+		"asset": 
+		{
+			"source": "Big_Bang/Big_Bang.flr",
+			"width": 3628,
+			"height": 3620,
+			"offset": 1500,
+			"gap": -1000, 
+			"loop": false,
+			"bounds":[-1814, -1810, 1814, 1810]
+		}
+	},
+	{
+		"date": -13000000000,
+		"label": "Birth of the Milky Way",
+		"id":"milky",
+		"article": "milky_way.txt",
+		"asset": 
+		{
+			"source": "Milky Way/Milky Way.flr",
+			"width": 1293,
+			"height": 1210,
+			"scale": 0.5,
+			"bounds":[-1616.5, -115.0, -323.5, 1095.0]
+		}
+	},
+	{
+		"date": -4600000000,
+		"label": "Sun is Born",
+		"article":"sun.txt",
+		"accent": [255, 166, 20, 255],
+		"asset": 
+		{
+			"source": "Sun.flr",
+			"width": 800,
+			"height": 800,
+			"offset": -100,
+			"intro":"Sun_in",
+			"idle":"Sun_idle",
+			"bounds":[-400.0, -400.0, 400.0, 400.0]
+		}
+	},
+	{
+		"date": -4505000000,
+		"label": "Earth is Born",
+		"article":"earth.txt",
+		"asset": 
+		{
+			"source": "HeavyBombardment.flr",
+			"width": 1210,
+			"height": 1210,
+			"scale": 0.25,
+			"idle":"Earth_is_born",
+			"bounds":[-581,-633,629,577]
+		}
+	},
+	{
+		"date": -4100000000,
+		"label": "Heavy Bombardment",
+		"article": "bombardment.txt",
+		"accent": [255, 63, 0, 255],
+		"asset": 
+		{
+			"source": "HeavyBombardment.flr",
+			"width": 3774,
+			"height": 2675,
+			"scale": 0.25,
+			"idle":"Bombardmnet",
+			"bounds":[-598.0,-2075.5,3176,599.5]
+		}
+	},
+	{
+		"start": -4000000000,
+		"label": "Life on Earth",
+		"article": "life_on_earth.txt",
+		"background": [31, 89, 143],
+		"ticks": 
+		{
+			"background": [27, 79, 128, 240],
+			"long": [255, 255, 255, 75],
+			"short": [255, 255, 255, 51],
+			"text": [255, 255, 255, 157]
+		},
+		"header": 
+		{
+			"background": [27, 79, 128, 240],
+			"text": [255, 255, 255, 157]
+		},
+
+		"asset": 
+		{
+			"source": "HeavyBombardment.flr",
+			"width": 1210,
+			"height": 1210,
+			"intro":"Transformation",
+			"idle":"Life on Earth",
+			"scale":0.5,
+			"offset":500,
+			"bounds":[-581,-633,629,577]
+		}
+	},
+	{
+		"date": -3800000000,
+		"label": "Single Celled Organisms",
+		"article":"single_celled_organisms.txt",
+		"asset": 
+		{
+			"source": "Cells/Cells.nma",
+			"width": 800,
+			"height": 400
+		}
+	},
+	{
+		"start": -600000000,
+		"label": "Animals",
+		"article":"animals.txt",
+		"asset": 
+		{
+			"source": "Animals.flr",
+			"width": 814,
+			"height": 564,
+			"offset": -100,
+			"bounds":[0.0, 0.0, 814.0, 664.0]
+		},
+		"background": [132, 175, 214],
+		"accent": [55, 134, 222, 255],
+		"ticks": 
+		{
+			"background": [113, 152, 188, 240],
+			"long": [255, 255, 255, 75],
+			"short": [255, 255, 255, 51],
+			"text": [255, 255, 255, 157]
+		},
+		"header": 
+		{
+			"background": [113, 152, 188, 240],
+			"text": [255, 255, 255, 157]
+		}
+	},
+	{
+		"date": -530000000,
+		"label": "Fish",
+		"article":"fish.txt",
+		"id":"fish",
+		"accent": [55, 134, 222, 255],
+		"asset": 
+		{
+			"source": "Fish_and_Stuff/Fish_and_Stuff.nma",
+			"width": 1290,
+			"height": 650,
+			"scale": 0.65,
+			"bounds":[-549,-5,741,645]
+		}
+	},
+	{
+		"date": -396000000,
+		"label": "Insects",
+		"article":"insects.txt",
+		"accent": [55, 134, 222, 255],
+		"asset": 
+		{
+			"source": "Insects/Insects.nma",
+			"width": 800,
+			"height": 528
+		}
+	},
+	{
+		"date": -312000000,
+		"label": "Reptiles",
+		"article":"reptiles.txt",
+		"accent": [55, 134, 222, 255],
+		"asset": 
+		{
+			"source": "Reptiles/Reptiles.nma",
+			"width": 400,
+			"height": 600
+		}
+	},
+	{
+		"start": -230000000,
+		"end": -65000000,
+		"label": "Dinosaur Age",
+		"article": "dinosaurs.txt",
+		"id":"dinosaur",
+		"asset": 
+		{
+			"source": "Dinosaurs.flr",
+			"width": 800,
+			"height": 570,
+			"offset":0,
+			"gap": 0
+		}
+	},
+	{
+		"date": -150000000,
+		"label": "Stegosaurus",
+		"article":"stegosaurus.txt",
+		"accent": [235, 155, 75, 255],
+		"asset": 
+		{
+			"source": "Dinosaurs/Dinosaurs.nma",
+			"width": 800,
+			"height": 570,
+			"offset":-200,
+			"gap": 0
+		}
+	},
+	{
+		"date": -200000000,
+		"label": "Mammals",
+		"article":"mammals.txt",
+		"id":"mammal",
+		"asset": 
+		{
+			"source": "Mammals/Mammals.nma",
+			"offset":-200,
+			"width": 400,
+			"height": 400
+		}
+	},
+	{
+		"date": -68000000,
+		"label": "Tyrannosaurus",
+		"article":"trex.txt",
+		"accent": [235, 155, 75, 255],
+		"asset": 
+		{
+			"source": "Trex.flr",
+			"width": 800,
+			"height": 570,
+			"offset":-200
+		}
+	},
+	{
+		"date": -65000001,
+		"label": "Dinosaur Extinction",
+		"article":"dino_extinction.txt",
+		"accent": [235, 155, 75, 255],
+		"asset": 
+		{
+			"source": "Dinosaur_Demise/Dinosaur_Demise.nma",
+			"width": 700,
+			"height": 500,
+			"offset":-100
+		}
+	},
+	{
+		"start": -6000000,
+		"label": "Humans",
+		"article":"humans.txt",
+		"background": [255, 255, 255],
+		"accent": [202, 79, 63, 255],
+		"asset": 
+		{
+			"source": "humans.flr",
+			"width": 1068,
+			"height": 670,
+			"offset": 0,
+			"bounds":[-534,-670,1602,670],
+			"idle":["human_1", "human_2", "human_3", "human_4", "human_5"]
+		},
+		"ticks": 
+		{
+			"background": [245, 245, 245, 240],
+			"long": [0, 0, 0, 60],
+			"short": [0, 0, 0, 35],
+			"text": [0, 0, 0, 110]
+		},
+		"header": 
+		{
+			"background": [245, 245, 245, 240],
+			"text": [0, 0, 0, 110]
+		}
+	},
+	{
+		"date": -4000000,
+		"label": "Last Common\nAncestor with Apes",
+		"article":"last_common_ancestor_apes.txt",
+		"asset": 
+		{
+			"source": "Apes/Apes.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -40
+		}
+	},
+	{
+		"date": -3300000,
+		"label": "Constructed Tools",
+		"article":"tools.txt",
+		"asset": 
+		{
+			"source": "Constructive_Tools/Constructive_Tools.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -40
+		}
+	},
+	{
+		"date": -1500000,
+		"label": "Control Fire",
+		"article":"fire.txt",
+		"asset": 
+		{
+			"source": "Fire/Fire.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -50
+		}
+	},
+	{
+		"start": -300000,
+		"label": "Homo Sapiens Sapiens",
+		"article":"sapiens.txt",
+		"asset": 
+		{
+			"source": "Homo_Sapiens_Sapiens/Homo_Sapiens_Sapiens.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -40
+		}
+	},
+	{
+		"date": -12000,
+		"label": "First Temple",
+		"article":"first_temple.txt",
+		"asset": 
+		{
+			"source": "First_Temple/First_Temple.nma",
+			"width": 340,
+			"height": 340,
+			"offset": -200
+		}
+	},
+	{
+		"date": -10000,
+		"label": "Agricultural Revolution",
+		"article":"agricultural_revolution.txt",
+		"asset": 
+		{
+			"source": "Agricultural_evolution/Agricultural_evolution.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -40,
+			"loop":false
+		}
+	},
+	{
+		"date": -5000,
+		"label": "Writing",
+		"article":"writing.txt",
+		"asset": 
+		{
+			"source": "Writing/Writing.nma",
+			"width": 900,
+			"height": 1200,
+			"scale": 0.5,
+			"offset": -40,
+			"bounds":[-459,4,441,1204]
+		}
+	},
+	{
+		"date": -2630,
+		"label": "First Pyramid Built",
+		"article":"pyramids.txt",
+		"asset": 
+		{
+			"source": "Pyramid/Pyramid.nma",
+			"width": 400,
+			"height": 430,
+			"offset": -350
+		}
+	},
+	{
+		"date": -27,
+		"label": "Roman Empire",
+		"article":"roman_empire.txt",
+		"asset": 
+		{
+			"source": "Roma/Roma.nma",
+			"width": 2100,
+			"height": 1375,
+			"scale": 0.5,
+			"offset": 0,
+			"bounds":[-1030,-7.5,1070,1367.5]
+		}
+	},
+	{
+		"start": -3500,
+		"label": "Recorded History",
+		"article":"history.txt",
+		"asset": 
+		{
+			"source": "Recorded_history/Recorded_history.nma",
+			"width": 400,
+			"height": 400,
+			"offset": -200
+		}
+	},
+	{
+		"start": 1095,
+		"end": 1291,
+		"label": "Crusades",
+		"article":"crusades.txt",
+		"accent": [227, 21, 55, 255],
+		"asset": 
+		{
+			"source": "Crusades/Crusades.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -60
+		}
+	},
+	{
+		"date": 1687,
+		"label": "Newton's\nTheory of Gravity",
+		"article":"newton.txt",
+		"asset": 
+		{
+			"source": "Newton/Newton_v2.nma",
+			"width": 500,
+			"height": 500,
+			"idle":"apple_falls"
+		}
+	},
+	{
+		"date": 1760,
+		"label": "Industrialization",
+		"article":"industrialization.txt",
+		"asset": 
+		{
+			"source": "Industrialization/Industrialization.nma",
+			"width": 500,
+			"height": 500,
+			"offset": -100
+		}
+	},
+	{
+		"date": 1453,
+		"label": "Constantinople",
+		"article":"constantinople.txt",
+		"asset": 
+		{
+			"source": "Constantinople/Constantinople.nma",
+			"width": 500,
+			"height": 500
+		}
+	},
+	{
+		"start": 1347,
+		"end": 1351,
+		"label": "Black Plague",
+		"article":"black_plague.txt",
+		"asset": 
+		{
+			"source": "BlackPlague/BlackPlague.nma",
+			"width": 800,
+			"height": 400
+		}
+	},
+	{
+		"start": 1914,
+		"end": 1918,
+		"label": "World War I",
+		"article":"world_war_i.txt",
+		"accent": [227, 21, 55, 255],
+		"asset": 
+		{
+			"source": "World_War_I/World_War_I.nma",
+			"width": 528,
+			"height": 528
+		}
+	},
+	{
+		"start": 1947,
+		"end": 1991,
+		"label": "Cold War",
+		"accent": [227, 21, 55, 255],
+		"article":"cold_war.txt",
+		"asset": 
+		{
+			"source": "Cold_war/Cold_war.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -80
+		}
+	},
+	{
+		"date": 1969,
+		"label": "Moon Landing",
+		"article":"moon_landing.txt",
+		"accent": [115, 132, 205, 255],
+		"asset": 
+		{
+			"source": "Moon/Moon.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -100
+		}
+	},
+	{
+		"date": 1859,
+		"label": "Darwin's\nTheory of Evolution",
+		"article":"darwin.txt",
+		"asset": 
+		{
+			"source": "Darwin 2/Darwin 2.nma",
+			"width": 1850,
+			"height": 2100,
+			"scale": 0.22,
+			"offset": 0,
+			"bounds":[-934,-859,916,1241]
+		}
+	},
+	{
+		"date": 1952,
+		"label": "Nelson Mandela",
+		"article":"nelson_mandela.txt",
+		"asset": 
+		{
+			"source": "Nelson Mandela_v2/Nelson Mandela_v2.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -40
+		}
+	},
+	{
+		"date": 1867,
+		"label": "Marie Curie",
+		"article":"marie_curie.txt",
+		"asset": 
+		{
+			"source": "Marie_Curie/Marie_Curie.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -140
+		}
+	},
+	{
+		"date": 1903,
+		"label": "Suffragettes",
+		"article":"suffragette.txt",
+		"asset": 
+		{
+			"source": "Sufraggette_movement/Sufraggette_movement.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -40
+		}
+	},
+	{
+		"date": 1932,
+		"label": "Amelia Earhart",
+		"id":"amelia",
+		"article":"amelia_earhart.txt",
+		"asset":
+		{
+			"source": "Amelia_Earhart/Amelia_Earhart.flr",
+			"width": 528,
+			"height": 528,
+			"offset": -140
+		}
+	},
+	{
+		"start": 1939,
+		"end": 1945,
+		"label": "World War II",
+		"article":"world_war_ii.txt",
+		"accent": [227, 21, 55, 255],
+		"asset": 
+		{
+			"source": "World_War_II/World_War_II.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -140
+		}
+	},
+	{
+		"date": 1939,
+		"label": "Alan Turing",
+		"article":"alan_turing.txt",
+		"asset":
+		{
+			"source": "Alan_Turing/Alan_Turing.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -140
+		}
+	},
+	{
+		"date": 1963,
+		"label": "Martin Luther King, Jr.",
+		"article":"martin_luther_king.txt",
+		"id":"mlk",
+		"asset":
+		{
+			"source": "Martin Luther king/Martin Luther king.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -140
+		}
+	},
+	{
+		"date": 1990,
+		"label": "World Wide Web",
+		"accent": [115, 132, 205, 255],
+		"article":"internet.txt",
+		"asset": 
+		{
+			"source": "Internet/Internet.nma",
+			"width": 528,
+			"height": 528,
+			"offset": -140
+		}
+	}
+]
