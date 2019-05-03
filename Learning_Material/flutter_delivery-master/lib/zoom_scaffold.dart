@@ -47,14 +47,17 @@ class _ZoomScaffoldState extends State<ZoomScaffold> with TickerProviderStateMix
               backgroundColor: Colors.grey[200],
               elevation: 0.0,
               leading: new IconButton(
-                  icon: new Icon(Icons.menu, color: Colors.black,),
+                  icon: new Icon(Icons.menu, color: Colors.blueGrey,),
                   onPressed: () {
                     menuController.toggle();
                   }
               ),
               actions: <Widget>[
                 IconButton(
-                  onPressed: (){},
+                  onPressed: (){
+
+
+                  },
                   icon: Icon(Icons.access_time, color: Colors.grey,),
                 )
               ],
@@ -66,7 +69,10 @@ class _ZoomScaffoldState extends State<ZoomScaffold> with TickerProviderStateMix
               items: [
                 BottomNavigationBarItem(
                   title: Text(''),
-                  icon: Icon(Icons.home, color: Colors.grey,)
+                  icon: Icon(Icons.home, color: Colors.grey)
+
+
+
                 ),
                 BottomNavigationBarItem(
                     title: Text(''),
@@ -76,8 +82,10 @@ class _ZoomScaffoldState extends State<ZoomScaffold> with TickerProviderStateMix
                     title: Text(''),
                     icon: Icon(Icons.shopping_cart, color: Colors.grey)
                 ),BottomNavigationBarItem(
+
                     title: Text(''),
                     icon: Icon(Icons.person, color: Colors.grey)
+
                 ),
               ],
             ),
