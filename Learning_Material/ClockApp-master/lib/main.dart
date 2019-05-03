@@ -112,7 +112,7 @@ class BottomBar extends StatelessWidget {
           ),
           FloatingActionButton(
             child: Text(
-              "+",
+              "^_^",
               style: TextStyle(
                   color: Colors.blueAccent,
                   fontWeight: FontWeight.w700,
