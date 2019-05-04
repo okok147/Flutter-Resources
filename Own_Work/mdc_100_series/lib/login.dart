@@ -54,8 +54,10 @@ class _LoginPageState extends State<LoginPage> {
 
           //Two text fields,one for entering a username and the other for a password
           TextField (
+
             controller: _usernameController,
     decoration: InputDecoration(
+
     filled: true,
     labelText: 'UserName',
     ),
