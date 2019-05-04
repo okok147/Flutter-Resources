@@ -89,22 +89,21 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void onDonePress() {
+
+
+
+
     // Do what you want
   }
 
-  void onSkipPress() {
-    // Do what you want
-
-
-
-  }
+  //void onSkipPress() {}
 
   @override
   Widget build(BuildContext context) {
     return new IntroSlider(
       slides: this.slides,
       onDonePress: this.onDonePress,
-      onSkipPress: this.onSkipPress,
+      //onSkipPress: this.onSkipPress,
     );
   }
 }
