@@ -4,20 +4,13 @@ import 'package:intro_slider/intro_slider.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
-
-
   // This widget is the root of your application.
   @override
-
   Widget build(BuildContext context) {
-
-
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-
         // This is the theme of your application.
         //
         // Try running your application with "flutter run". You'll see the
@@ -35,7 +28,6 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
-
   MyHomePage({Key key, this.title}) : super(key: key);
 
   // This widget is the home page of your application. It is stateful, meaning
@@ -79,8 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
     slides.add(
       new Slide(
         title: "HAHA",
-        description:
-        "Start Now",
+        description: "Start Now",
         pathImage: "images/photo_ruler.png",
         backgroundColor: Color(0xff9932CC),
         backgroundBlendMode: BlendMode.darken,
@@ -89,10 +80,6 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void onDonePress() {
-
-
-
-
     // Do what you want
   }
 
