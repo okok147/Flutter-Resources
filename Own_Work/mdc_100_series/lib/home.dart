@@ -20,7 +20,6 @@ import 'model/products_repository.dart';
 import 'package:intl/intl.dart';
 
 class HomePage extends StatelessWidget {
-
   // TODO: Make a collection of cards (102)
 //MDC 102
 
@@ -39,7 +38,8 @@ class HomePage extends StatelessWidget {
       return Card(
         clipBehavior: Clip.antiAlias,
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+
+          crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
             AspectRatio(
               aspectRatio: 18 / 11,
@@ -51,18 +51,27 @@ class HomePage extends StatelessWidget {
             Expanded(
               child: Padding(
                 padding: EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
+
                 child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.end,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+
+
+
                   children: <Widget>[
+
                     Text(
-                      product.name,
-                      style: theme.textTheme.title,
+                      product == null ? '' : product.name,
+                      style: theme.textTheme.button,
+                      softWrap: false,
+                      overflow: TextOverflow.ellipsis,
                       maxLines: 1,
                     ),
-                    SizedBox(height: 8.0),
+
+                    SizedBox(height: 4.0),
                     Text(
-                      formatter.format(product.price),
-                      style: theme.textTheme.body2,
+                      product == null? '': formatter.format(product.price),
+                      style: theme.textTheme.caption,
                     ),
                   ],
                 ),
@@ -80,10 +89,8 @@ class HomePage extends StatelessWidget {
     // TODO: Return an AsymmetricView (104)
     // TODO: Pass Category variable to AsymmetricView (104)
     return Scaffold(
-
         appBar: AppBar(
           elevation: 10.0,
-
           brightness: Brightness.light,
           leading: IconButton(
               icon: Icon(
@@ -108,8 +115,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {},
             )
           ],
-            toolbarOpacity: 0.8,
-
+          toolbarOpacity: 0.8,
         ),
         body: GridView.count(
             crossAxisCount: 2,
