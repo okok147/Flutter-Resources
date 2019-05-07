@@ -19,8 +19,8 @@ import 'model/product.dart';
 import 'model/products_repository.dart';
 import 'package:intl/intl.dart';
 
-
 class HomePage extends StatelessWidget {
+
   // TODO: Make a collection of cards (102)
 //MDC 102
 
@@ -29,31 +29,26 @@ class HomePage extends StatelessWidget {
 
     if (products == null || products.isEmpty) {
       return const <Card>[];
-
-
     }
 
     final ThemeData theme = Theme.of(context);
     final NumberFormat formatter = NumberFormat.simpleCurrency(
-      locale: Localizations.localeOf(context).toString());
+        locale: Localizations.localeOf(context).toString());
 
-    return products.map((product)
-    {
-      return Card (
+    return products.map((product) {
+      return Card(
         clipBehavior: Clip.antiAlias,
-
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
             AspectRatio(
-              aspectRatio: 18 / 11 ,
+              aspectRatio: 18 / 11,
               child: Image.asset(
                 product.assetName,
                 package: product.assetPackage,
               ),
             ),
-
-            Expanded (
+            Expanded(
               child: Padding(
                 padding: EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
                 child: Column(
@@ -76,19 +71,8 @@ class HomePage extends StatelessWidget {
           ],
         ),
       );
-
     }).toList();
-
-
-
   }
-
-
-
-
-
-
-
 
   // TODO: Add a variable for Category (104)
   @override
@@ -96,62 +80,40 @@ class HomePage extends StatelessWidget {
     // TODO: Return an AsymmetricView (104)
     // TODO: Pass Category variable to AsymmetricView (104)
     return Scaffold(
-      backgroundColor: Colors.white12,
-      appBar: AppBar(
-        elevation: 10.0,
-        brightness: Brightness.light,
 
-
-
-
-
-        leading: IconButton(icon: Icon(Icons.menu,semanticLabel: 'menu',
-        ),
-            onPressed: () {
-
-            }
-
-
-        ),
-        title: Text('SHRRINNEEE'),
-
-
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(
-              Icons.search,semanticLabel: 'search',
+        appBar: AppBar(
+          elevation: 10.0,
+          brightness: Brightness.light,
+          leading: IconButton(
+              icon: Icon(
+                Icons.menu,
+                semanticLabel: 'menu',
+              ),
+              onPressed: () {}),
+          title: Text('SHRRINNEEE'),
+          actions: <Widget>[
+            IconButton(
+              icon: Icon(
+                Icons.search,
+                semanticLabel: 'search',
+              ),
+              onPressed: () {},
             ),
-            onPressed: (){
-
-            },
-          ),
-
-
-          IconButton(
-
-            icon: Icon(Icons.tune,semanticLabel: 'filter',
-            ),
-
-            onPressed: (){
-
-            },
-          )
-        ],
-
-        backgroundColor: Colors.blueGrey,toolbarOpacity: 0.9,
+            IconButton(
+              icon: Icon(
+                Icons.tune,
+                semanticLabel: 'filter',
+              ),
+              onPressed: () {},
+            )
+          ],
 
 
-      ),
-
-
-
-        body: GridView.count(crossAxisCount: 2,
-        padding: EdgeInsets.all(16.0),
-        childAspectRatio: 8.0 / 9.0,
-        children: _buildGridCards(context)
-        )
-
-
-    );
+        ),
+        body: GridView.count(
+            crossAxisCount: 2,
+            padding: EdgeInsets.all(16.0),
+            childAspectRatio: 8.0 / 9.0,
+            children: _buildGridCards(context)));
   }
 }

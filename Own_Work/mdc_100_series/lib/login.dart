@@ -26,7 +26,7 @@ class _LoginPageState extends State<LoginPage> {
               SizedBox(height: 16.0),
 
               //The name of the app(Shrine)
-              Text('SHRRINE'),
+              Text('Login SHRINE'),
             ],
           ),
           SizedBox(height: 120.0),
