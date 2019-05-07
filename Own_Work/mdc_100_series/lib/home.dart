@@ -83,6 +83,7 @@ class HomePage extends StatelessWidget {
 
         appBar: AppBar(
           elevation: 10.0,
+
           brightness: Brightness.light,
           leading: IconButton(
               icon: Icon(
@@ -107,7 +108,7 @@ class HomePage extends StatelessWidget {
               onPressed: () {},
             )
           ],
-
+            toolbarOpacity: 0.8,
 
         ),
         body: GridView.count(
