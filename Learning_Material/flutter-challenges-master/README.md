@@ -4,7 +4,7 @@
 
 <img src="ss1.png" height="300em" /> <img src="ss2.png" height="300em" /> <img src="ss3.gif" height="300em" /> <img src="ss3.png" height="300em" /> <img src="ss4.png" height="300em" /> <img src="ss5.gif" height="300em" /> <img src="ss5.png" height="300em" /> <img src="ss6.png" height="300em" />
 <img src="ss6.gif" height="300em" /> <img src="ss7.png" height="300em" /> <img src="ss8.png" height="300em" /> <img src="ss9.png" height="300em" />
-<img src="ss10.png" height="300em" /> <img src="ss11.png" height="300em" />
+<img src="ss10.png" height="300em" /> <img src="ss11.png" height="300em" /> <img src="ss7.gif" height="300em" />
 
 ### Created & Maintained By
 
@@ -25,9 +25,9 @@
 
 # Donate
 
-> Si encontró útil este proyecto o aprendió algo del código fuente y quiere agradecerme, considere comprarme una taza de café. : )
+> Si encontró útil este proyecto o aprendió algo del código fuente y quiere agradecerme, considere comprarme una taza de :coffee: : )
 >
-> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of cofee : )
+> If you found this project helpful or you learned something from the source code and want to thank me, consider buying me a cup of :coffee: : )
 >
 > - [PayPal](https://www.paypal.me/javierglezrdguez)
 
