@@ -1,0 +1,49 @@
+version: 2.1
+jobs:
+  test:
+
+    docker:
+      - image: circleci/android:api-28
+
+    environment:
+      JVM_OPTS: -Xmx3200m
+
+    steps:
+      - checkout
+      - run:
+          name: "Update Submodules"
+          command: |
+            git submodule init
+            git submodule update --recursive
+      - run:
+          name: Install Flutter
+          command: |
+            git clone https://github.com/flutter/flutter.git -b v1.5.4
+            ./flutter/bin/flutter doctor
+            ./flutter/bin/flutter packages get
+
+      - run:
+          name: Check formatting
+          command: |
+            ./flutter/bin/cache/dart-sdk/bin/dartfmt -n --set-exit-if-changed ./lib
+
+      - run:
+          name: Static Analysis
+          command: |
+            ./flutter/bin/cache/dart-sdk/bin/dartanalyzer --fatal-infos --fatal-warnings ./lib
+
+      - run:
+          name: Test App
+          command: |
+            ./flutter/bin/flutter test
+
+      - run:
+          name: Build App
+          command: |
+            ./flutter/bin/flutter build apk
+
+workflows:
+  version: 2
+  build:
+    jobs:
+      - test
