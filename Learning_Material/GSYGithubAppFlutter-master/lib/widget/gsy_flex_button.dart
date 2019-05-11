@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 /**
+ * //退出登錄
  * 充满的button
  * Created by guoshuyu
  * Date: 2018-07-16
@@ -26,7 +27,7 @@ class GSYFlexButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new RaisedButton(
-        padding: new EdgeInsets.only(left: 20.0, top: 10.0, right: 20.0, bottom: 10.0),
+        padding: new EdgeInsets.only(left: 20.0, top: 20.0, right: 20.0, bottom: 10.0),
         textColor: textColor,
         color: color,
         child: new Flex(
