@@ -1,0 +1,4 @@
+#Sun May 12 12:47:26 HKT 2019
+base.0=/Users/ok/Desktop/quiz_app_ui/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
