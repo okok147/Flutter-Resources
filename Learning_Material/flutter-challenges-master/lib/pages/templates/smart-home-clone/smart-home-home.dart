@@ -232,7 +232,7 @@ class _SmartHomeState extends State<SmartHome>
                     Visibility(
                       visible: _heightAnimation.value > 210,
                       child: Icon(
-                        Icons.history,
+                        Icons.drag_handle,
                         color: Colors.white,
                         size: _iconSizeAnimation.value,
                       ),
@@ -240,7 +240,7 @@ class _SmartHomeState extends State<SmartHome>
                     Visibility(
                       visible: _heightAnimation.value > 160,
                       child: Icon(
-                        Icons.history,
+                        Icons.youtube_searched_for,
                         color: Colors.white,
                         size: _iconSizeAnimation.value,
                       ),
