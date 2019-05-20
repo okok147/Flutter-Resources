@@ -1,2 +1,0 @@
-gitbook build
-./cdn.sh
