@@ -62,7 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
     return new Scaffold(
       appBar: new AppBar(
 
-        bottomOpacity: 0.5,
+        bottomOpacity: 0.7,
         leading: IconButton(
 
           icon: Icon(Icons.whatshot),color: Colors.redAccent,
@@ -80,6 +80,24 @@ class _MyHomePageState extends State<MyHomePage> {
            padding: const EdgeInsets.all(0.0),
            child: Text('無聊吧',textAlign: TextAlign.center,),
          ),
+
+
+
+        actions: <Widget>[
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: IconButton(
+              icon: Icon(Icons.message,color: Colors.lightGreenAccent,),
+              onPressed: (){
+
+              },
+            ),
+          ),
+        ],
+
+
+
+
 
 
       ),
