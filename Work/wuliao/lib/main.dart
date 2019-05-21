@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
 
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: '說樹',
+      title: '無聊吧',
       theme: new ThemeData(
 
         brightness:Brightness.dark,
