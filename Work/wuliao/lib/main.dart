@@ -76,7 +76,10 @@ class _MyHomePageState extends State<MyHomePage> {
 
         title:
 
-         Text('無聊吧',textAlign: TextAlign.center,),
+         Padding(
+           padding: const EdgeInsets.all(0.0),
+           child: Text('無聊吧',textAlign: TextAlign.center,),
+         ),
 
 
       ),
