@@ -112,8 +112,8 @@ class _MyHomePageState extends State<MyHomePage> {
               title: new Text('搜尋'),
             ),
             new BottomNavigationBarItem(
-              icon: const Icon(Icons.favorite_border),
-              title: new Text('最愛')
+              icon: const Icon(Icons.settings),
+              title: new Text('設定')
             ),
           ]
 
