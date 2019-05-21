@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:testing/Homepage.dart';
 import 'package:testing/Search.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
 
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Generated App',
+      title: '無聊吧',
       theme: new ThemeData(
 
         brightness:Brightness.dark,
@@ -61,7 +62,23 @@ class _MyHomePageState extends State<MyHomePage> {
     return new Scaffold(
       appBar: new AppBar(
 
-        title: Center(child: new Text('無聊吧')),
+        bottomOpacity: 0.5,
+        leading: IconButton(
+
+          icon: Icon(Icons.whatshot),color: Colors.redAccent,
+          onPressed: (){
+
+
+          },
+        ),
+
+
+
+        title:
+
+         Text('無聊吧',textAlign: TextAlign.center,),
+
+
       ),
       body:
       callPage(_currentIndex),
