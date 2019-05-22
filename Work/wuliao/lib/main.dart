@@ -39,8 +39,6 @@ class _MyHomePageState extends State<MyHomePage> {
     switch (currentIndex) {
       case 0:
         return HomePage();
-      case 1:
-        return SearchPage();
     }
   }
 
@@ -83,15 +81,17 @@ class _MyHomePageState extends State<MyHomePage> {
           selectedItemColor: Color(0xFF64ffda),
           items: [
             new BottomNavigationBarItem(
-              icon: const Icon(Icons.people),
+              icon: const Icon(Icons.person),
               title: new Text('開聊'),
+
+
             ),
+
+
+
             new BottomNavigationBarItem(
-              icon: const Icon(Icons.search),
-              title: new Text('搜尋'),
-            ),
-            new BottomNavigationBarItem(
-                icon: const Icon(Icons.settings), title: new Text('設定')),
+                icon: const Icon(Icons.settings),
+                title: new Text('設定')),
           ]),
     );
   }
