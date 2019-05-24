@@ -16,9 +16,9 @@ class MyApp extends StatelessWidget {
       theme: new ThemeData(
         brightness: Brightness.dark,
         primarySwatch: Colors.blue,
-        primaryColor: const Color(0xFF212121),
-        accentColor: const Color(0xFF64ffda),
-        canvasColor: const Color(0xFF303030),
+        primaryColor: Colors.white,
+        accentColor: Colors.black,
+        canvasColor: Colors.white,
       ),
       home: new MyHomePage(),
     );
@@ -61,7 +61,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: IconButton(
               icon: Icon(
                 Icons.message,
-                color: Colors.lightGreenAccent,
+                color: Colors.green,
               ),
               onPressed: () {},
             ),
@@ -70,7 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: callPage(_currentIndex),
       bottomNavigationBar: new BottomNavigationBar(
-          elevation: 15.0,
+          elevation: 10.0,
 
           //how to change thee selected page with currentIndex in BottomNavigationBar
           currentIndex: _currentIndex,
@@ -78,11 +78,12 @@ class _MyHomePageState extends State<MyHomePage> {
             _currentIndex = value;
             setState(() {});
           },
-          selectedItemColor: Color(0xFF64ffda),
+          selectedItemColor: Colors.black,
           items: [
             new BottomNavigationBarItem(
-              icon: const Icon(Icons.person),
-              title: new Text('開聊'),
+              icon: const Icon(Icons.person,color: Colors.blueAccent,),
+              title: new Text('開聊',
+              ),
 
 
             ),
@@ -90,7 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
             new BottomNavigationBarItem(
-                icon: const Icon(Icons.settings),
+                icon: const Icon(Icons.settings,color: Colors.blueAccent,),
                 title: new Text('設定')),
           ]),
     );
