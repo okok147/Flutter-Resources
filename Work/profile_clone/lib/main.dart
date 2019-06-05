@@ -48,7 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     onPressed: () {},
                   ),
 
-                  Spacer(),
+                  Spacer(flex: 1,),
 
 
 
@@ -57,7 +57,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
                   ),
 
-                  Spacer(),
+                  Spacer(flex: 1,),
 
 
                   IconButton(
