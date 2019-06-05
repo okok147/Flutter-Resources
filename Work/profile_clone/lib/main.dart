@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text(
                     "Mockups",
                     style: new TextStyle(
-                        fontWeight: FontWeight.w500, fontSize: 25.0),
+                        fontWeight: FontWeight.w600, fontSize: 25.0),
                   ),
                   Spacer(
                     flex: 1,
