@@ -12,12 +12,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: '無聊吧',
+
       theme: new ThemeData(
-        brightness: Brightness.dark,
-        primarySwatch: Colors.blue,
+
+        primarySwatch: Colors.green,
         primaryColor: Colors.white,
-        accentColor: Colors.black,
         canvasColor: Colors.white,
       ),
       home: new MyHomePage(),
@@ -46,31 +45,30 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        bottomOpacity: 0.7,
+
         leading: IconButton(
-          icon: Icon(Icons.whatshot),
-          color: Colors.redAccent,
+          icon: Icon(Icons.keyboard_arrow_left),
+          color: Colors.black,
           onPressed: () {},
         ),
-        title: Padding(
-            padding: const EdgeInsets.all(0.0),
-            child: Text('無聊吧', textAlign: TextAlign.center)),
+
         actions: <Widget>[
           Padding(
             padding: const EdgeInsets.all(8.0),
             child: IconButton(
               icon: Icon(
-                Icons.message,
-                color: Colors.green,
+                Icons.search,
+                color: Colors.black,
+                size: 20.0,
               ),
-              onPressed: ,
+              onPressed: (){},
             ),
           ),
         ],
       ),
       body: callPage(_currentIndex),
       bottomNavigationBar: new BottomNavigationBar(
-          elevation: 10.0,
+
 
           //how to change thee selected page with currentIndex in BottomNavigationBar
           currentIndex: _currentIndex,
