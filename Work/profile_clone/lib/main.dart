@@ -28,7 +28,7 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-       // (0xffE8E8F3)
+       // (0xffE8E8F3) for original colour
 
       body: SingleChildScrollView(
 
