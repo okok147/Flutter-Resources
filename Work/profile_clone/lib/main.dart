@@ -28,16 +28,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-       // (0xffE8E8F3) for original colour
+      // (0xffE8E8F3) for original colour
 
       body: SingleChildScrollView(
-
         child: Column(
           children: <Widget>[
             Padding(
-              padding: const EdgeInsets.only(left: 16.0, top: 50.0,right: 16.0,bottom: 8.0),
+              padding: const EdgeInsets.only(
+                  left: 16.0, top: 50.0, right: 16.0, bottom: 8.0),
               child: Row(
-
                 children: <Widget>[
                   IconButton(
                     icon: Icon(
@@ -47,28 +46,25 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     onPressed: () {},
                   ),
-
-                  Spacer(flex: 1,),
-
-
-
-                  Text(
-                    "Mockups",style: new TextStyle(fontWeight: FontWeight.w500,fontSize: 25.0),
-
+                  Spacer(
+                    flex: 1,
                   ),
-
-                  Spacer(flex: 1,),
-
-
+                  Text(
+                    "Mockups",
+                    style: new TextStyle(
+                        fontWeight: FontWeight.w500, fontSize: 25.0),
+                  ),
+                  Spacer(
+                    flex: 1,
+                  ),
                   IconButton(
                     icon: Icon(
                       Icons.menu,
                       color: Color(0xff080708),
                       size: 30.0,
                     ),
-                    onPressed: (){},
+                    onPressed: () {},
                   ),
-
                 ],
               ),
             )
