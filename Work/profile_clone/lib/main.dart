@@ -27,31 +27,43 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
+       // (0xffE8E8F3)
+
       body: SingleChildScrollView(
+
         child: Column(
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(left: 16.0, top: 50.0,right: 16.0,bottom: 8.0),
               child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
                 children: <Widget>[
                   IconButton(
                     icon: Icon(
                       Icons.chevron_left,
-                      color: Colors.black,
+                      color: Color(0xff080708),
                       size: 30.0,
                     ),
                     onPressed: () {},
                   ),
 
+                  Spacer(),
+
+
+
                   Text(
                     "Mockups",style: new TextStyle(fontWeight: FontWeight.w500,fontSize: 25.0),
 
                   ),
+
+                  Spacer(),
+
+
                   IconButton(
                     icon: Icon(
                       Icons.menu,
-                      color: Colors.black,
+                      color: Color(0xff080708),
                       size: 30.0,
                     ),
                     onPressed: (){},
