@@ -30,46 +30,46 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.white,
       // (0xffE8E8F3) for original colour
 
-      body: SingleChildScrollView(
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.only(
-                  left: 16.0, top: 50.0, right: 16.0, bottom: 8.0),
-              child: Row(
-                children: <Widget>[
-                  IconButton(
-                    icon: Icon(
-                      Icons.chevron_left,
-                      color: Color(0xff080708),
-                      size: 30.0,
-                    ),
-                    onPressed: () {},
+      body: ListView(
+        children: <Widget>[
+          Padding(
+            padding: const EdgeInsets.only(
+                left: 16.0, right: 16.0, bottom: 8.0, top: 8.0),
+            child: Row(
+              children: <Widget>[
+                IconButton(
+                  icon: Icon(
+                    Icons.chevron_left,
+                    color: Color(0xff080708),
+                    size: 30.0,
                   ),
-                  Spacer(
-                    flex: 1,
+                  onPressed: () {},
+                ),
+                Spacer(),
+                Text(
+                  "Mockups",
+                  style: new TextStyle(
+                      fontSize: 25.0, fontWeight: FontWeight.w600),
+                ),
+                Spacer(),
+                IconButton(
+                  icon: Icon(
+                    Icons.menu,
+                    color: Color(0xff080708),
+                    size: 30.0,
                   ),
-                  Text(
-                    "Mockups",
-                    style: new TextStyle(
-                        fontWeight: FontWeight.w600, fontSize: 25.0),
-                  ),
-                  Spacer(
-                    flex: 1,
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      Icons.menu,
-                      color: Color(0xff080708),
-                      size: 30.0,
-                    ),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-            )
-          ],
-        ),
+                  onPressed: () {},
+                )
+              ],
+            ),
+          ),
+
+          Container(
+            child: Text(
+              "Hi"
+            ),
+          ),
+        ],
       ),
     );
   }
