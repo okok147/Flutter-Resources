@@ -30,12 +30,12 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.white,
       // (0xffE8E8F3) for original colour
 
-      body: ListView(
-        children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.only(
-                left: 16.0, right: 16.0, bottom: 8.0, top: 8.0),
-            child: Row(
+      body: Padding(
+        padding: const EdgeInsets.only(
+            left: 16.0, right: 16.0, bottom: 8.0, top: 8.0),
+        child: ListView(
+          children: <Widget>[
+            Row(
               children: <Widget>[
                 IconButton(
                   icon: Icon(
@@ -62,14 +62,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               ],
             ),
-          ),
+            Container(
 
-          Container(
-            child: Text(
-              "Hi"
+              child: ,
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
