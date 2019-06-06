@@ -99,42 +99,60 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: const EdgeInsets.only(top: 16.0),
               child: Container(
-                
                 height: 300.0,
                 child: Column(
                   children: <Widget>[
                     Expanded(
-                      flex: 6,
-                      child: Stack(
-                        children: <Widget>[
-                          Positioned(
-                            top: 10.0,
-                            left: 0.0,
-                            right: 0.0,
-                            child: Card(
-
-                              color: Colors.green,shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8.0),
-                            ),
-                              child: Container(
-                                height: 200.0,
+                        flex: 6,
+                        child: Stack(
+                          children: <Widget>[
+                            Positioned(
+                              top: 10.0,
+                              left: 0.0,
+                              right: 0.0,
+                              child: new Container(
+                                height: 300.0,
+                                width: 1000.0,
+                                decoration: new BoxDecoration(
+                                    color: Color(0xffFEC13E),
+                                    borderRadius: new BorderRadius.only(
+                                        topLeft: const Radius.circular(30.0))),
+                                child: Text('Replace with background image'),
                               ),
-                              
-                              
-
                             ),
-
-
-                          )
-                        ],
-
-                      )
-                    ),
+                          ],
+                        )),
                     Expanded(
-                      flex: 4,
-                      child: Container(color: Colors.white,
-                      ),
-                    )
+                        flex: 4,
+                        child: Stack(
+                          children: <Widget>[
+                            Positioned(
+                              child: new Container(
+                                height: 300.0,
+                                width: 1000.0,
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        bottomRight:
+                                            const Radius.circular(30.0))),
+                                child: Column(
+                                  children: <Widget>[
+                                    Padding(
+                                      padding: const EdgeInsets.all(16.0),
+                                      child: Row(
+                                        children: <Widget>[
+                                          Text('Hi'),
+                                          Spacer(),
+                                          Text('World!'),
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ],
+                        )),
                   ],
                 ),
               ),
