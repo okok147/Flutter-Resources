@@ -27,12 +27,12 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xffFAFAFA),
       // (0xffE8E8F3) for original colour
 
       body: Padding(
-        padding: const EdgeInsets.only(
-            left: 16.0, right: 16.0, bottom: 8.0, top: 8.0),
+        padding:
+            const EdgeInsets.only(left: 0.0, right: 0.0, bottom: 8.0, top: 8.0),
         child: ListView(
           children: <Widget>[
             Row(
@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   icon: Icon(
                     Icons.chevron_left,
                     color: Color(0xff080708),
-                    size: 30.0,
+                    size: 25.0,
                   ),
                   onPressed: () {},
                 ),
@@ -49,22 +49,63 @@ class _MyHomePageState extends State<MyHomePage> {
                 Text(
                   "Mockups",
                   style: new TextStyle(
-                      fontSize: 25.0, fontWeight: FontWeight.w600),
+                      fontSize: 20.0, fontWeight: FontWeight.w600),
                 ),
                 Spacer(),
                 IconButton(
                   icon: Icon(
-                    Icons.menu,
+                    Icons.search,
                     color: Color(0xff080708),
-                    size: 30.0,
+                    size: 20.0,
                   ),
                   onPressed: () {},
                 )
               ],
             ),
-            Container(
-
-              child: ,
+            /*Stack(
+              children: <Widget>[
+                Positioned(
+                  bottom: 0.0,
+                  left: 0.0,
+                  right: 0.0,
+                  top: 16.0,
+                  child: Card(
+                    elevation: 3.0,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.only(topLeft: const Radius.circular(30.0)),
+                    ),
+                  ),
+                ),
+                Container(height: 200.0, child: Column()),
+                Positioned(
+                  top: 36.0,
+                  child: Column(
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text('123'),
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text('456'),
+                      )
+                    ],
+                  ),
+                ),
+              ],
+            ),*/
+            Padding(
+              padding: const EdgeInsets.only(top: 16.0),
+              child: Container(
+                height: 300.0,
+                decoration: BoxDecoration(
+                    borderRadius:
+                        BorderRadius.only(topLeft: const Radius.circular(30.0)),
+                    gradient: new LinearGradient(colors: [
+                      const Color(0xff662d8c),
+                      const Color(0xffed1e79),
+                    ])),
+              ),
             ),
           ],
         ),
