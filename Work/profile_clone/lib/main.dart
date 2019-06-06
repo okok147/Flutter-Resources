@@ -62,6 +62,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 )
               ],
             ),
+
             /*Stack(
               children: <Widget>[
                 Positioned(
@@ -94,17 +95,48 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ],
             ),*/
+
             Padding(
               padding: const EdgeInsets.only(top: 16.0),
               child: Container(
+                
                 height: 300.0,
-                decoration: BoxDecoration(
-                    borderRadius:
-                        BorderRadius.only(topLeft: const Radius.circular(30.0)),
-                    gradient: new LinearGradient(colors: [
-                      const Color(0xff662d8c),
-                      const Color(0xffed1e79),
-                    ])),
+                child: Column(
+                  children: <Widget>[
+                    Expanded(
+                      flex: 6,
+                      child: Stack(
+                        children: <Widget>[
+                          Positioned(
+                            top: 10.0,
+                            left: 0.0,
+                            right: 0.0,
+                            child: Card(
+
+                              color: Colors.green,shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8.0),
+                            ),
+                              child: Container(
+                                height: 200.0,
+                              ),
+                              
+                              
+
+                            ),
+
+
+                          )
+                        ],
+
+                      )
+                    ),
+                    Expanded(
+                      flex: 4,
+                      child: Container(color: Colors.white,
+                      ),
+                    )
+                  ],
+                ),
               ),
             ),
           ],
