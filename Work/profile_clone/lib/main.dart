@@ -121,8 +121,8 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                             Positioned(
-                              top: 20.0,
-                              left: 40.0,
+                              top: 10.0,
+                              left: 0.0,
                               child: new Container(
                                 height: 30.0,
                                 width: 30.0,
