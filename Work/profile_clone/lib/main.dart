@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(primaryColor: Colors.white),
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: MyHomePage(),
     );
   }
 }
@@ -106,18 +106,38 @@ class _MyHomePageState extends State<MyHomePage> {
                         flex: 6,
                         child: Stack(
                           children: <Widget>[
-                            Positioned(
-                              top: 10.0,
-                              left: 0.0,
-                              right: 0.0,
+                            Positioned.fill(
                               child: new Container(
                                 height: 300.0,
-                                width: 1000.0,
                                 decoration: new BoxDecoration(
-                                    color: Color(0xffFEC13E),
                                     borderRadius: new BorderRadius.only(
-                                        topLeft: const Radius.circular(30.0))),
-                                child: Text('Replace with background image'),
+                                      topLeft: const Radius.circular(30.0),
+                                    ),
+                                    image: DecorationImage(
+                                      image:
+                                          AssetImage('assets/blue_plate.png'),
+                                      fit: BoxFit.fill,
+                                    )),
+                              ),
+                            ),
+                            Positioned(
+                              top: 20.0,
+                              left: 40.0,
+                              child: new Container(
+                                height: 30.0,
+                                width: 30.0,
+                                decoration: new BoxDecoration(
+                                    borderRadius:
+                                        new BorderRadius.circular(20.0),
+                                    color: Colors.white),
+                                child: new IconButton(
+                                  splashColor: Colors.redAccent,
+                                  highlightColor: Colors.red,
+                                  alignment: Alignment.topLeft,
+                                  icon: Icon(Icons.add_shopping_cart,
+                                      color: Colors.blue, size: 17.0),
+                                  onPressed: () {},
+                                ),
                               ),
                             ),
                           ],
@@ -141,9 +161,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                       padding: const EdgeInsets.all(16.0),
                                       child: Row(
                                         children: <Widget>[
-                                          Text('Hi'),
+                                          Text(' '),
                                           Spacer(),
-                                          Text('World!'),
+                                          Text(' '),
                                         ],
                                       ),
                                     ),
