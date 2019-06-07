@@ -115,14 +115,14 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                     image: DecorationImage(
                                       image:
-                                          AssetImage('assets/blue_plate.png'),
-                                      fit: BoxFit.fill,
+                                          AssetImage('assets/summer_girl.png'),
+                                      fit: BoxFit.fitWidth,
                                     )),
                               ),
                             ),
                             Positioned(
-                              top: 10.0,
-                              left: 0.0,
+                              top: 20.0,
+                              left: 20.0,
                               child: new Container(
                                 height: 30.0,
                                 width: 30.0,
@@ -132,9 +132,9 @@ class _MyHomePageState extends State<MyHomePage> {
                                     color: Colors.white),
                                 child: new IconButton(
                                   splashColor: Colors.redAccent,
-                                  alignment: Alignment.topLeft,
-                                  icon: Icon(Icons.add_shopping_cart,
-                                      color: Colors.blue, size: 17.0),
+                                  alignment: Alignment.center,
+                                  icon: Icon(Icons.wb_incandescent,
+                                      color: Colors.orangeAccent, size: 17.0),
                                   onPressed: () {},
                                 ),
                               ),
@@ -157,12 +157,24 @@ class _MyHomePageState extends State<MyHomePage> {
                                 child: Column(
                                   children: <Widget>[
                                     Padding(
-                                      padding: const EdgeInsets.all(16.0),
+                                      padding: const EdgeInsets.only(
+                                          top: 30.0, left: 25.0),
                                       child: Row(
                                         children: <Widget>[
-                                          Text(' '),
+                                          Text(
+                                            '10 Flat Mockups',
+                                            style: TextStyle(
+                                                fontWeight: FontWeight.bold),
+                                          ),
                                           Spacer(),
-                                          Text(' '),
+                                          Padding(
+                                            padding: const EdgeInsets.only(top: 0.0,right: 20.0),
+                                            child: Text(
+                                              "\$\ 19",
+                                              style:
+                                                  TextStyle(color: Colors.deepOrange, fontWeight: FontWeight.bold),
+                                            ),
+                                          ),
                                         ],
                                       ),
                                     ),
