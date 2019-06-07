@@ -99,7 +99,7 @@ class _MyHomePageState extends State<MyHomePage> {
             Padding(
               padding: const EdgeInsets.only(top: 16.0),
               child: Container(
-                height: 300.0,
+                height: 350.0,
                 child: Column(
                   children: <Widget>[
                     Expanded(
@@ -121,21 +121,20 @@ class _MyHomePageState extends State<MyHomePage> {
                               ),
                             ),
                             Positioned(
-                              top: 20.0,
-                              left: 20.0,
-                              child: new Container(
-                                height: 30.0,
-                                width: 30.0,
-                                decoration: new BoxDecoration(
-                                    borderRadius:
-                                        new BorderRadius.circular(20.0),
-                                    color: Colors.white),
-                                child: new IconButton(
-                                  splashColor: Colors.redAccent,
-                                  alignment: Alignment.center,
-                                  icon: Icon(Icons.wb_incandescent,
-                                      color: Colors.orangeAccent, size: 17.0),
-                                  onPressed: () {},
+                              top: 25.0,
+                              left: 25.0,
+                              child: new Material(
+                                shape: CircleBorder(),
+                                shadowColor: Colors.transparent,
+                                color: Colors.white,
+                                child: Ink.image(
+                                  image: AssetImage('assets/sketch_icon.png'),
+                                  fit: BoxFit.cover,
+                                  width: 30.0,
+                                  height: 30.0,
+                                  child: InkWell(
+                                    onTap: () {},
+                                  ),
                                 ),
                               ),
                             ),
@@ -147,38 +146,235 @@ class _MyHomePageState extends State<MyHomePage> {
                           children: <Widget>[
                             Positioned(
                               child: new Container(
-                                height: 300.0,
+                                height: 500.0,
                                 width: 1000.0,
                                 decoration: new BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: new BorderRadius.only(
                                         bottomRight:
                                             const Radius.circular(30.0))),
-                                child: Column(
-                                  children: <Widget>[
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                          top: 30.0, left: 25.0),
-                                      child: Row(
-                                        children: <Widget>[
-                                          Text(
-                                            '10 Flat Mockups',
-                                            style: TextStyle(
-                                                fontWeight: FontWeight.bold),
-                                          ),
-                                          Spacer(),
-                                          Padding(
-                                            padding: const EdgeInsets.only(top: 0.0,right: 20.0),
-                                            child: Text(
-                                              "\$\ 19",
-                                              style:
-                                                  TextStyle(color: Colors.deepOrange, fontWeight: FontWeight.bold),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      top: 30.0, left: 30.0, right: 30.0),
+                                  child: Column(
+                                    children: <Widget>[
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            top: 0.0, left: 0.0),
+                                        child: Row(
+                                          children: <Widget>[
+                                            Text(
+                                              '10 Flat Mockups',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold),
                                             ),
-                                          ),
-                                        ],
+                                            Spacer(),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                top: 0.0,
+                                              ),
+                                              child: Text(
+                                                "\$\ 19",
+                                                style: TextStyle(
+                                                    color:
+                                                        Colors.deepOrangeAccent,
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                          top: 20.0,
+                                          bottom: 0.0,
+                                        ),
+                                        child: Row(
+                                          children: <Widget>[
+                                            new Material(
+                                              shape: CircleBorder(),
+                                              shadowColor: Colors.transparent,
+                                              color: Colors.white,
+                                              child: Ink.image(
+                                                image: AssetImage(
+                                                    'assets/women_icon.png'),
+                                                fit: BoxFit.cover,
+                                                width: 30.0,
+                                                height: 30.0,
+                                                child: InkWell(
+                                                  onTap: () {},
+                                                ),
+                                              ),
+                                            ),
+                                            Spacer(
+                                              flex: 1,
+                                            ),
+                                            Text('Lily'),
+                                            Spacer(
+                                              flex: 15,
+                                            ),
+                                            IconButton(
+                                              icon: Icon(
+                                                Icons.favorite,
+                                                color: Colors.orangeAccent,
+                                                size: 20.0,
+                                              ),
+                                            ),
+                                            Text('1980')
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        )),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              height: 20.0,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(top: 16.0),
+              child: Container(
+                height: 350.0,
+                child: Column(
+                  children: <Widget>[
+                    Expanded(
+                        flex: 6,
+                        child: Stack(
+                          children: <Widget>[
+                            Positioned.fill(
+                              child: new Container(
+                                height: 300.0,
+                                decoration: new BoxDecoration(
+                                    borderRadius: new BorderRadius.only(
+                                      topLeft: const Radius.circular(30.0),
                                     ),
-                                  ],
+                                    image: DecorationImage(
+                                      image:
+                                          AssetImage('assets/green_walk.jpg'),
+                                      fit: BoxFit.fitWidth,
+                                    )),
+                              ),
+                            ),
+                            Positioned(
+                              top: 25.0,
+                              left: 25.0,
+                              child: new Container(
+                                child: new Material(
+                                  shape: CircleBorder(),
+                                  shadowColor: Colors.transparent,
+                                  color: Colors.white,
+                                  child: Ink.image(
+                                    image: AssetImage('assets/figma_icon.png'),
+                                    fit: BoxFit.cover,
+                                    width: 30.0,
+                                    height: 30.0,
+                                    child: InkWell(
+                                      onTap: () {},
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        )),
+                    Expanded(
+
+                        flex: 4,
+                        child: Stack(
+
+                          children: <Widget>[
+
+                            Positioned(
+                              child: new Container(
+                                height: 500.0,
+                                width: 1000.0,
+                                decoration: new BoxDecoration(
+                                    color: Colors.white,
+                                    borderRadius: new BorderRadius.only(
+                                        bottomRight:
+                                            const Radius.circular(30.0))),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(
+                                      top: 30.0, left: 30.0, right: 30.0),
+                                  child: Column(
+                                    children: <Widget>[
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            top: 0.0, left: 0.0),
+                                        child: Row(
+                                          children: <Widget>[
+                                            Text(
+                                              'Apple Devices Mockups',
+                                              style: TextStyle(
+                                                  fontWeight: FontWeight.bold),
+                                            ),
+                                            Spacer(),
+                                            Padding(
+                                              padding: const EdgeInsets.only(
+                                                top: 0.0,
+                                              ),
+                                              child: Text(
+                                                "\$\ 15",
+                                                style: TextStyle(
+                                                    color:
+                                                        Colors.deepOrangeAccent,
+                                                    fontWeight:
+                                                        FontWeight.bold),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                          top: 20.0,
+                                          bottom: 0.0,
+                                        ),
+                                        child: Row(
+                                          children: <Widget>[
+                                            new Material(
+                                              borderRadius: BorderRadius.circular(30.0),
+                                              color: Colors.transparent,
+                                              child: Ink.image(
+                                                image: AssetImage(
+                                                    'assets/men_icon.png'),
+
+                                                fit: BoxFit.cover,
+                                                width: 30.0,
+                                                height: 30.0,
+                                                child: InkWell(
+                                                  onTap: () {},
+                                                ),
+                                              ),
+                                            ),
+                                            Spacer(
+                                              flex: 1,
+                                            ),
+                                            Text('James'),
+                                            Spacer(
+                                              flex: 15,
+                                            ),
+                                            IconButton(
+                                              icon: Icon(
+                                                Icons.favorite,
+                                                color: Colors.orangeAccent,
+                                                size: 20.0,
+                                              ),
+                                            ),
+                                            Text('1875')
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ),
