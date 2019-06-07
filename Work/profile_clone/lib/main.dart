@@ -132,7 +132,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                     color: Colors.white),
                                 child: new IconButton(
                                   splashColor: Colors.redAccent,
-                                  highlightColor: Colors.red,
                                   alignment: Alignment.topLeft,
                                   icon: Icon(Icons.add_shopping_cart,
                                       color: Colors.blue, size: 17.0),
