@@ -146,6 +146,10 @@ class _NotificationsPageState extends State<NotificationsPage>
 
     final _ssbr = Radius.circular(45.0);
 
+
+
+
+
     final _secondSection = Container(
       height: screenHeight * 0.55,
       padding: EdgeInsets.only(left: 20.0, right: 20.0),
