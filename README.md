@@ -1,4 +1,4 @@
-In here , you can find different resource for learning.
+In here , you can find different resource for inspecting.
    
     
     
