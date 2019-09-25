@@ -62,10 +62,12 @@ class _MyDiaryScreenState extends State<MyDiaryScreen>
       TitleView(
         titleTxt: 'Mediterranean diet',
         subTxt: 'Details',
-        animation: Tween(begin: 0.0, end: 1.0).animate(CurvedAnimation(
-            parent: widget.animationController,
-            curve:
-                Interval((1 / count) * 0, 1.0, curve: Curves.fastOutSlowIn))),
+        animation: Tween(begin: 0.0, end: 1.0).animate(
+          CurvedAnimation(
+              parent: widget.animationController,
+              curve:
+                  Interval((1 / count) * 0, 1.0, curve: Curves.fastOutSlowIn)),
+        ),
         animationController: widget.animationController,
       ),
     );
