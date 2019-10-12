@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/kaho/Documents/GitHub/flutter-development/Codewar/6kyu"
 		}
 	]
 }
