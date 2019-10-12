@@ -2,7 +2,7 @@
 
 def find_even_index(arr):
     for i, x in enumerate(arr): 
-        if sum(arr[0:i]) == sum(arr[i+1]): 
+        if sum(arr[:i]) == sum(arr[i+1]): 
             return i 
         return -1 
 
@@ -23,5 +23,6 @@ def find_even_index(arr):
 
 
 '*********************************'
+
 
 
