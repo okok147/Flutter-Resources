@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:task_app/widgets/dashed_rect.dart';
+import 'package:task_app/widgets/filter.dart';
 import 'package:task_app/widgets/heading.dart';
 import 'package:task_app/widgets/project_card_tile.dart';
-import 'package:task_app/widgets/projects_slider.dart';
+import 'package:task_app/widgets/project_detail_card.dart';
 
-class Dashboard extends StatelessWidget {
+class Projects extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -20,7 +21,7 @@ class Dashboard extends StatelessWidget {
               ),
               Heading(
                 text: Text(
-                  "Today's tasks",
+                  "My projects",
                   style: TextStyle(fontSize: 32, fontWeight: FontWeight.w600),
                 ),
                 button: DottedBorder(
@@ -29,7 +30,7 @@ class Dashboard extends StatelessWidget {
                     color: Colors.grey,
                     child: Center(
                       child: Icon(
-                        Icons.navigate_next,
+                        Icons.filter_list,
                         size: 28,
                         color: Colors.orange,
                       ),
@@ -38,35 +39,23 @@ class Dashboard extends StatelessWidget {
                     dashPattern: [3, 4]),
               ),
               SizedBox(
-                height: 22,
+                height: 12,
               ),
-              ProjectSlider(
-                projects: [1, 2, 3, 4, 5],
+              FiltersWidget(
+                updateFilter: () {},
               ),
               SizedBox(
                 height: 12,
               ),
               Heading(
                 text: Text(
-                  "Open projects",
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.w600),
+                  "You have 11 projects",
+                  style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w500,
+                      color: Colors.grey[500]),
                 ),
-                button: DottedBorder(
-                    borderType: BorderType.RRect,
-                    radius: Radius.circular(8),
-                    color: Colors.grey,
-                    child: Center(
-                      child: Icon(
-                        Icons.navigate_next,
-                        size: 28,
-                        color: Colors.orange,
-                      ),
-                    ),
-                    strokeWidth: 1,
-                    dashPattern: [3, 4]),
-              ),
-              SizedBox(
-                height: 12.0,
+                button: SizedBox(),
               ),
               Container(
                 child: ListView.builder(
@@ -74,7 +63,7 @@ class Dashboard extends StatelessWidget {
                   physics: NeverScrollableScrollPhysics(),
                   itemCount: 5,
                   itemBuilder: (BuildContext context, int index) {
-                    return ProjectCardTile();
+                    return ProjectDetailCard();
                   },
                 ),
               )
