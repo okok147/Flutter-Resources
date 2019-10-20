@@ -26,11 +26,14 @@ class AppTextStyles {
   static const unselectedTabTextStyle = const TextStyle(
     fontWeight: FontWeight.w600,
     color: Colors.grey,
+    fontSize: 13
   );
 
   static const selectedTabTextStyle = const TextStyle(
     fontWeight: FontWeight.w600,
-    color: CustomColors.primaryColor,
+    color: Colors.white,
+    fontSize: 13
+    
   );
 }
 

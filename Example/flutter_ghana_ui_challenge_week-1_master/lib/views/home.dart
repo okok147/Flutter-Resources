@@ -122,8 +122,8 @@ class _HomePageState extends State<HomePage>
         unselectedLabelColor: Colors.grey.withOpacity(0.6),
         isScrollable: true,
         indicator: BoxDecoration(
-          color: CustomColors.primaryColor.withOpacity(0.3),
-          borderRadius: BorderRadius.circular(12.0),
+          color: CustomColors.primaryColor.withOpacity(0.9),
+          borderRadius: BorderRadius.circular(20.0),
         ),
         tabs: _tabs.map((tab) {
           var index = _tabs.indexOf(tab);
