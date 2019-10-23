@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:task_app/screens/dashboad.dart';
+import 'package:task_app/screens/projects.dart';
 import 'package:task_app/widgets/bottom_nav.dart';
 
 class Home extends StatefulWidget {
@@ -38,10 +39,10 @@ class HomeState extends State<Home> {
       appBar: AppBar(
         elevation: 0.0,
         automaticallyImplyLeading: true,
-        backgroundColor: Colors.white,
+        backgroundColor: Color(0xfff0f0f0),
         centerTitle: false,
         title: Padding(
-          padding: const EdgeInsets.only(left: 6.0, top: 8.0),
+          padding: const EdgeInsets.only(left: 6.0, top: 5.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -63,14 +64,14 @@ class HomeState extends State<Home> {
         ),
         actions: <Widget>[
           Padding(
-            padding: const EdgeInsets.only(right: 24.0, top: 8.0),
+            padding: const EdgeInsets.only(right: 18.0, top: 8.0),
             child: Container(
               decoration: BoxDecoration(
                   borderRadius: new BorderRadius.circular(8.0),
                   image:
                       DecorationImage(image: AssetImage("assets/user.jpeg"))),
-              width: 50.0,
-              height: 60.0,
+              width: 40.0,
+              height: 40.0,
             ),
           ),
         ],
@@ -83,15 +84,15 @@ class HomeState extends State<Home> {
             body:
                 TabBarView(physics: NeverScrollableScrollPhysics(), children: [
               Dashboard(),
-              accountTab(),
+              Projects(),
               accountTab(),
             ]),
 
             bottomNavigationBar: Padding(
-              padding: const EdgeInsets.only(bottom: 16.0),
+              padding: const EdgeInsets.only(bottom: 0.0),
               child: CustomBottomNav(updateIndex),
             ),
-            backgroundColor: Colors.white,
+            backgroundColor: Color(0xfff0f0f0),
           )),
     );
   }

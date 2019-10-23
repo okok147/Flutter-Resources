@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomColors {
-  static const primaryColor = const Color(0xFFFFAC00);
+  static const primaryColor = Color(0xff3C246F);
   static const statusBarColor = Colors.white;
   static const appBarColor = Colors.white;
   static const scaffoldColor = Colors.white;
