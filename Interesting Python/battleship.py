@@ -1,5 +1,5 @@
 #https://www.codecademy.com/courses/learn-python/lessons/battleship/exercises/extra-credit?action=resume_content_item
-
+#alpha 0.1
 
 
 import string
