@@ -16,3 +16,5 @@ while guesses_left > 0:
   print 'You have :', guesses_left, 'times left'
 else:
   print "You lose."
+
+#print("\n") means to print a blank line.
