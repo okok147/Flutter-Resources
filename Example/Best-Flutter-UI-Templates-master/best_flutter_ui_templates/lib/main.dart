@@ -1,13 +1,17 @@
 import 'dart:io';
 import 'package:best_flutter_ui_templates/appTheme.dart';
-import 'package:best_flutter_ui_templates/homeScreen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'navigationHomeScreen.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  SystemChrome.setPreferredOrientations(
+          [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown])
+      .then((_) => runApp(new MyApp()));
+  // runApp(new MyApp());
+}
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -27,10 +31,11 @@ class MyApp extends StatelessWidget {
         textTheme: AppTheme.textTheme,
         platform: TargetPlatform.iOS,
       ),
-      home: MyHomePage(),
+      home: NavigationHomeScreen(),
     );
   }
 }
+
 
 class HexColor extends Color {
   static int _getColorFromHex(String hexColor) {

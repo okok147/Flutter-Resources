@@ -16,7 +16,6 @@ class MealsListData {
   });
 
   static List<MealsListData> tabIconsList = [
-    // very good example for list
     MealsListData(
       imagePath: 'assets/fitness_app/breakfast.png',
       titleTxt: 'Breakfast',
