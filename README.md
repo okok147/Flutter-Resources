@@ -1,4 +1,4 @@
-In here , you can find different resource for inspecting.
+In here , you can find different flutter example for learning.
    
     
     
