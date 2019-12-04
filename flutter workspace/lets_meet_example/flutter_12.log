@@ -1,0 +1,116 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --release
+
+## exception
+
+ProcessException: ProcessException: Process "/Users/wailimcheng/Library/Android/sdk/platform-tools/adb" exited abnormally:
+Starting: Intent { act=android.intent.action.RUN flg=0x20000000 cmp=com.basezero.letsmeet/com.apptreesoftware.mapview.MapActivity (has extras) }
+
+Security exception: Permission Denial: starting Intent { act=android.intent.action.RUN flg=0x30000000 cmp=com.basezero.letsmeet/com.apptreesoftware.mapview.MapActivity (has extras) } from null (pid=10868, uid=2000) not exported from uid 10108
+
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.RUN flg=0x30000000 cmp=com.basezero.letsmeet/com.apptreesoftware.mapview.MapActivity (has extras) } from null (pid=10868, uid=2000) not exported from uid 10108
+	at com.android.server.am.ActivityStackSupervisor.checkStartAnyActivityPermission(ActivityStackSupervisor.java:1670)
+	at com.android.server.am.ActivityStarter.startActivity(ActivityStarter.java:498)
+	at com.android.server.am.ActivityStarter.startActivityLocked(ActivityStarter.java:319)
+	at com.android.server.am.ActivityStarter.startActivityMayWait(ActivityStarter.java:1012)
+	at com.android.server.am.ActivityManagerService.startActivityAsUser(ActivityManagerService.java:4744)
+	at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:410)
+	at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:141)
+	at android.os.ShellCommand.exec(ShellCommand.java:96)
+	at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:15352)
+	at android.os.Binder.shellCommand(Binder.java:573)
+	at android.os.Binder.onTransact(Binder.java:473)
+	at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:4272)
+	at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:3150)
+	at android.os.Binder.execTransact(Binder.java:674)
+  Command: /Users/wailimcheng/Library/Android/sdk/platform-tools/adb -s 2bd54900 shell am start -a android.intent.action.RUN -f 0x20000000 --ez enable-background-compilation true --ez enable-dart-profiling true com.basezero.letsmeet/com.apptreesoftware.mapview.MapActivity
+
+```
+#0      runCheckedAsync (package:flutter_tools/src/base/process.dart:251:5)
+<asynchronous suspension>
+#1      AndroidDevice.startApp (package:flutter_tools/src/android/android_device.dart:441:34)
+<asynchronous suspension>
+#2      FlutterDevice.runCold (package:flutter_tools/src/resident_runner.dart:349:46)
+<asynchronous suspension>
+#3      ColdRunner.run (package:flutter_tools/src/run_cold.dart:55:39)
+<asynchronous suspension>
+#4      RunCommand.runCommand (package:flutter_tools/src/commands/run.dart:398:37)
+<asynchronous suspension>
+#5      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:401:18)
+#6      _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#7      _rootRunUnary (dart:async/zone.dart:1132:38)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#9      _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#10     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#11     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#12     Future._complete (dart:async/future_impl.dart:476:7)
+#13     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#14     _AsyncAwaitCompleter.complete (dart:async/runtime/libasync_patch.dart:28:18)
+#15     _completeOnAsyncReturn (dart:async/runtime/libasync_patch.dart:295:13)
+#16     RunCommand.usageValues (package:flutter_tools/src/commands/run.dart)
+#17     _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#18     _rootRunUnary (dart:async/zone.dart:1132:38)
+#19     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#20     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#21     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#22     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#23     Future._complete (dart:async/future_impl.dart:476:7)
+#24     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#25     _AsyncAwaitCompleter.complete.<anonymous closure> (dart:async/runtime/libasync_patch.dart:33:20)
+#26     _rootRun (dart:async/zone.dart:1124:13)
+#27     _CustomZone.run (dart:async/zone.dart:1021:19)
+#28     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:947:23)
+#29     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#30     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#31     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#32     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+```
+
+## flutter doctor
+
+```
+[32m[✓][39m Flutter (Channel beta, v1.0.0, on Mac OS X 10.14.3 18D109, locale en-GB)
+    [32m•[39m Flutter version 1.0.0 at /Users/wailimcheng/flutter
+    [32m•[39m Framework revision 5391447fae (3 months ago), 2018-11-29 19:41:26 -0800
+    [32m•[39m Engine revision 7375a0f414
+    [32m•[39m Dart version 2.1.0 (build 2.1.0-dev.9.4 f9ebf21297)
+
+[33m[!][39m Android toolchain - develop for Android devices (Android SDK 27.0.3)
+    [32m•[39m Android SDK at /Users/wailimcheng/Library/Android/sdk
+    [32m•[39m Android NDK location not configured (optional; useful for native profiling support)
+    [32m•[39m Platform android-28, build-tools 27.0.3
+    [32m•[39m Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    [32m•[39m Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b01)
+    [33m![39m Some Android licenses not accepted.  To resolve this, run: flutter doctor --android-licenses
+
+[32m[✓][39m iOS toolchain - develop for iOS devices (Xcode 10.1)
+    [32m•[39m Xcode at /Applications/Xcode.app/Contents/Developer
+    [32m•[39m Xcode 10.1, Build version 10B61
+    [32m•[39m ios-deploy 1.9.4
+    [32m•[39m CocoaPods version 1.5.3
+
+[32m[✓][39m Android Studio (version 3.1)
+    [32m•[39m Android Studio at /Applications/Android Studio.app/Contents
+    [32m•[39m Flutter plugin version 29.0.1
+    [32m•[39m Dart plugin version 173.4700
+    [32m•[39m Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b01)
+
+[33m[!][39m IntelliJ IDEA Community Edition (version 2017.2.4)
+    [32m•[39m IntelliJ at /Applications/IntelliJ IDEA CE.app
+    [31m✗[39m Flutter plugin not installed; this adds Flutter specific functionality.
+    [31m✗[39m Dart plugin not installed; this adds Dart specific functionality.
+    [32m•[39m For information about installing plugins, see
+      https://flutter.io/intellij-setup/#installing-the-plugins
+
+[32m[✓][39m VS Code (version 1.31.1)
+    [32m•[39m VS Code at /Applications/Visual Studio Code.app/Contents
+    [32m•[39m Flutter extension version 2.22.3
+
+[32m[✓][39m Connected device (1 available)
+    [32m•[39m Lenovo K520 • 2bd54900 • android-arm64 • Android 8.0.0 (API 26)
+
+[33m![39m Doctor found issues in 2 categories.
+```

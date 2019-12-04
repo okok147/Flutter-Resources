@@ -1,0 +1,91 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter packages get
+
+## exception
+
+FormatException: FormatException: No ':' on line (at offset 12)
+
+```
+#0      parse (package:package_config/packages_file.dart:53:7)
+#1      _parse (package:flutter_tools/src/dart/package_map.dart:14:10)
+#2      PackageMap.load (package:flutter_tools/src/dart/package_map.dart:35:14)
+#3      PackageMap.map (package:flutter_tools/src/dart/package_map.dart:39:5)
+#4      FlutterCommandRunner._checkFlutterCopy (package:flutter_tools/src/runner/flutter_command_runner.dart:489:41)
+#5      FlutterCommandRunner.runCommand.<anonymous closure> (package:flutter_tools/src/runner/flutter_command_runner.dart:319:9)
+<asynchronous suspension>
+#6      AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:142:29)
+<asynchronous suspension>
+#7      _rootRun (dart:async/zone.dart:1124:13)
+#8      _CustomZone.run (dart:async/zone.dart:1021:19)
+#9      _runZoned (dart:async/zone.dart:1516:10)
+#10     runZoned (dart:async/zone.dart:1463:12)
+#11     AppContext.run (package:flutter_tools/src/base/context.dart:141:18)
+<asynchronous suspension>
+#12     FlutterCommandRunner.runCommand (package:flutter_tools/src/runner/flutter_command_runner.dart:303:19)
+<asynchronous suspension>
+#13     CommandRunner.run.<anonymous closure> (package:args/command_runner.dart:109:29)
+#14     new Future.sync (dart:async/future.dart:224:31)
+#15     CommandRunner.run (package:args/command_runner.dart:109:11)
+#16     FlutterCommandRunner.run (package:flutter_tools/src/runner/flutter_command_runner.dart:211:18)
+#17     run.<anonymous closure> (package:flutter_tools/runner.dart:59:20)
+<asynchronous suspension>
+#18     AppContext.run.<anonymous closure> (package:flutter_tools/src/base/context.dart:142:29)
+<asynchronous suspension>
+#19     _rootRun (dart:async/zone.dart:1124:13)
+#20     _CustomZone.run (dart:async/zone.dart:1021:19)
+#21     _runZoned (dart:async/zone.dart:1516:10)
+#22     runZoned (dart:async/zone.dart:1463:12)
+#23     AppContext.run (package:flutter_tools/src/base/context.dart:141:18)
+<asynchronous suspension>
+#24     runInContext (package:flutter_tools/src/context_runner.dart:42:24)
+<asynchronous suspension>
+#25     run (package:flutter_tools/runner.dart:50:10)
+#26     main (package:flutter_tools/executable.dart:52:9)
+<asynchronous suspension>
+#27     main (file:///Users/chunholee/workspace/flutter/packages/flutter_tools/bin/flutter_tools.dart:8:3)
+#28     _startIsolate.<anonymous closure> (dart:isolate/runtime/libisolate_patch.dart:287:32)
+#29     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:171:12)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel unknown, v0.7.5, on Mac OS X 10.13.6 17G2307, locale zh-Hant-HK)
+    • Flutter version 0.7.5 at /Users/chunholee/workspace/flutter
+    • Framework revision eab5cd9853 (3 weeks ago), 2018-08-30 14:47:04 -0700
+    • Engine revision dc7b5eb89d
+    • Dart version 2.1.0-dev.3.0.flutter-760a9690c2
+
+[✓] Android toolchain - develop for Android devices (Android SDK 28.0.2)
+    • Android SDK at /Users/chunholee/Library/Android/sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-28, build-tools 28.0.2
+    • Java binary at: /Applications/Android Studio.app/Contents/jre/jdk/Contents/Home/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b01)
+    • All Android licenses accepted.
+
+[✓] iOS toolchain - develop for iOS devices (Xcode 9.4.1)
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Xcode 9.4.1, Build version 9F2000
+    • ios-deploy 2.0.0
+    • CocoaPods version 1.5.3
+
+[✓] Android Studio (version 3.1)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    • Flutter plugin version 27.1.1
+    • Dart plugin version 173.4700
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b01)
+
+[!] VS Code (version 1.27.2)
+    • VS Code at /Applications/Visual Studio Code.app/Contents
+    • Flutter extension not installed; install from
+      https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+[✓] Connected devices (1 available)
+    • 「Chun Ho」的 iPhone • af589c54de6d2e24513260f3145974b12023e9e0 • ios • iOS 11.4.1
+
+! Doctor found issues in 1 category.
+```

@@ -1,0 +1,66 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --suppress-analytics build bundle --target-platform=ios --target=/Users/william/lets_meet_flutter/lib/main.dart --snapshot=build/snapshot_blob.bin --debug --depfile=build/snapshot_blob.bin.d --asset-dir=/Users/william/lets_meet_flutter/ios/Flutter/flutter_assets
+
+## exception
+
+FileSystemException: FileSystemException: Cannot open file, path = '/Applications/flutter/version' (OS Error: Permission denied, errno = 13)
+
+```
+#0      _File.open.<anonymous closure> (dart:io/file_impl.dart:368:9)
+#1      _rootRunUnary (dart:async/zone.dart:1132:38)
+#2      _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#3      _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#4      Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#5      Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#6      Future._completeWithValue (dart:async/future_impl.dart:486:5)
+#7      Future._asyncComplete.<anonymous closure> (dart:async/future_impl.dart:516:7)
+#8      _rootRun (dart:async/zone.dart:1124:13)
+#9      _CustomZone.run (dart:async/zone.dart:1021:19)
+#10     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:947:23)
+#11     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#12     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#13     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:115:13)
+#14     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:172:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, v0.9.4, on Mac OS X 10.13.6 17G65, locale zh-Hant-HK)
+    • Flutter version 0.9.4 at /Applications/flutter
+    • Framework revision f37c235c32 (5 weeks ago), 2018-09-25 17:45:40 -0400
+    • Engine revision 74625aed32
+    • Dart version 2.1.0-dev.5.0.flutter-a2eb050044
+
+[✗] Android toolchain - develop for Android devices
+    ✗ Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.io/setup/#android-setup for detailed instructions).
+      If Android SDK has been installed to a custom location, set $ANDROID_HOME to that location.
+
+[✓] iOS toolchain - develop for iOS devices (Xcode 10.0)
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Xcode 10.0, Build version 10A255
+    • ios-deploy 1.9.2
+    • CocoaPods version 1.5.3
+
+[✓] Android Studio (version 3.0)
+    • Android Studio at /Applications/Android Studio.app/Contents
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-915-b08)
+
+[!] VS Code (version 1.28.2)
+    • VS Code at /Applications/Visual Studio Code.app/Contents
+    • Flutter extension not installed; install from
+      https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+[✓] Connected devices (1 available)
+    • iPhone • f8519f90edfbfb2d511a6307331a0ccfa1f991f4 • ios • iOS 11.2.6
+
+! Doctor found issues in 2 categories.
+```

@@ -1,0 +1,96 @@
+Flutter crash report; please file at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --release
+
+## exception
+
+String: Exit code 1 from: /home/chengwailim/Android/Sdk/platform-tools/adb -s CB5A29E2X2 shell am start -a android.intent.action.RUN -f 0x20000000 --ez enable-background-compilation true --ez enable-dart-profiling true com.example.letsmeetflutter/com.yalantis.ucrop.UCropActivity:
+Starting: Intent { act=android.intent.action.RUN flg=0x20000000 cmp=com.example.letsmeetflutter/com.yalantis.ucrop.UCropActivity (has extras) }
+
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.RUN flg=0x30000000 cmp=com.example.letsmeetflutter/com.yalantis.ucrop.UCropActivity (has extras) } from null (pid=30669, uid=2000) not exported from uid 10128
+	at android.os.Parcel.readException(Parcel.java:1689)
+	at android.os.Parcel.readException(Parcel.java:1641)
+	at android.app.ActivityManagerProxy.startActivityAsUser(ActivityManagerNative.java:3164)
+	at com.android.commands.am.Am.runStart(Am.java:635)
+	at com.android.commands.am.Am.onRun(Am.java:388)
+	at com.android.internal.os.BaseCommand.run(BaseCommand.java:51)
+	at com.android.commands.am.Am.main(Am.java:121)
+	at com.android.internal.os.RuntimeInit.nativeFinishInit(Native Method)
+	at com.android.internal.os.RuntimeInit.main(RuntimeInit.java:262)
+
+```
+#0      runCheckedAsync (package:flutter_tools/src/base/process.dart:249:5)
+<asynchronous suspension>
+#1      AndroidDevice.startApp (package:flutter_tools/src/android/android_device.dart:441:34)
+<asynchronous suspension>
+#2      FlutterDevice.runCold (package:flutter_tools/src/resident_runner.dart:352:46)
+<asynchronous suspension>
+#3      ColdRunner.run (package:flutter_tools/src/run_cold.dart:54:39)
+<asynchronous suspension>
+#4      RunCommand.runCommand (package:flutter_tools/src/commands/run.dart:408:37)
+<asynchronous suspension>
+#5      FlutterCommand.verifyThenRunCommand (package:flutter_tools/src/runner/flutter_command.dart:348:18)
+#6      _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#7      _rootRunUnary (dart:async/zone.dart:1132:38)
+#8      _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#9      _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#10     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#11     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#12     Future._complete (dart:async/future_impl.dart:476:7)
+#13     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#14     _AsyncAwaitCompleter.complete (dart:async/runtime/libasync_patch.dart:28:18)
+#15     _completeOnAsyncReturn (dart:async/runtime/libasync_patch.dart:295:13)
+#16     RunCommand.usageValues (package:flutter_tools/src/commands/run.dart)
+#17     _asyncThenWrapperHelper.<anonymous closure> (dart:async/runtime/libasync_patch.dart:77:64)
+#18     _rootRunUnary (dart:async/zone.dart:1132:38)
+#19     _CustomZone.runUnary (dart:async/zone.dart:1029:19)
+#20     _FutureListener.handleValue (dart:async/future_impl.dart:129:18)
+#21     Future._propagateToListeners.handleValueCallback (dart:async/future_impl.dart:642:45)
+#22     Future._propagateToListeners (dart:async/future_impl.dart:671:32)
+#23     Future._complete (dart:async/future_impl.dart:476:7)
+#24     _SyncCompleter.complete (dart:async/future_impl.dart:51:12)
+#25     _AsyncAwaitCompleter.complete.<anonymous closure> (dart:async/runtime/libasync_patch.dart:33:20)
+#26     _rootRun (dart:async/zone.dart:1124:13)
+#27     _CustomZone.run (dart:async/zone.dart:1021:19)
+#28     _CustomZone.bindCallback.<anonymous closure> (dart:async/zone.dart:947:23)
+#29     _microtaskLoop (dart:async/schedule_microtask.dart:41:21)
+#30     _startMicrotaskLoop (dart:async/schedule_microtask.dart:50:5)
+#31     _runPendingImmediateCallback (dart:isolate/runtime/libisolate_patch.dart:114:13)
+#32     _RawReceivePortImpl._handleMessage (dart:isolate/runtime/libisolate_patch.dart:170:5)
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel beta, v0.6.0, on Linux, locale en_US.UTF-8)
+    • Flutter version 0.6.0 at /home/chengwailim/workspace/flutter
+    • Framework revision 9299c02cf7 (3 weeks ago), 2018-08-16 00:35:12 +0200
+    • Engine revision e3687f70c7
+    • Dart version 2.1.0-dev.0.0.flutter-be6309690f
+
+[✓] Android toolchain - develop for Android devices (Android SDK 28.0.1)
+    • Android SDK at /home/chengwailim/Android/Sdk
+    • Android NDK location not configured (optional; useful for native profiling support)
+    • Platform android-28, build-tools 28.0.1
+    • Java binary at: /home/chengwailim/下載/android-studio/jre/bin/java
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b01)
+    • All Android licenses accepted.
+
+[✓] Android Studio (version 3.1)
+    • Android Studio at /home/chengwailim/下載/android-studio
+    ✗ Flutter plugin not installed; this adds Flutter specific functionality.
+    ✗ Dart plugin not installed; this adds Dart specific functionality.
+    • Java version OpenJDK Runtime Environment (build 1.8.0_152-release-1024-b01)
+
+[!] VS Code (version 1.25.1)
+    • VS Code at /usr/share/code
+    • Flutter extension not installed; install from
+      https://marketplace.visualstudio.com/items?itemName=Dart-Code.flutter
+
+[✓] Connected devices (1 available)
+    • E6853 • CB5A29E2X2 • android-arm64 • Android 7.1.1 (API 25)
+
+! Doctor found issues in 1 category.
+```
