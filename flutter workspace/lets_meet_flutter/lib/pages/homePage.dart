@@ -990,8 +990,14 @@ class HubCategoryPageState extends State<HubCategoryPage> {
                       bool focus = await showMap();
                     },
                     child: Container(
+                      //this is where we have to place cirrus map view
+                      //here !
+
+                      color: Colors.blue,
                       height: 265.0,
+                      width: 300.0,
                       child: Image.network(
+                      
                         uri.toString(),
                         fit: BoxFit.cover,
                       ),
