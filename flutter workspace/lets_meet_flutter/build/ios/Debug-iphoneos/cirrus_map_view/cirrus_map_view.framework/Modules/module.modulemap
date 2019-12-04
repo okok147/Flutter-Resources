@@ -1,0 +1,6 @@
+framework module cirrus_map_view {
+  umbrella header "cirrus_map_view-umbrella.h"
+
+  export *
+  module * { export * }
+}
