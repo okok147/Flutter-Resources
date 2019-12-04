@@ -101,16 +101,19 @@ class Request {
   }
 }
 
-main() {
+main() async {
+  
+  
   WidgetsFlutterBinding.ensureInitialized();
+  await SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
   MapView.setApiKey("AIzaSyCA3T4BDdR7Lhiqw1sZT3HBa3AvZJqtnP8");
   defineRoutes(Global.router);
-
-  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
-      .then((_) {
-    //  runApp(new MyApp());
-    runApp(new RoutePage());
-  });
+  runApp(new RoutePage());
+  //     .then((_) {
+  //   //  runApp(new MyApp());
+    
+  
+  // });
 
   //return runApp(new RoutePage());
 }

@@ -182,7 +182,7 @@ class _LoginPageState extends State<LoginPage> {
               )
             : Stack(
                 children: <Widget>[
-                  Container(
+                  Container(                    
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height,
                     child: Image.asset(
