@@ -18,6 +18,20 @@ class Cor {
   static const Color black2 = Color(0xFF16181E);
   static const Color grey3 = Color(0xFF828282);
   static const Color grey4 = Color(0xFF3D3D3D);
+  //for Homepage.dart
+  static const Color statusBarMessage = Colors.white;
+  static const Color statusBarColor1 = Color(0xff403C3D);
+  static const Color statusBarColor2 = Color(0xff1FC483);
+  static const Color carNumberColor = Colors.black;
+  static const Color dropDownMenuIcon = Colors.blueAccent;
+  static const Color dropDownMenuItemColor = Colors.deepPurpleAccent;
+  static const Color openWork = Color(0xff1FC483);
+  static const Color closeWork = Color(0xffD54A21);
+
+  static const Color workButtonColor = Colors.transparent;
+  static const Color workButtonBorder = Colors.blueGrey;
+
+  //
 
   static const Gradient bgColor = RadialGradient(radius: 1.5, colors: <Color>[
     Colors.white,

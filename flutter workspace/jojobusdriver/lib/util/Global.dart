@@ -343,6 +343,7 @@ class MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
+      debugShowCheckedModeBanner: false,
       onGenerateRoute: Global.router.generator,
       theme: new ThemeData(
           fontFamily: "Nova",

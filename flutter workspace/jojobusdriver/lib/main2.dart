@@ -366,6 +366,7 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     getData();
+    // 5 Dec 2019
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -390,8 +391,20 @@ class _MainPageState extends State<MainPage> {
           child: Column(
             children: <Widget>[
               Container(
-                color: starting ? Color(0xff1FC483) : Color(0xff403C3D),
                 height: 40,
+                width: double.infinity,
+                color: starting ? Cor.statusBarColor2 : Cor.statusBarColor1,
+                child: starting
+                    ? Center(
+                        child: Text(
+                        'Winner Winner-Chicken Dinner!',
+                        style: TextStyle(color: Cor.statusBarMessage),
+                      ))
+                    : Center(
+                        child: Text(
+                        '幸福存在於一個人真正的工作中。',
+                        style: TextStyle(color: Cor.statusBarMessage),
+                      )),
               ),
               Spacer(),
               Row(
@@ -401,15 +414,16 @@ class _MainPageState extends State<MainPage> {
                     padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),
                     child: Text(
                       '車牌號碼 ： ',
-                      style: TextStyle(fontSize: 32.0),
+                      style: TextStyle(fontSize: 32.0,fontFamily: 'Noto Serif TC'),
                     ),
                   ),
                   DropdownButton<String>(
                       isExpanded: false,
                       iconSize: 32.0,
+                      iconEnabledColor: Cor.dropDownMenuIcon,
                       style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.w300,
+                          color: Cor.carNumberColor,
+                          fontWeight: FontWeight.w600,
                           fontSize: 32.0),
                       value: dropdownValue,
                       onChanged: (String newValue) {
@@ -423,7 +437,8 @@ class _MainPageState extends State<MainPage> {
                             value: value,
                             child: Text(
                               value,
-                              style: TextStyle(color: Colors.deepPurpleAccent),
+                              style:
+                                  TextStyle(color: Cor.dropDownMenuItemColor),
                             ));
                       }).toList()),
                 ],
@@ -434,17 +449,16 @@ class _MainPageState extends State<MainPage> {
                   child: Padding(
                     padding: const EdgeInsets.symmetric(vertical: 32.0),
                     child: FlatButton(
+                      color: Cor.workButtonColor,
                       child: Text(
                         starting ? "收工" : "開工",
                         style: starting
-                            ? TextStyle(
-                                color: Color(0xffD54A21), fontSize: 80.0)
-                            : TextStyle(
-                                color: Color(0xff1FC483), fontSize: 80.0),
+                            ? TextStyle(color: Cor.openWork, fontSize: 80.0,fontFamily: 'NotoSerifTC')
+                            : TextStyle(color: Cor.closeWork, fontSize: 80.0),
                       ),
                       shape: RoundedRectangleBorder(
                           borderRadius: new BorderRadius.circular(18.0),
-                          side: BorderSide(color: Colors.blueAccent)),
+                          side: BorderSide(color: Cor.workButtonBorder)),
                       onPressed: () async {
                         // bg.BackgroundGeolocation.start();
                         // bg.BackgroundGeolocation.
