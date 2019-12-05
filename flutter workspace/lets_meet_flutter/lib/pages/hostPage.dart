@@ -102,7 +102,7 @@ class _HostPageState extends State<HostPage> {
             color: Colors.blue));
       }
       provider =
-          new StaticMapProvider('AIzaSyCA3T4BDdR7Lhiqw1sZT3HBa3AvZJqtnP8');
+          new StaticMapProvider('AIzaSyDeKVY6XnuyrxmfmU4fRJ5gqrL56yMHNEc');
       uri = provider.getStaticUriWithMarkersAndZoom(
         marker_list,
         center: new Location(

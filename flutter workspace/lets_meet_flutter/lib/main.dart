@@ -39,6 +39,7 @@ import 'package:share/share.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:badges/badges.dart';
 import 'package:firebase_dynamic_links/firebase_dynamic_links.dart';
+import 'package:lets_meet_flutter/pages/trueMapView.dart';
 
 //testing branch
 GlobalKey<MainPageState> keyMainPage = new GlobalKey<MainPageState>();
@@ -123,6 +124,11 @@ void defineRoutes(Router router) {
       handlerFunc: (BuildContext context, Map<String, dynamic> params) {
     return new LoginPage();
   }));
+
+  // router.define("/MapView", handler: new Handler(
+  //     handlerFunc: (BuildContext context, Map<String, dynamic> params) {
+  //   return new TrueMapView();
+  // }));
 
   router.define("/", handler: new Handler(
       handlerFunc: (BuildContext context, Map<String, dynamic> params) {

@@ -1,0 +1,1 @@
+{"_info":"// This is a generated file; do not edit or check into version control.","dependencyGraph":[{"name":"background_fetch","dependencies":[]},{"name":"device_info","dependencies":[]},{"name":"flutter_background_geolocation","dependencies":["device_info","background_fetch"]},{"name":"qrcode_reader","dependencies":[]},{"name":"shared_preferences","dependencies":[]}]}

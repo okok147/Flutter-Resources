@@ -1,0 +1,5 @@
+version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+options: "99a3caceaafe605304ca2231c2e91a83"
+build_time: [1575531683, 16210000]
+inputs:
+  "/Users/kelvin/Documents/workspace/Flutter-Resources/flutter workspace/lets_meet_flutter/ios/Runner/AppDelegate.swift": [1571818148, 0]

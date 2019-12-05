@@ -18,47 +18,32 @@
 	<string>$(FLUTTER_BUILD_NAME)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb2212761528965115</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
-
-	<key>CFBundleURLTypes</key>
-<array>
-    <!--
-    <dict>
-    ... Some other CFBundleURLTypes definition.
-    </dict>
-    -->
-    <dict>
-        <key>CFBundleURLSchemes</key>
-        <array>
-            <!--
-              Replace "2212761528965115" with your Facebook App ID here.
-              **NOTE**: The scheme needs to start with `fb` and then your ID.
-            -->
-            <string>fb2212761528965115</string>
-        </array>
-    </dict>
-</array>
-
-<key>FacebookAppID</key>
-
-<!-- Replace "2212761528965115" with your Facebook App ID here. -->
-<string>2212761528965115</string>
-<key>FacebookDisplayName</key>
-
-<!-- Replace "YOUR_APP_NAME" with your Facebook App name. -->
-<string>YOUR_APP_NAME</string>
-
-<key>LSApplicationQueriesSchemes</key>
-<array>
-    <string>fbapi</string>
-    <string>fb-messenger-share-api</string>
-    <string>fbauth2</string>
-    <string>fbshareextension</string>
-</array>
-
+	<key>FacebookAppID</key>
+	<string>2212761528965115</string>
+	<key>FacebookDisplayName</key>
+	<string>YOUR_APP_NAME</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-share-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Using location to display on a map</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -78,5 +63,7 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>io.flutter.embedded_views_preview</key>
+	<string>YES</string>
 </dict>
 </plist>

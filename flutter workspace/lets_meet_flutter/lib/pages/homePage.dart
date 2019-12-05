@@ -3,6 +3,10 @@ import 'dart:convert';
 import 'dart:io';
 import 'dart:math';
 import 'package:flutter_html/flutter_html.dart';
+import 'package:cirrus_map_view/map_view.dart';
+import 'package:cirrus_map_view/marker.dart';
+import 'package:cirrus_map_view/static_map_provider.dart';
+import 'package:cirrus_map_view/toolbar_action.dart';
 import 'package:lets_meet_flutter/pages/loginPage_new.dart';
 import 'package:lets_meet_flutter/util/ColumnBuilder.dart';
 import 'package:lets_meet_flutter/util/country.dart';
@@ -37,8 +41,9 @@ class HomePage extends StatefulWidget {
   final PageController listController;
 
   void setPage(int n) {
-    listController.jumpToPage(n,
-       );
+    listController.jumpToPage(
+      n,
+    );
     // listController.jumpToPage(n-1);
   }
 
@@ -188,7 +193,7 @@ class _HostProfileState extends State<HostProfile> {
     }
   }
 
-    Future getUsers_without_host() async {
+  Future getUsers_without_host() async {
     var response_users = await Request.getDio()
         .get("host/get/users_without_host", data: {"Host_ID": widget.host_id});
     invite_users = response_users.data["Data"];
@@ -197,8 +202,6 @@ class _HostProfileState extends State<HostProfile> {
       setState(() {});
     }
   }
-
-
 
   Future send_to_all(message) async {
     await Request.getDio().post("host/send/all",
@@ -212,7 +215,7 @@ class _HostProfileState extends State<HostProfile> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    
+
     getUsers();
   }
 
@@ -387,32 +390,31 @@ class _HostProfileState extends State<HostProfile> {
                     "ADD OTHER USERS AS ADMIN",
                     onPressed: () async {
                       await getUsers_without_host();
-                      if(invite_users == null || invite_users.length == 0){
+                      if (invite_users == null || invite_users.length == 0) {
                         showDialog(
-                          context: context,
-                          child: AlertDialog(
-                            content: Container(
-                              child: Text("No suitable user"),
-                            ),
-                          )
-                        );
-                      }else{
-                        showDialog(
-                          context: context,
-                          child: AlertDialog(
+                            context: context,
+                            child: AlertDialog(
                               content: Container(
-                            height: 300.0,
-                            width: 100.0,
-                            child: ListView.builder(
-                              itemBuilder: (_, i) {
-                                return Icon_Add_Admin(
-                                  user: invite_users[i],
-                                  host_id: widget.host_id,
-                                );
-                              },
-                              itemCount: invite_users.length,
-                            ),
-                          )));
+                                child: Text("No suitable user"),
+                              ),
+                            ));
+                      } else {
+                        showDialog(
+                            context: context,
+                            child: AlertDialog(
+                                content: Container(
+                              height: 300.0,
+                              width: 100.0,
+                              child: ListView.builder(
+                                itemBuilder: (_, i) {
+                                  return Icon_Add_Admin(
+                                    user: invite_users[i],
+                                    host_id: widget.host_id,
+                                  );
+                                },
+                                itemCount: invite_users.length,
+                              ),
+                            )));
                       }
                     },
                     color: Colors.grey,
@@ -498,7 +500,6 @@ class Icon_Add_AdminState extends State<Icon_Add_Admin> {
   Widget build(BuildContext context) {
     return ListTile(
       onTap: () async {
-
         var response = await Request.getDio().patch("host/invite",
             data: {"Host_ID": widget.host_id, "User_ID": widget.user["ID"]});
         if (response.data["Code"] == 200) {
@@ -513,7 +514,8 @@ class Icon_Add_AdminState extends State<Icon_Add_Admin> {
               child: AlertDialog(
                 title: Text("The Selected user has been host already"),
               ));
-        };
+        }
+        ;
       },
       leading: Container(
         width: 45.0,
@@ -521,7 +523,7 @@ class Icon_Add_AdminState extends State<Icon_Add_Admin> {
         color: Colors.grey,
         child: widget.user.containsKey("IconUrl") == true
             ? Image.network(
-                 Global.baseUrl + widget.user["IconUrl"],
+                Global.baseUrl + widget.user["IconUrl"],
                 //placeholder: Container(color: Colors.grey),
                 //errorWidget: Image.asset("images/login_background.jpg",fit: BoxFit.cover,),
                 fit: BoxFit.cover,
@@ -649,6 +651,7 @@ class _ProfilePageState extends State<ProfilePage> {
       setState(() {});
     }
   }
+
   @override
   initState() {
     // TODO: implement initState
@@ -732,7 +735,8 @@ class _ProfilePageState extends State<ProfilePage> {
                         icon: GCIcon.gender,
                         tag: "Gender",
                         hint: " ",
-                        title: "gender", choices: <String>["Male", "Female", "Secret"],
+                        title: "gender",
+                        choices: <String>["Male", "Female", "Secret"],
                       ),
                       // ListTile(leading: Icon(GCIcon.b_day),title: Text('June 4, 1989 ',style: Global.style_profile,),onTap: (){ getCountry(); },),
                       form.dateField(
@@ -744,7 +748,8 @@ class _ProfilePageState extends State<ProfilePage> {
                         icon: GCIcon.marital_status,
                         tag: "Marital",
                         hint: " ",
-                        title: "marital status", choices: <String>["Single", "Married", "Others"],
+                        title: "marital status",
+                        choices: <String>["Single", "Married", "Others"],
                       ),
                       // ListTile(leading: Icon(GCIcon.marital_status),title: Text('single ',style: Global.style_profile,),onTap: (){_showAutocomplete();},),
                       //ListTile(leading: Icon(GCIcon.location),title: Text('from Vancouver  ',style: Global.style_profile,), onTap: (){showPlacePicker();},),
@@ -908,12 +913,13 @@ class HubCategoryPageState extends State<HubCategoryPage> {
   }
 
   showMap() {
-    MapView mapView = new MapView();
+    MapView mapView =  MapView();
     mapView.onToolbarAction.listen((id) {
       if (id == 1) {
         mapView.dismiss();
       }
     });
+    // mapView.show(new MapOptions());
     mapView.show(
         new MapOptions(
             mapViewType: MapViewType.normal,
@@ -938,7 +944,7 @@ class HubCategoryPageState extends State<HubCategoryPage> {
   }
 
   Future getHub() async {
-    provider = new StaticMapProvider('AIzaSyCA3T4BDdR7Lhiqw1sZT3HBa3AvZJqtnP8');
+    provider = new StaticMapProvider('AIzaSyDeKVY6XnuyrxmfmU4fRJ5gqrL56yMHNEc');
     Response response = await Request.getDio().get("hub/get/all");
     if (response.data["Code"] == 200) {
       if (this.mounted) {
@@ -947,7 +953,7 @@ class HubCategoryPageState extends State<HubCategoryPage> {
           for (int i = 0; i < hub_data.length; i++) {
             marker_list.add(new Marker(
                 hub_data[i]["ID"].toString(),
-                hub_data[i]["Name"]??"",
+                hub_data[i]["Name"] ?? "",
                 double.parse(hub_data[i]["Latitude"].toString()),
                 double.parse(hub_data[i]["Longitude"].toString())));
           }
@@ -974,6 +980,11 @@ class HubCategoryPageState extends State<HubCategoryPage> {
     super.initState();
   }
 
+  realShowMap(){
+
+
+  }
+
   @override
   Widget build(BuildContext context) {
     print(uri.toString());
@@ -987,17 +998,22 @@ class HubCategoryPageState extends State<HubCategoryPage> {
             uri != null
                 ? GestureDetector(
                     onTap: () async {
-                      bool focus = await showMap();
+                      //is it normal for never using bool focus?
+
+                        bool focus = await showMap();
+
+                        // print('clicked the map.');
+                    
+                      // Global.router.navigateTo(context, "/MapView",
+                      //     transition: TransitionType.native);
+                      
+                      
+
                     },
                     child: Container(
-                      //this is where we have to place cirrus map view
-                      //here !
+                      //this is where mapview located
 
-                      color: Colors.blue,
-                      height: 265.0,
-                      width: 300.0,
                       child: Image.network(
-                      
                         uri.toString(),
                         fit: BoxFit.cover,
                       ),
@@ -1069,7 +1085,6 @@ class HubTile extends StatelessWidget {
                           image: data.containsKey("LogoUrl") != false
                               ? new NetworkImage(
                                   Global.baseUrl + data["LogoUrl"] + "?tn=108",
-                                  
                                 )
                               : AssetImage('images/placeholder.png'))),
                 ),
@@ -1143,7 +1158,7 @@ class Search_Bar_HubState extends State<Search_Bar_Hub> {
       for (int i = 0; i < search_result.length; i++) {
         widget.marker_list.add(new Marker(
             search_result[i]["ID"].toString(),
-            search_result[i]["Name"]??"",
+            search_result[i]["Name"] ?? "",
             double.parse(search_result[i]["Latitude"].toString()),
             double.parse(search_result[i]["Longitude"].toString())));
       }
@@ -1192,11 +1207,15 @@ class Search_Bar_HubState extends State<Search_Bar_Hub> {
                     border: InputBorder.none,
                     hintText: widget.title,
                     hintStyle: TextStyle(
-                        color: Color(0xffC0BFBF), fontFamily: "HelveticaNeue", fontSize: 18.0),
+                        color: Color(0xffC0BFBF),
+                        fontFamily: "HelveticaNeue",
+                        fontSize: 18.0),
                   ),
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                      color: Color(0xff444444), fontFamily: "HelveticaNeue", fontSize: 18.0),
+                      color: Color(0xff444444),
+                      fontFamily: "HelveticaNeue",
+                      fontSize: 18.0),
                   onChanged: (value) {
                     search_hub(value);
                   },
@@ -1239,8 +1258,7 @@ class Search_BarState extends State<Search_Bar> {
 
   @override
   Widget build(BuildContext context) {
-    return 
-    Container(
+    return Container(
       alignment: Alignment.center,
       height: 43.0,
       decoration: BoxDecoration(
@@ -1248,7 +1266,10 @@ class Search_BarState extends State<Search_Bar> {
           color: Color.fromRGBO(239, 239, 239, 1.0)),
       child: FlatButton(
         // color:  Colors.red,
-        padding: EdgeInsets.only(left: 8.0,right: 8.0,),
+        padding: EdgeInsets.only(
+          left: 8.0,
+          right: 8.0,
+        ),
         child: Row(
           children: <Widget>[
             Padding(
@@ -1267,11 +1288,14 @@ class Search_BarState extends State<Search_Bar> {
                       hintText: widget.title,
                       hintStyle: TextStyle(
                           color: Color(0xffC0BFBF),
-                          fontFamily: "HelveticaNeue", fontSize: 18.0),
+                          fontFamily: "HelveticaNeue",
+                          fontSize: 18.0),
                     ),
                     textAlign: TextAlign.center,
                     style: TextStyle(
-                        color: Color(0xff444444), fontFamily: "HelveticaNeue", fontSize: 18.0),
+                        color: Color(0xff444444),
+                        fontFamily: "HelveticaNeue",
+                        fontSize: 18.0),
                     onChanged: (value) {
                       search_meet(value);
                     },
@@ -1374,7 +1398,8 @@ class MeetListView_SearchState extends State<MeetListView_Search> {
                                   textAlign: TextAlign.center,
                                   style: TextStyle(
                                       color: Color(0xff444444),
-                                      fontFamily: "HelveticaNeue", fontSize: 18.0),
+                                      fontFamily: "HelveticaNeue",
+                                      fontSize: 18.0),
                                   onChanged: (value) {
                                     search_meet(value);
                                   },

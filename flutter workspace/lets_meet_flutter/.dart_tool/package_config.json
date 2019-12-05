@@ -2,6 +2,12 @@
   "configVersion": 2,
   "packages": [
     {
+      "name": "apple_maps_flutter",
+      "rootUri": "file:///Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/apple_maps_flutter-0.0.6+2",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "archive",
       "rootUri": "file:///Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/archive-2.0.10",
       "packageUri": "lib/",
@@ -314,6 +320,12 @@
       "languageVersion": "1.24"
     },
     {
+      "name": "platform_maps_flutter",
+      "rootUri": "file:///Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/platform_maps_flutter-0.1.4+1",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "quiver",
       "rootUri": "file:///Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/quiver-2.0.5",
       "packageUri": "lib/",
@@ -446,7 +458,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2019-12-04T14:15:10.996635Z",
+  "generated": "2019-12-05T13:27:21.427361Z",
   "generator": "pub",
   "generatorVersion": "2.7.0"
 }
