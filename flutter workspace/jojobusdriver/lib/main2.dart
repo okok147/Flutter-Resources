@@ -403,7 +403,9 @@ class _MainPageState extends State<MainPage> {
                     : Center(
                         child: Text(
                         '幸福存在於一個人真正的工作中。',
-                        style: TextStyle(color: Cor.statusBarMessage),
+                        style: TextStyle(
+                          color: Cor.statusBarMessage,
+                        ),
                       )),
               ),
               Spacer(),
@@ -414,7 +416,8 @@ class _MainPageState extends State<MainPage> {
                     padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),
                     child: Text(
                       '車牌號碼 ： ',
-                      style: TextStyle(fontSize: 32.0,fontFamily: 'Noto Serif TC'),
+                      style: TextStyle(
+                          fontSize: 32.0, fontFamily: 'Noto Serif TC'),
                     ),
                   ),
                   DropdownButton<String>(
@@ -453,11 +456,17 @@ class _MainPageState extends State<MainPage> {
                       child: Text(
                         starting ? "收工" : "開工",
                         style: starting
-                            ? TextStyle(color: Cor.openWork, fontSize: 80.0,fontFamily: 'NotoSerifTC')
-                            : TextStyle(color: Cor.closeWork, fontSize: 80.0),
+                            ? TextStyle(
+                                color: Cor.openWork,
+                                fontSize: 80.0,
+                                fontFamily: 'Noto Serif TC')
+                            : TextStyle(
+                                color: Cor.closeWork,
+                                fontSize: 80.0,
+                                fontFamily: 'Noto Serif TC'),
                       ),
                       shape: RoundedRectangleBorder(
-                          borderRadius: new BorderRadius.circular(18.0),
+                          borderRadius: new BorderRadius.circular(32.0),
                           side: BorderSide(color: Cor.workButtonBorder)),
                       onPressed: () async {
                         // bg.BackgroundGeolocation.start();

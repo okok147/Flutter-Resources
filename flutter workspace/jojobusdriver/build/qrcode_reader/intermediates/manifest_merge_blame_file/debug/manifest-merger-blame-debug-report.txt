@@ -1,0 +1,30 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.matheusvillela.flutter.plugins.qrcodereader"
+4    android:versionCode="1"
+5    android:versionName="0.0.1" >
+6
+7    <uses-sdk
+7-->/Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/qrcode_reader-0.4.4/android/src/main/AndroidManifest.xml:6:5-8:40
+8        android:minSdkVersion="16"
+8-->/Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/qrcode_reader-0.4.4/android/src/main/AndroidManifest.xml:7:9-35
+9        android:targetSdkVersion="21" />
+9-->/Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/qrcode_reader-0.4.4/android/src/main/AndroidManifest.xml:8:9-38
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->/Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/qrcode_reader-0.4.4/android/src/main/AndroidManifest.xml:10:5-64
+11-->/Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/qrcode_reader-0.4.4/android/src/main/AndroidManifest.xml:10:22-62
+12
+13    <application>
+13-->/Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/qrcode_reader-0.4.4/android/src/main/AndroidManifest.xml:11:5-16:19
+14        <activity
+14-->/Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/qrcode_reader-0.4.4/android/src/main/AndroidManifest.xml:12:9-15:98
+15            android:name="com.matheusvillela.flutter.plugins.qrcodereader.QRScanActivity"
+15-->/Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/qrcode_reader-0.4.4/android/src/main/AndroidManifest.xml:14:13-43
+16            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+16-->/Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/qrcode_reader-0.4.4/android/src/main/AndroidManifest.xml:15:13-96
+17            android:theme="@android:style/Theme.NoTitleBar" />
+17-->/Users/ok/Documents/flutter/.pub-cache/hosted/pub.dartlang.org/qrcode_reader-0.4.4/android/src/main/AndroidManifest.xml:13:13-60
+18    </application>
+19
+20</manifest>
