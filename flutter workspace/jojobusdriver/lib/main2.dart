@@ -405,6 +405,7 @@ class _MainPageState extends State<MainPage> {
                         '幸福存在於一個人真正的工作中。',
                         style: TextStyle(
                           color: Cor.statusBarMessage,
+                          fontFamily: 'Noto Serif TC'
                         ),
                       )),
               ),
