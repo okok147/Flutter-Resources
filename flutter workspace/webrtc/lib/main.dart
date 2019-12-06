@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => new _MyAppState();
 }
 
-enum DialogDemoAction {
+enum DialogDemoAction { 
   cancel,
   connect,
 }

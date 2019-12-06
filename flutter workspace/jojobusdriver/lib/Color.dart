@@ -21,12 +21,14 @@ class Cor {
   //for Homepage.dart
   static const Color statusBarMessage = Colors.white;
   static const Color statusBarColor1 = Color(0xff403C3D);
-  static const Color statusBarColor2 = Color(0xff1FC483);
+  static const Color statusBarColor2 = Color(0xff24B87E);
   static const Color carNumberColor = Colors.black;
-  static const Color dropDownMenuIcon = Colors.blueAccent;
+  static const Color dropDownMenuCard = Color(0xffFFF5D5);
+  static Color dropDownMenuIcon = Colors.blueAccent.withOpacity(0.618);
   static const Color dropDownMenuItemColor = Colors.deepPurpleAccent;
-  static const Color openWork = Color(0xff1FC483);
-  static const Color closeWork = Color(0xffD54A21);
+  static const Color dropDownMenuUnderLine = Color(0xffFFE0BE);
+  static const Color openWork = Color(0xffD54A21);
+  static const Color closeWork = Color(0xff24B87E);
 
   static const Color workButtonColor = Colors.transparent;
   static const Color workButtonBorder = Colors.blueGrey;
