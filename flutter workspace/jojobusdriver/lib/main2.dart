@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
+import 'dart:math';
 
 import 'package:background_fetch/background_fetch.dart';
 import 'package:flutter/material.dart';
@@ -404,47 +405,62 @@ class _MainPageState extends State<MainPage> {
                         child: Text(
                         '幸福存在於一個人真正的工作中。',
                         style: TextStyle(
-                          color: Cor.statusBarMessage,
-                        ),
+                            color: Cor.statusBarMessage,
+                            fontFamily: 'Noto Serif TC'),
                       )),
               ),
               Spacer(),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),
-                    child: Text(
-                      '車牌號碼 ： ',
-                      style: TextStyle(
-                          fontSize: 32.0, fontFamily: 'Noto Serif TC'),
-                    ),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Card(
+                  color: Cor.dropDownMenuCard,
+                  elevation: 2.0,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.fromLTRB(0, 0, 16, 0),
+                        child: Text(
+                          '車牌號碼 ： ',
+                          style: TextStyle(
+                              fontSize: 32.0, fontFamily: 'Noto Serif TC'),
+                        ),
+                      ),
+                      DropdownButton<String>(
+                          hint: Text('選一個'),
+                          underline: Material(
+                            child: Container(
+                              width: double.infinity,
+                              height: 2,
+                              color: Cor.dropDownMenuUnderLine,
+                            ),
+                          ),
+                          isExpanded: false,
+                          iconSize: 32.0,
+                          iconEnabledColor: Cor.dropDownMenuIcon,
+                          style: TextStyle(
+                              color: Cor.carNumberColor,
+                              fontWeight: FontWeight.w600,
+                              fontSize: 32.0),
+                          value: dropdownValue,
+                          onChanged: (String newValue) {
+                            setState(() {
+                              dropdownValue = newValue;
+                            });
+                          },
+                          items: <String>['AB2000', 'VO2020', 'QO2852']
+                              .map<DropdownMenuItem<String>>((String value) {
+                            return DropdownMenuItem<String>(
+                                value: value,
+                                child: Text(
+                                  value,
+                                  style: TextStyle(
+                                      color: Cor.dropDownMenuItemColor),
+                                ));
+                          }).toList()),
+                    ],
                   ),
-                  DropdownButton<String>(
-                      isExpanded: false,
-                      iconSize: 32.0,
-                      iconEnabledColor: Cor.dropDownMenuIcon,
-                      style: TextStyle(
-                          color: Cor.carNumberColor,
-                          fontWeight: FontWeight.w600,
-                          fontSize: 32.0),
-                      value: dropdownValue,
-                      onChanged: (String newValue) {
-                        setState(() {
-                          dropdownValue = newValue;
-                        });
-                      },
-                      items: <String>['AB2000', 'VO2020', 'QO2852']
-                          .map<DropdownMenuItem<String>>((String value) {
-                        return DropdownMenuItem<String>(
-                            value: value,
-                            child: Text(
-                              value,
-                              style:
-                                  TextStyle(color: Cor.dropDownMenuItemColor),
-                            ));
-                      }).toList()),
-                ],
+                ),
               ),
               Spacer(),
               Container(
