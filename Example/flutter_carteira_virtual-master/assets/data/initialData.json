@@ -1,0 +1,49 @@
+{
+    "cardResults": [
+        {
+            "cardHolderName": "Márcio Teixeira Quimbundo",
+            "cardNumber": "1234567891019999",
+            "cardMonth": "11",
+            "cardYear": "2025",
+            "cardCvv": "127",
+            "cardColor": null,
+            "cardType": "CREDIT"
+        },
+        {
+            "cardHolderName": "Erikson Melgarejo",
+            "cardNumber": "1234567891019999",
+            "cardMonth": "10",
+            "cardYear": "2022",
+            "cardCvv": "227",
+            "cardColor": null,
+            "cardType": "CREDIT"
+        },
+        {
+            "cardHolderName": "Dercio Viegas",
+            "cardNumber": "1234567891019999",
+            "cardMonth": "10",
+            "cardYear": "2020",
+            "cardCvv": "227",
+            "cardColor": null,
+            "cardType": "CREDIT"
+        },
+        {
+            "cardHolderName": "Acidiney Dias",
+            "cardNumber": "1234567891019999",
+            "cardMonth": "10",
+            "cardYear": "2027",
+            "cardCvv": "227",
+            "cardColor": null,
+            "cardType": "CREDIT"
+        },
+        {
+            "cardHolderName": "Xênia Pedro",
+            "cardNumber": "1234567891019999",
+            "cardMonth": "10",
+            "cardYear": "2029",
+            "cardCvv": "227",
+            "cardColor": null,
+            "cardType": "CREDIT"
+        }
+    ]
+}
