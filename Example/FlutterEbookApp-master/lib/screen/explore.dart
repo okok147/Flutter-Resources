@@ -17,7 +17,7 @@ class Explore extends StatelessWidget{
           appBar: AppBar(
             centerTitle: true,
             title: Text(
-              "Explore",
+              "Explore !",
             ),
           ),
 
