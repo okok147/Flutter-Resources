@@ -1,4 +1,0 @@
-#Thu Dec 05 21:55:18 HKT 2019
-base.0=/Users/ok/Documents/Flutter-Resources/flutter workspace/jojobusdriver/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

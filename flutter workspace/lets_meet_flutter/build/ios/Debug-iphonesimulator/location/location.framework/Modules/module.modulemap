@@ -1,6 +1,0 @@
-framework module location {
-  umbrella header "location-umbrella.h"
-
-  export *
-  module * { export * }
-}

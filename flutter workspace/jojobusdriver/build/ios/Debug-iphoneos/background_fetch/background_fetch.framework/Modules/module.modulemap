@@ -1,6 +1,0 @@
-framework module background_fetch {
-  umbrella header "background_fetch-umbrella.h"
-
-  export *
-  module * { export * }
-}
