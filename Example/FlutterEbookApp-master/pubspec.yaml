@@ -32,7 +32,7 @@ dependencies:
   objectdb: ^1.0.7+1
   epub_kitty: ^0.1.0
   path_provider: ^1.4.0
-  dio: ^3.0.8
+  dio: ">=3.0.8 <6.0.0"
   permission_handler: ^4.2.0+hotfix.1
 
 dev_dependencies:
